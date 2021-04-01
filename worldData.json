@@ -1,0 +1,34 @@
+{
+    "worldName": "Jarparur",
+    "worldAge": 20000,
+    "worldPopulation": 100000,
+    "worldType": "Planet",
+
+    "nulr": {
+        "name": "Nulr",
+        "description": "Uma bela região ao norte de Jarparunn, separada do resto do mundo pelo muro colossal de Grenkëparur.",
+
+        "language": "nulrfanghe"
+    },
+
+    "grenkeparur": {
+        "name": "Grenkeparur",
+        "description": "Um gigantesco muro de gelo, destino daqueles que foram contra as leis do Sul, uma gigantesca prisão.",
+
+        "language": "espocioComum"
+    },
+
+    "desertoDosOssos": {
+        "name": "Deserto dos Ossos",
+        "description": "Quente, árido e lar das criaturas mais ferozes de Jarparunn. Você vai precisar de muita água aqui.",
+
+        "language": "espocioAntigo"
+    },
+
+    "sul": {
+        "name": "O Sul",
+        "description": "Terra dos humanos e dos elfos da floresta, possui imensos reinos e políticas, e claro, muita magia arcana.",
+
+        "language": "espocioComum"
+    }
+}

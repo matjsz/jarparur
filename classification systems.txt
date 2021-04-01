@@ -1,0 +1,40 @@
+tier
+
+Mágico (Real):
+    18 - Real
+    17 - Ascendido
+    16 - Iluminado
+    15 - Fraco
+
+Mágico (Arcano):
+    14 - Mestre
+    13 - Perito
+    12 - Experiente
+    11 - Iniciante
+
+Não Mágico:
+    10 - Lendário
+    9 - Semi-lendário
+    8 - Divino
+    7 - Obra de arte
+    6 - Excelente
+    5 - Muito bom
+    4 - Bom
+    3 - Razoável
+    2 - Ruim
+    1 - Péssimo
+    0 - Miserável
+
+type
+
+1 - Arma de uma mão 
+2 - Arma de duas mãos
+3 - Arma de longo alcance
+4 - Armadura
+5 - Roupa
+6 - Mágico
+7 - Utilizável
+
+type, tier, id
+
+tier, id

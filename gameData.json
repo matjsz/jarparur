@@ -1,0 +1,453 @@
+{
+    "human": {
+        "name": "Humano",
+        "description": "Humanos são ambiciosos e insistentes, talvez sejam a própria definição de liderança. É a raça mais populosa de Jarparur.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [] 
+    },
+
+    "dwarf": {
+        "name": "Anão",
+        "description": "Anões são ótimos ferreiros e adoram cavernas, talvez por ambição, ou apenas por puro tédio. Anões são encontrados em montanhas.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [] 
+    },
+
+    "nulr": {
+        "name": "Nórdico",
+        "description": 
+        "Também conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. São conhecidos por sua resistência ao frio e pela Magia Real."
+    },
+
+    "elf": {
+        "name": "Elfo",
+        "description": "Os elfos são conhecidos por sua arquitetura magnífica, seu conhecimento do universo e seus diferentes planos existênciais.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+
+    "woodElf": {
+        "name": "Elfo da Floresta",
+        "description": "Ótimos caçadores, diferente de seus parentes próximos, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+
+    "halfling": {
+        "name": "Halfling",
+        "description": "Halflings são ótimos bardos, além de alegrarem a festa com suas divertidas canções, também podem ser ótimos assassinos.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [],
+        "startPoint": ""
+    },
+
+    "orc": {
+        "name": "Orc",
+        "description": "Orcs vivem no Deserto dos Ossos, são extremamente resistentes ao calor, graças à sua pele, que dá a eles uma armadura natural.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [""]
+    },
+
+    "warrior": {
+        "name": "Guerreiro",
+        "description": "Um bravo guerreiro pode trucidar legiões inteiras de combatentes. devido a sua enorme força e resistência.",
+
+        "health": 120,
+        "mana": 10,
+        "velocity": 5,
+        "armor": 2,
+
+        "strength": 15,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+
+        "favoriteWeapons": ["Arma de uma mão", "Arma de duas mãos"]
+    },
+
+    "ranger": {
+        "name": "Ranger",
+        "description": "Um ótimo rastreador, além de caçador e flanco, os Rangers possuem uma precisão impecável quando bem treinados.",
+
+        "health": 80,
+        "mana": 30,
+        "velocity": 10,
+        "armor": 2,
+
+        "strength": 10,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+
+        "favoriteWeapons": ["Arma de longo alcance", "Arma de uma mão"]
+    },
+
+    "wizard": {
+        "name": "Mago",
+        "description": "O Mago estuda as nuânces do Cosmos de forma estoica, revelando ser um verdadeiro portador da magia arcana.",
+
+        "health": 60,
+        "mana": 50,
+        "velocity": 8,
+        "armor": 2,
+
+        "strength": 6,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+
+        "favoriteWeapons": ["Mágico", "Utilizável"]
+    },
+
+    "bjoretNen": {
+        "name": "Bjoret-Nen",
+        "description": "Buscam entender a origem dos sinais misteriosos de magia real, além de dominar os artifícios da Bjoret (Natureza)",
+
+        "health": 60,
+        "mana": 50,
+        "velocity": 8,
+        "armor": 2,
+
+        "strength": 8,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+
+        "favoriteWeapons": ["Mágico"]
+    },
+
+    "assassin": {
+        "name": "Assassino",
+        "description": "Assassinos são sublimes rastreadores e possuem dano explosivo, se destacam em habilidades furtivas.",
+
+        "health": 60,
+        "mana": 20,
+        "velocity": 10,
+        "armor": 2,
+
+        "strength": 12,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+
+        "favoriteWeapons": ["Arma de uma mão", "Utilizável"]
+    },
+
+    "cleric": {
+        "name": "Clérigo",
+        "description": "Bastiões da proteção e da justiça, os clérigos buscam proteger seus aliados e a liberdade de seu povo.",
+
+        "health": 110,
+        "mana": 20,
+        "velocity": 5,
+        "armor": 2,
+
+        "strength": 15,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+
+        "favoriteWeapons": ["Arma de duas mãos", "Arma de uma mão"]
+    },
+
+    "paladin": {
+        "name": "Paladino",
+        "description": "Sendo protetores da religião do Sul, são abençoados por suas entidades e protegem suas cidades dos elfos da floresta.",
+
+        "health": 100,
+        "mana": 10,
+        "velocity": 5,
+        "armor": 2,
+
+        "strength": 15,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+
+        "favoriteWeapons": ["Arma de duas mãos", "Arma de uma mão"]
+    },
+
+    "barbarian": {
+        "name": "Bárbaro",
+        "description": "Raivosos e com sede de sangue. Um Bárbaro está sempre a procura de uma boa batalha, não importando se é justa ou não.",
+
+        "health": 100,
+        "mana": 10,
+        "velocity": 8,
+        "armor": 2,
+
+        "strength": 15,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12
+    },
+
+    "druid": {
+        "name": "Druida",
+        "description": "Druidas são poderosos domadores de animais, eles possuem uma conexão física e espiritual com seus bichanos.",
+
+        "health": 60,
+        "mana": 35,
+        "velocity": 12,
+        "armor": 2,
+
+        "strength": 12,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12
+    },
+ 
+    "bard": {
+        "name": "Bardo",
+        "description": "Belíssimas cantorias podem ser tão mortais quanto a lâmina de um guerreiro. Um banjo bem encantado faz a diferença.",
+
+        "health": 60,
+        "mana": 50,
+        "velocity": 10,
+        "armor": 2,
+
+        "strength": 6,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15
+    },
+
+    "monk": {
+        "name": "Monge",
+        "description": "Paciência. Disciplina. Sabedoria é a chave para acertar o chute mortal ou atingir a postura do dragão lendário.",
+
+        "health": 80,
+        "mana": 40,
+        "velocity": 10,
+        "armor": 2,
+
+        "strength": 15,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8
+    },
+
+    "espocioComum": {
+        "name": "Espócio Comum",
+        "description": "Língua falada no Sul de Jarparunn, tanto pelos elfos, quanto pelos humanos."
+    },
+
+    "espocioAntigo": {
+        "name": "Espócio Antigo",
+        "description": "Língua falada no escaldante Deserto dos Ossos pelos orcs."
+    },
+
+    "nulrfanghe": {
+        "name": "Nulrfanghë",
+        "description": "Língua fala no Norte/Nulr de Jarparunn pelos Nórdicos/Nulr-Nen, também é a língua das antigas runas nórdicas."
+    },
+
+    "items": {
+        "all": ["101", "301", "6111", "6151", "102", "201", "202", "6112", "203", "401", "5111", "402", "501"],
+        "101": {
+            "name": "Espada de Bronze",
+            "description": "Uma espada simples de bronze, acho que o anão que a forjou não estava de bom humor.",
+            "tier": "Miserável",
+            "type": "Arma de uma mão",
+            
+            "damage": 2,
+            "cost": 5
+        },
+
+        "301": {
+            "name": "Arco de Caça",
+            "description": "Um arco simples, bom para caçar animais pequenos, nem um pouco confiável, pode quebrar a qualquer momento.",
+            "tier": "Miserável",
+            "type": "Arma de longo alcance",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "6111": {
+            "name": "Tomo de Feitiços de Iniciante",
+            "description": "Talvez essas duas páginas possam ajudar em alguma coisa... cuidado com o nariz.",
+            "tier": "Iniciante",
+            "type": "Mágico",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "6151": {
+            "name": "Raíz de Fulläret",
+            "description": "Uma raíz seca retirada de uma árvore que um dia já foi portadora de um Bjoret-Nen em sua mais pura forma.",
+            "tier": "Fraco",
+            "type": "Mágico",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "102": {
+            "name": "Adaga Cega",
+            "description": "Precisa ser afiado, mas funciona, prometo. Só não vá entrar em uma briga com uma dessas, não é uma boa ideia.",
+            "tier": "Miserável",
+            "type": "Arma de uma mão",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "201": {
+            "name": "Martelo de Pedra",
+            "description": "Esculpido pelo anão mais preguiçoso da região, aqui está seu maravilhoso martelo! Nem pense em usar em uma guerra.",
+            "tier": "Miserável",
+            "type": "Arma de duas-mãos",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "202": {
+            "name": "Machado de Ossos",
+            "description": "Feito com os ossos de suas maiores batalhas, verdadeiros troféus. Confeccionado com ossos de ratos.",
+            "tier": "Miserável",
+            "type": "Arma de duas-mãos",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "6112": {
+            "name": "Banjo com Pérolas",
+            "description": "Um banjo decorado com pérolas do colar quebrado de um mago iniciante, não sei exatamente oque faz, mas já vi os ratos dançarem ao som desse banjo!",
+            "tier": "Iniciante",
+            "type": "Mágico",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "203": {
+            "name": "Bastão de Madeira",
+            "description": "Minha antiga vassoura, agora devastada pelos ratos, malditos roedores. Mas enfim, agora é seu, use com sabedoria!",
+            "tier": "Miserável",
+            "type": "Arma de duas-mãos",
+
+            "damage": 2,
+            "cost": 5
+        },
+
+        "401": {
+            "name": "Armadura de Couro",
+            "description": "Uma (des)confortável armadura de couro para te proteger de pontadas de espadas e flechas.",
+            "tier": "Miserável",
+            "type": "Armadura",
+
+            "armor": 1,
+            "cost": 2
+        },
+
+        "5111": {
+            "name": "Robe de Mago Iniciante",
+            "description": "Pano. Sim, só pano.",
+            "tier": "Iniciante",
+            "type": "Roupa",
+
+            "mana": 5,
+            "cost": 2
+        },
+
+        "402": {
+            "name": "Calças de Couro",
+            "description": "Para cobrir suas vergonhas.",
+            "tier": "Miserável",
+            "type": "Armadura",
+
+            "armor": 1,
+            "cost": 1
+        },
+
+        "501": {
+            "name": "Botas Básicas",
+            "description": "Você não vai querer andar nas pedras, né?",
+            "tier": "Miserável",
+            "type": "Calçado",
+
+            "armor": 1,
+            "cost": 1
+        },
+
+        "42": {
+            "name": "O Sentido da Vida",
+            "description": "O verdadeiro sentido da vida!",
+            "tier": "Lendário",
+            "type": "Easter Egg",
+
+            "damage": 420000,
+            "cost": 420000
+        }
+    },
+
+    "abilities": {
+        "111": {
+            "name": "Explosão Arcana",
+            "description": "Causa uma pequena explosão causando dano em área.",
+
+            "cooldown": 1,
+            "damage": 2,
+            "manaCost": 5
+        },
+
+        "112": {
+            "name": "Feixe",
+            "description": "Libera um feixe de luz que diminui a armadura do alvo em 2",
+            
+            "cooldown": 5,
+            "damage": 0,
+            "manaCost": 20
+        },
+
+        "151": {
+            "name": "Onda de Espinhos",
+            "description": "Libera uma onda de espinhos que rastejam até o alvo, causando dano em área",
+
+            "cooldown": 1,
+            "damage": 2,
+            "manaCost": 5
+        },
+
+        "152": {
+            "name": "Raízes de Bjoret",
+            "description": "Faz nascer raízes do chão, que prendem e atordoam o alvo por 3 turnos.",
+
+            "cooldown": 5,
+            "damage": 0,
+            "manaCost": 20
+        }
+    }
+}
