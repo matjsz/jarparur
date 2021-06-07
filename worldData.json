@@ -30,5 +30,21 @@
         "description": "Terra dos humanos e dos elfos da floresta, possui imensos reinos e políticas, e claro, muita magia arcana.",
 
         "language": "espocioComum"
+    },
+
+    "test": {
+        "name": "Região de Testes",
+        "description": "Local de testes para movimentação do jogador",
+        "language": "espocioComum",
+
+        "testArea": {
+            "type": "plain",
+            "name": "Área de Testes",
+            "description": "Um lugar perfeito para... mais bugs :(",
+            "sizex": 50,
+            "sizey": 50,
+            "xWorldRegion": 0,
+            "yWorldRegion": 0
+        }
     }
 }
