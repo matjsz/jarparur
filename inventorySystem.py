@@ -1,6 +1,6 @@
 import os, json
 from terminaltables import SingleTable
-from mapHandler import MapHandler
+from gameHandler import MapHandler
 
 class Inventory:
     def __init__(self, loadName):
@@ -203,7 +203,7 @@ class Inventory:
         print("\n[slot[n]] ex: slot1 - Mostra detalhes do item no slot escolhido\n[parteInventario] ex: cabeça - Mostra detalhes do item no componente escolhido\n[back] - Volta para a tela de jogo\n[d] [parteInventario] - Descarta item no componente escolhido\n[c] - Limpa o log")
 
         while True:
-            cmds = ["cabeça", "torso", "braço", "mãos", "perna", "pés"]
+            cmds = ["cabeça", "torso", "braços", "mãos", "pernas", "pés"]
 
             inventoryEvent = input("\n[i] >>> ")
 

@@ -31,22 +31,27 @@ def loadGame():
     os.system("cls")
     print("CARREGAR JOGO\n")
 
-    listfolder = []
+    i = 1
+    folderListeners = {}
+    print("[0] VOLTAR")
 
     for folder in listdir('saves/'):
-        print(folder)
-        listfolder.append(folder)
+        print(f"[{str(i)}] {folder}")
+        folderListeners[str(i)] = folder
+        i += 1
 
-    loadName = input("\nCarregar Save >>> ")
+    loadNum = input("\n>>> ")
 
-    if loadName in listfolder:
-        loadThis = gameEngine.GameWorld(loadName)
+    if loadNum in folderListeners:
+        loadThis = gameEngine.GameWorld(folderListeners[loadNum])
         loadThis.start()
+    elif loadNum == "0":
+        import jarparur
+        jarparur.mainStructure()
     else:
         os.system("cls")
-        print("O nome do save inserido está incorreto!")
+        print("O identificador do save inserido está incorreto!")
 
         input("Pressione Enter para continuar...")
-
-        import main
-        main.mainStructure()
+        import jarparur
+        jarparur.mainStructure()

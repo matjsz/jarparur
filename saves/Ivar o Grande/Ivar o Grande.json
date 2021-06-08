@@ -1,25 +1,26 @@
 {
-    "playerName": "Einar",
-    "playerRace": "nulr",
-    "playerClass": "bjoretNen",
+    "playerName": "Ivar",
+    "playerGenre": "M",
+    "playerRace": "human",
+    "playerClass": "wizard",
     "playerLanguage": "nulrfanghe",
     "playerAge": 25,
-    "playerHeight": 1.82,
+    "playerHeight": 1.83,
     "playerHealth": 60,
     "playerMana": 50,
     "playerArmor": 2,
     "playerLevel": 1,
     "playerXP": 0,
+    "playerMood": "Bem",
     "playerVelocity": 8,
-    "playerStrength": 8,
-    "playerDexterity": 12,
-    "playerConstitution": 12,
+    "playerStrength": 6,
+    "playerDexterity": 10,
+    "playerConstitution": 6,
     "playerIntelligence": 15,
     "playerWisdom": 15,
-    "playerCharisma": 6,
+    "playerCharisma": 12,
     "playerStartPoint": "nulr",
     "playerFavoriteWeapon": "M\u00e1gico",
-    "playerMood": "Bem",
     "playerInventory": {
         "head": "",
         "torso": "5111",
@@ -28,7 +29,7 @@
         "legs": "",
         "foot": "501",
         "slots": [
-            "6151",
+            "6111",
             "",
             "",
             "",
@@ -44,11 +45,11 @@
         ]
     },
     "playerAbilities": {
-        "ability1": "151",
-        "ability2": "152"
+        "ability1": "111",
+        "ability2": "112"
     },
     "playerWorld": {
-        "worldRegion": "",
+        "worldRegion": "nulr",
         "localRegion": "",
         "building": ""
     }

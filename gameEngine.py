@@ -3,7 +3,8 @@ import json
 import sys
 from terminaltables import SingleTable
 from inventorySystem import Inventory
-from mapHandler import MapHandler
+from gameHandler import MapHandler
+import gameHandler
 from dataStock import DataStock
 
 class GameWorld:
@@ -14,7 +15,8 @@ class GameWorld:
         #START MODULES
         Inventory(self.loadName)
         DataStock(self.loadName)
-        MapHandler(self.loadName).UI().start()
+        myScreen = MapHandler(self.loadName)
+        myScreen.UI().start()
 
         with open(f'saves/{self.loadName}/gameData.json', encoding='utf-8') as jf:
             data = json.load(jf)
@@ -45,15 +47,20 @@ class GameWorld:
         playerCharisma = dataPlayer['playerCharisma']
         playerFavoriteWeapon = dataPlayer['playerFavoriteWeapon']
 
+        playerWorldRegion = dataPlayer["playerWorld"]["worldRegion"]
+        playerLocalRegion = dataPlayer["playerWorld"]["localRegion"]
+        playerBuilding = dataPlayer["playerWorld"]["building"]
+
+        # ["Bem", "Com fome", "Com sono", "Irritado"]
+        playerMood = dataPlayer["playerMood"]
+        eventsEngineSide = gameHandler.events
+
         while True:
             eventTerminal = input(">>> ")
 
             #Game Commands
             if eventTerminal == "i":
                 Inventory.showInventory()
-
-            elif eventTerminal == "m":
-                MapHandler.UI().whileInProgressScreen()
 
             elif eventTerminal == "p":
                 profileData = [
@@ -86,36 +93,28 @@ class GameWorld:
                 MapHandler.UI().update("default")
 
             #Navigation
-            elif eventTerminal == "menu":
+            elif eventTerminal == "m":
                 import jarparur
 
                 jarparur.mainStructure()
-            elif eventTerminal == "exit":
+            elif eventTerminal == "e":
+                os.system("cls")
                 exit()
 
             elif eventTerminal == "dev data":
                 DataStock.seeAllData()
 
-            #Dev Testsss
-            elif eventTerminal == "dev map":
-                global mapData
+            elif eventTerminal in eventsEngineSide:
+                thisEvent = gameHandler.events[eventTerminal]
 
-                mapData = f"""
-                #####################
-                #####################
-                #####################
-                #####################
-                #####################
-                ##########p##########
-                #####################
-                #####################
-                #####################
-                #####################
-                #####################
-                """
+                if thisEvent.eType == "sleep":
+                    sleepTime = input("Horas de sono: ")
+                    thisEvent.event(int(sleepTime))
+                elif thisEvent.eType == "devTest":
+                    thisEvent.event()
+                else:
+                    thisEvent.event()
 
-                MapHandler.UI().update([["Mapa"],[mapData]])
-            
             else:
                 MapHandler.UI().update("default")
 

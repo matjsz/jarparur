@@ -1,1 +1,63 @@
-{"worldName": "Jarparur", "worldAge": 20000, "worldPopulation": 100000, "worldType": "Planet", "nulr": {"name": "Nulr", "description": "Uma bela regi\u00e3o ao norte de Jarparunn, separada do resto do mundo pelo muro colossal de Grenk\u00ebparur.", "language": "nulrfanghe"}, "grenkeparur": {"name": "Grenkeparur", "description": "Um gigantesco muro de gelo, destino daqueles que foram contra as leis do Sul, uma gigantesca pris\u00e3o.", "language": "espocioComum"}, "desertoDosOssos": {"name": "Deserto dos Ossos", "description": "Quente, \u00e1rido e lar das criaturas mais ferozes de Jarparunn. Voc\u00ea vai precisar de muita \u00e1gua aqui.", "language": "espocioAntigo"}, "sul": {"name": "O Sul", "description": "Terra dos humanos e dos elfos da floresta, possui imensos reinos e pol\u00edticas, e claro, muita magia arcana.", "language": "espocioComum"}}
+{
+    "worldName": "Jarparur", 
+    "worldAge": 20000, 
+    "worldPopulation": 100000, 
+    "worldType": "Planet", 
+    "day": 12,
+    "month": 2,
+    "year": 20000,
+    "options": ["nulr", "grenkeparur", "desertoDosOssos", "sul", "test"],
+    
+    "nulr": {
+        "id": "nulr",
+        "name": "Nulr", 
+        "description": "Uma bela regi\u00e3o ao norte de Jarparunn, separada do resto do mundo pelo muro colossal de Grenk\u00ebparur.",
+        "language": "nulrfanghe",
+        "options": [""]
+    }, 
+    "grenkeparur": {
+        "id": "grenkeparur",
+        "name": "Grenkeparur", 
+        "description": "Um gigantesco muro de gelo, destino daqueles que foram contra as leis do Sul, uma gigantesca pris\u00e3o.", 
+        "language": "espocioComum",
+        "options": [""]
+    }, 
+    "desertoDosOssos": {
+        "id": "desertoDosOssos",
+        "name": "Deserto dos Ossos", 
+        "description": "Quente, \u00e1rido e lar das criaturas mais ferozes de Jarparunn. Voc\u00ea vai precisar de muita \u00e1gua aqui.", 
+        "language": "espocioAntigo",
+        "options": [""]
+    }, 
+    "sul": {
+        "id": "sul",
+        "name": "O Sul", 
+        "description": "Terra dos humanos e dos elfos da floresta, possui imensos reinos e pol\u00edticas, e claro, muita magia arcana.", 
+        "language": "espocioComum",
+        "options": [""]
+    },
+
+    "test": {
+        "id": "test",
+        "name": "Região de Testes",
+        "description": "Local de testes para movimentação do jogador",
+        "language": "espocioComum",
+        "options": ["testArea1"],
+
+        "testArea1": {
+            "id": "testArea1",
+            "type": "plain",
+            "name": "Área de Testes",
+            "description": "Um lugar perfeito para... mais bugs :(",
+            "options": ["building1"],
+
+            "building1": {
+                "id": "building1",
+                "type": "house",
+                "name": "Casa 1",
+                "description": "Acho que os bugs não vão entrar aqui.",
+                "options": ["sleep"]
+            }
+        }
+    }
+}

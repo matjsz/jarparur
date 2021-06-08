@@ -70,6 +70,8 @@ def createCharacter():
     print(dragonBeforeName)
 
     playerName = input("\nSeu nome: ")
+    print("\nAgora, seu personagem precisa de um gênero.")
+    playerGenre = input("\nSeu gênero [M/F]: ")
 
     while True:
         #Update RAÇA
@@ -327,6 +329,7 @@ def createCharacter():
 
     playerData = {
         "playerName": f"{playerName}", #INPUT
+        "playerGenre": f"{playerGenre}", #INPUT
         "playerRace": f"{playerRace}", #INPUT
         "playerClass": f"{playerClass}",
         "playerLanguage": f"{playerLanguage}", #INPUT
@@ -339,6 +342,7 @@ def createCharacter():
 
         "playerLevel": 1,
         "playerXP": 0,
+        "playerMood": "Bem",
         
         "playerVelocity": int(data[playerClass]['velocity']),
 
@@ -367,6 +371,12 @@ def createCharacter():
         "playerAbilities": {
             "ability1": f"{playerAbility1}",
             "ability2": f"{playerAbility2}"
+        },
+
+        "playerWorld": {
+            "worldRegion": f"{playerStartPoint}",
+            "localRegion": "",
+            "building": ""
         }
     }
 
@@ -376,6 +386,7 @@ def createCharacter():
 
     print(f"\nPERSONAGEM: {playerName}")
     print(f"------------------------------/")
+    print(f"Gênero: {playerGenre}")
     print(f"Raça: {data[playerRace]['name']}")
     print(f"Classe: {data[playerClass]['name']}")
     print(f"Idioma: {data[playerLanguage]['name']}")
