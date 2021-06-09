@@ -1,0 +1,5602 @@
+{
+    "244379776688901033955547809718939057473": {
+        "name": "Marty",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "druid",
+        "language": "espocioAntigo",
+        "age": 51,
+        "height": 2.2,
+        "health": 60,
+        "mana": 35,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arco curto",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "120752841853584945387881632045514777038": {
+        "name": "Darin",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "bjoretNen",
+        "language": "espocioAntigo",
+        "age": 81,
+        "height": 2.41,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "212975311928916519231297621274749988329": {
+        "name": "Stephen",
+        "genre": "M",
+        "race": "nulr",
+        "class": "bard",
+        "language": "nulrfanghe",
+        "age": 47,
+        "height": 1.74,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "188045268999661968836625612606775272593": {
+        "name": "Jeffery",
+        "genre": "M",
+        "race": "elf",
+        "class": "paladin",
+        "language": "nulrfanghe",
+        "age": 62,
+        "height": 1.6,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "238355759456946694815040649679604168501": {
+        "name": "Joe",
+        "genre": "M",
+        "race": "orc",
+        "class": "ranger",
+        "language": "espocioAntigo",
+        "age": 1,
+        "height": 1.97,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "28308289431065626638397597890520654704": {
+        "name": "Rachel",
+        "genre": "F",
+        "race": "elf",
+        "class": "monk",
+        "language": "nulrfanghe",
+        "age": 61,
+        "height": 1.78,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "18816725623367386030124756193595478722": {
+        "name": "Sherry",
+        "genre": "F",
+        "race": "elf",
+        "class": "monk",
+        "language": "nulrfanghe",
+        "age": 55,
+        "height": 1.62,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Bast\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "72477112635479010759014017922978310669": {
+        "name": "Terry",
+        "genre": "M",
+        "race": "elf",
+        "class": "bjoretNen",
+        "language": "nulrfanghe",
+        "age": 79,
+        "height": 1.87,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "314244235462439148805218328427366555242": {
+        "name": "Julie",
+        "genre": "F",
+        "race": "human",
+        "class": "warrior",
+        "language": "espocioComum",
+        "age": 5,
+        "height": 1.56,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "320299127660501767658929506247403213270": {
+        "name": "Cary",
+        "genre": "M",
+        "race": "human",
+        "class": "monk",
+        "language": "espocioComum",
+        "age": 7,
+        "height": 1.82,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "sul",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "58250521239818614573157320441733889635": {
+        "name": "Nancy",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "paladin",
+        "language": "espocioComum",
+        "age": 38,
+        "height": 0.89,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "329846832456962672261542999424812215702": {
+        "name": "Michael",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 93,
+        "height": 0.61,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "121376020690455906617367634126529183691": {
+        "name": "Manuel",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "warrior",
+        "language": "espocioAntigo",
+        "age": 73,
+        "height": 2.49,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "134740655472883574281481497679474543419": {
+        "name": "John",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "paladin",
+        "language": "espocioAntigo",
+        "age": 31,
+        "height": 2.16,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "149195108450491912117867088816211017817": {
+        "name": "Elizabeth",
+        "genre": "F",
+        "race": "orc",
+        "class": "assassin",
+        "language": "espocioAntigo",
+        "age": 96,
+        "height": 2.4,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "238348701141653273490554265524785385967": {
+        "name": "Martha",
+        "genre": "F",
+        "race": "orc",
+        "class": "barbarian",
+        "language": "espocioAntigo",
+        "age": 71,
+        "height": 2.39,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "93165919674318896839006312757487736942": {
+        "name": "Dana",
+        "genre": "F",
+        "race": "human",
+        "class": "monk",
+        "language": "espocioComum",
+        "age": 32,
+        "height": 1.52,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "sul",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "128634418745093728925044037772317948038": {
+        "name": "Amy",
+        "genre": "F",
+        "race": "nulr",
+        "class": "druid",
+        "language": "nulrfanghe",
+        "age": 16,
+        "height": 1.68,
+        "health": 60,
+        "mana": 35,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arco curto",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "151817520138977841527114135419233033264": {
+        "name": "Salvatore",
+        "genre": "M",
+        "race": "elf",
+        "class": "wizard",
+        "language": "nulrfanghe",
+        "age": 41,
+        "height": 1.83,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "101749895147899996807409733361332433299": {
+        "name": "Christopher",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "barbarian",
+        "language": "espocioAntigo",
+        "age": 23,
+        "height": 2.0,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "187824943811937242413479930113871053668": {
+        "name": "Maria",
+        "genre": "F",
+        "race": "human",
+        "class": "warrior",
+        "language": "espocioComum",
+        "age": 86,
+        "height": 1.68,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "161376325954534964458652283328994119740": {
+        "name": "Katrina",
+        "genre": "F",
+        "race": "nulr",
+        "class": "assassin",
+        "language": "nulrfanghe",
+        "age": 1,
+        "height": 1.7,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "230927917188379088620673096564775735140": {
+        "name": "Andrew",
+        "genre": "M",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 62,
+        "height": 1.88,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "226177413499621447618120160329796596418": {
+        "name": "Eugene",
+        "genre": "M",
+        "race": "elf",
+        "class": "bjoretNen",
+        "language": "nulrfanghe",
+        "age": 69,
+        "height": 1.75,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "260543072646764083419333128739756039680": {
+        "name": "William",
+        "genre": "M",
+        "race": "human",
+        "class": "monk",
+        "language": "espocioComum",
+        "age": 11,
+        "height": 1.57,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "sul",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "176994077840792844478842947037392060907": {
+        "name": "Todd",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "monk",
+        "language": "espocioComum",
+        "age": 42,
+        "height": 1.36,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "sul",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "153372085392631596335867931950227079329": {
+        "name": "Sammy",
+        "genre": "M",
+        "race": "halfling",
+        "class": "bjoretNen",
+        "language": "espocioComum",
+        "age": 80,
+        "height": 0.95,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "306389499962018465637922774894174670405": {
+        "name": "Ann",
+        "genre": "F",
+        "race": "woodElf",
+        "class": "bjoretNen",
+        "language": "espocioAntigo",
+        "age": 4,
+        "height": 2.08,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "259432199054675257992019863869035684480": {
+        "name": "Charlotte",
+        "genre": "F",
+        "race": "orc",
+        "class": "bard",
+        "language": "espocioAntigo",
+        "age": 36,
+        "height": 2.31,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Instrumento",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "257459084831541311973412176770379648653": {
+        "name": "Lester",
+        "genre": "M",
+        "race": "elf",
+        "class": "druid",
+        "language": "nulrfanghe",
+        "age": 47,
+        "height": 1.5,
+        "health": 60,
+        "mana": 35,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arco longo",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "97463583253178584839299165598168827050": {
+        "name": "Candice",
+        "genre": "F",
+        "race": "elf",
+        "class": "wizard",
+        "language": "nulrfanghe",
+        "age": 98,
+        "height": 1.52,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "250068558144725314355096038504669475052": {
+        "name": "Diane",
+        "genre": "F",
+        "race": "orc",
+        "class": "cleric",
+        "language": "espocioAntigo",
+        "age": 3,
+        "height": 1.96,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "133800346754081091983721283730523061921": {
+        "name": "Michael",
+        "genre": "M",
+        "race": "orc",
+        "class": "monk",
+        "language": "espocioAntigo",
+        "age": 89,
+        "height": 2.38,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "301868583985929567809545880751070346268": {
+        "name": "Mary",
+        "genre": "F",
+        "race": "halfling",
+        "class": "barbarian",
+        "language": "espocioComum",
+        "age": 83,
+        "height": 1.28,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "284798545752157706422674955841428700261": {
+        "name": "Inez",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "assassin",
+        "language": "espocioComum",
+        "age": 58,
+        "height": 1.34,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "309371480807089212936849937130115244450": {
+        "name": "Robert",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "ranger",
+        "language": "espocioAntigo",
+        "age": 30,
+        "height": 2.31,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de longo alcance",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "108705593807476785464083085196301334870": {
+        "name": "Bradley",
+        "genre": "M",
+        "race": "nulr",
+        "class": "monk",
+        "language": "nulrfanghe",
+        "age": 12,
+        "height": 1.64,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "122095785905963582778546685439994223322": {
+        "name": "Martin",
+        "genre": "M",
+        "race": "halfling",
+        "class": "wizard",
+        "language": "espocioComum",
+        "age": 1,
+        "height": 1.41,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "42876940905398207580829678455138458843": {
+        "name": "Georgia",
+        "genre": "F",
+        "race": "nulr",
+        "class": "druid",
+        "language": "nulrfanghe",
+        "age": 74,
+        "height": 1.55,
+        "health": 60,
+        "mana": 35,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arco curto",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "265672238051897393180509214522785046672": {
+        "name": "Pamala",
+        "genre": "F",
+        "race": "nulr",
+        "class": "assassin",
+        "language": "nulrfanghe",
+        "age": 82,
+        "height": 1.84,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "292950434034172711916230009697789906341": {
+        "name": "Tyson",
+        "genre": "M",
+        "race": "orc",
+        "class": "bard",
+        "language": "espocioAntigo",
+        "age": 63,
+        "height": 1.9,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Instrumento",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "294164928834455027152489905903456541789": {
+        "name": "Monique",
+        "genre": "F",
+        "race": "nulr",
+        "class": "warrior",
+        "language": "nulrfanghe",
+        "age": 63,
+        "height": 1.7,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "295853806941903921223450166531075896467": {
+        "name": "Alexander",
+        "genre": "M",
+        "race": "nulr",
+        "class": "monk",
+        "language": "nulrfanghe",
+        "age": 89,
+        "height": 1.57,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Bast\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "34286969359675505282018167783032703282": {
+        "name": "Nancy",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "barbarian",
+        "language": "espocioComum",
+        "age": 87,
+        "height": 1.48,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "46149700918385653287340023878954170450": {
+        "name": "Louise",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "wizard",
+        "language": "espocioComum",
+        "age": 49,
+        "height": 0.98,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "123296967112454058486298638052930830966": {
+        "name": "Scotty",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "cleric",
+        "language": "espocioAntigo",
+        "age": 54,
+        "height": 1.92,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "121224933253200520046911403537802877797": {
+        "name": "Jessie",
+        "genre": "F",
+        "race": "human",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 89,
+        "height": 1.74,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "213541409000446908087177065681381185750": {
+        "name": "Shannon",
+        "genre": "F",
+        "race": "human",
+        "class": "bard",
+        "language": "espocioComum",
+        "age": 6,
+        "height": 1.62,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Instrumento",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "105890495771831380205485717125809816012": {
+        "name": "Joshua",
+        "genre": "M",
+        "race": "human",
+        "class": "wizard",
+        "language": "espocioComum",
+        "age": 3,
+        "height": 1.86,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "325261466085514000422360854938599353761": {
+        "name": "Orville",
+        "genre": "M",
+        "race": "orc",
+        "class": "bard",
+        "language": "espocioAntigo",
+        "age": 71,
+        "height": 2.5,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Instrumento",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "127097445375553452249240335069010515650": {
+        "name": "Elmer",
+        "genre": "M",
+        "race": "woodElf",
+        "class": "monk",
+        "language": "espocioAntigo",
+        "age": 25,
+        "height": 2.49,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "sul",
+        "favoriteWeapon": "Bast\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "272831390152803719303756457946014155944": {
+        "name": "Richard",
+        "genre": "M",
+        "race": "human",
+        "class": "warrior",
+        "language": "espocioComum",
+        "age": 13,
+        "height": 1.79,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "116116016320262761111746940329773364417": {
+        "name": "Sadie",
+        "genre": "F",
+        "race": "elf",
+        "class": "wizard",
+        "language": "nulrfanghe",
+        "age": 93,
+        "height": 1.62,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "307587247533206260623682842526398489822": {
+        "name": "Virginia",
+        "genre": "F",
+        "race": "woodElf",
+        "class": "bjoretNen",
+        "language": "espocioAntigo",
+        "age": 39,
+        "height": 2.44,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "53994950721184894623047924838607279870": {
+        "name": "Victoria",
+        "genre": "F",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 98,
+        "height": 1.65,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "43324735015624999484093720367650545604": {
+        "name": "Tiara",
+        "genre": "F",
+        "race": "orc",
+        "class": "cleric",
+        "language": "espocioAntigo",
+        "age": 34,
+        "height": 2.26,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "144591668097887041060237903054710497931": {
+        "name": "Patricia",
+        "genre": "F",
+        "race": "nulr",
+        "class": "barbarian",
+        "language": "nulrfanghe",
+        "age": 41,
+        "height": 1.74,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "112454814435263487075439845625528908665": {
+        "name": "Erick",
+        "genre": "M",
+        "race": "orc",
+        "class": "paladin",
+        "language": "espocioAntigo",
+        "age": 75,
+        "height": 1.93,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "127281958253444718659758436757690484551": {
+        "name": "Harold",
+        "genre": "M",
+        "race": "halfling",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 70,
+        "height": 0.54,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "223983768750290855087061332922713900019": {
+        "name": "Christian",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "assassin",
+        "language": "espocioComum",
+        "age": 27,
+        "height": 0.83,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "48417650896522688369811559936054676534": {
+        "name": "Don",
+        "genre": "M",
+        "race": "orc",
+        "class": "warrior",
+        "language": "espocioAntigo",
+        "age": 10,
+        "height": 2.03,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "66652923173960152175906685446031259729": {
+        "name": "Elva",
+        "genre": "F",
+        "race": "woodElf",
+        "class": "ranger",
+        "language": "espocioAntigo",
+        "age": 99,
+        "height": 2.25,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "316640797590740869862380258472884136578": {
+        "name": "Andrea",
+        "genre": "F",
+        "race": "human",
+        "class": "warrior",
+        "language": "espocioComum",
+        "age": 60,
+        "height": 1.85,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "284652259734845769080654209687204159048": {
+        "name": "Marjorie",
+        "genre": "F",
+        "race": "halfling",
+        "class": "barbarian",
+        "language": "espocioComum",
+        "age": 0,
+        "height": 0.7,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "153383869216913862725881719578687884510": {
+        "name": "James",
+        "genre": "M",
+        "race": "nulr",
+        "class": "paladin",
+        "language": "nulrfanghe",
+        "age": 45,
+        "height": 1.78,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "29434953369355483817151028819028526023": {
+        "name": "Jose",
+        "genre": "M",
+        "race": "halfling",
+        "class": "bjoretNen",
+        "language": "espocioComum",
+        "age": 26,
+        "height": 0.81,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "25785205112977576158787069388855663102": {
+        "name": "David",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "wizard",
+        "language": "espocioComum",
+        "age": 98,
+        "height": 1.21,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "61716860492849817652451679978790026857": {
+        "name": "Vincent",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "wizard",
+        "language": "espocioComum",
+        "age": 60,
+        "height": 1.2,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 6,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6111",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "111",
+            "ability2": "112"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "291479067196740916665161127465453307501": {
+        "name": "Eva",
+        "genre": "F",
+        "race": "woodElf",
+        "class": "assassin",
+        "language": "espocioAntigo",
+        "age": 72,
+        "height": 1.93,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "179422042892314450636627851589453185107": {
+        "name": "Duane",
+        "genre": "M",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 27,
+        "height": 1.54,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "263668806182354215261035985984419622905": {
+        "name": "Ralph",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 8,
+        "height": 1.01,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de longo alcance",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "74666090165812418838598108173387503285": {
+        "name": "Donald",
+        "genre": "M",
+        "race": "orc",
+        "class": "bard",
+        "language": "espocioAntigo",
+        "age": 38,
+        "height": 1.95,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 10,
+        "intelligence": 15,
+        "wisdom": 12,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "6112",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "112528345612631425890979419820682334086": {
+        "name": "Alejandro",
+        "genre": "M",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 2,
+        "height": 1.87,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "158263507146651059825838443239081908953": {
+        "name": "Michael",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 98,
+        "height": 0.93,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "143371665023850692221390709401267401508": {
+        "name": "Lawrence",
+        "genre": "M",
+        "race": "nulr",
+        "class": "bjoretNen",
+        "language": "nulrfanghe",
+        "age": 74,
+        "height": 1.61,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "175331143254697451151011927100358672070": {
+        "name": "Danny",
+        "genre": "M",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 89,
+        "height": 1.84,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "77735424622918331748662578524081695645": {
+        "name": "Mary",
+        "genre": "F",
+        "race": "halfling",
+        "class": "paladin",
+        "language": "espocioComum",
+        "age": 42,
+        "height": 1.36,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "140037975341102901899338948196571137883": {
+        "name": "Frankie",
+        "genre": "M",
+        "race": "elf",
+        "class": "bjoretNen",
+        "language": "nulrfanghe",
+        "age": 38,
+        "height": 1.77,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "nulr",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "129259788901419544918433307256697624766": {
+        "name": "William",
+        "genre": "M",
+        "race": "orc",
+        "class": "assassin",
+        "language": "espocioAntigo",
+        "age": 77,
+        "height": 2.13,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "144503761298690438200375455886535213504": {
+        "name": "Richard",
+        "genre": "M",
+        "race": "human",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 81,
+        "height": 1.83,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "292859012177567994044283253606477927658": {
+        "name": "David",
+        "genre": "M",
+        "race": "human",
+        "class": "paladin",
+        "language": "espocioComum",
+        "age": 17,
+        "height": 1.71,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "296693574844856917999547859060968118669": {
+        "name": "Glen",
+        "genre": "M",
+        "race": "orc",
+        "class": "assassin",
+        "language": "espocioAntigo",
+        "age": 29,
+        "height": 2.24,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "desertoDosOssos",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "desertoDosOssos",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "137364600416642571507186669915187552426": {
+        "name": "Mable",
+        "genre": "F",
+        "race": "nulr",
+        "class": "barbarian",
+        "language": "nulrfanghe",
+        "age": 25,
+        "height": 1.86,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "45979912908065262405828289583628631706": {
+        "name": "Valerie",
+        "genre": "F",
+        "race": "halfling",
+        "class": "paladin",
+        "language": "espocioComum",
+        "age": 96,
+        "height": 0.69,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "264682774758218567766861712551951744478": {
+        "name": "Elvis",
+        "genre": "M",
+        "race": "nulr",
+        "class": "druid",
+        "language": "nulrfanghe",
+        "age": 44,
+        "height": 1.81,
+        "health": 60,
+        "mana": 35,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 12,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 8,
+        "wisdom": 15,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arco curto",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "129884100928934439992579406689283145321": {
+        "name": "William",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 79,
+        "height": 1.49,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "75961565763361320660303295607657297259": {
+        "name": "Benjamin",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "paladin",
+        "language": "espocioComum",
+        "age": 47,
+        "height": 0.97,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "121940445440936980714471089736139966681": {
+        "name": "Beatrice",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "assassin",
+        "language": "espocioComum",
+        "age": 30,
+        "height": 0.77,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Utiliz\u00e1vel",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "314494100354292816470368427367490624761": {
+        "name": "Lucien",
+        "genre": "M",
+        "race": "elf",
+        "class": "monk",
+        "language": "nulrfanghe",
+        "age": 95,
+        "height": 1.72,
+        "health": 80,
+        "mana": 40,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 8,
+        "intelligence": 6,
+        "wisdom": 15,
+        "charisma": 8,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Punhos",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "321070234678691343859802194154763394269": {
+        "name": "Elizabeth",
+        "genre": "F",
+        "race": "halfling",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 39,
+        "height": 1.14,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "316214742983642086277802642191082888801": {
+        "name": "Lena",
+        "genre": "F",
+        "race": "elf",
+        "class": "paladin",
+        "language": "nulrfanghe",
+        "age": 3,
+        "height": 1.9,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "129431790473041104291586988188904176617": {
+        "name": "Janice",
+        "genre": "F",
+        "race": "human",
+        "class": "cleric",
+        "language": "espocioComum",
+        "age": 81,
+        "height": 1.79,
+        "health": 110,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de duas m\u00e3os",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "203",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "319140534871877222506709453573354290622": {
+        "name": "Gary",
+        "genre": "M",
+        "race": "human",
+        "class": "assassin",
+        "language": "espocioComum",
+        "age": 74,
+        "height": 1.53,
+        "health": 60,
+        "mana": 20,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 12,
+        "wisdom": 6,
+        "charisma": 15,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "102",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "275532762140775442219100028769184001614": {
+        "name": "Leon",
+        "genre": "M",
+        "race": "dwarf",
+        "class": "bjoretNen",
+        "language": "espocioComum",
+        "age": 63,
+        "height": 0.87,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "257528155933446953347539530438801063166": {
+        "name": "Alfonso",
+        "genre": "M",
+        "race": "elf",
+        "class": "paladin",
+        "language": "nulrfanghe",
+        "age": 19,
+        "height": 1.74,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 10,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 10,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "75861297352308919964438907929096649649": {
+        "name": "Jesus",
+        "genre": "M",
+        "race": "nulr",
+        "class": "barbarian",
+        "language": "nulrfanghe",
+        "age": 3,
+        "height": 1.63,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "nulr",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "nulr",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "56832432995819985588386529031935861543": {
+        "name": "Erik",
+        "genre": "M",
+        "race": "human",
+        "class": "barbarian",
+        "language": "espocioComum",
+        "age": 23,
+        "height": 1.5,
+        "health": 100,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 15,
+        "intelligence": 8,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "201",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "236147525095608935231200170050181693060": {
+        "name": "Patricia",
+        "genre": "F",
+        "race": "dwarf",
+        "class": "ranger",
+        "language": "espocioComum",
+        "age": 69,
+        "height": 0.97,
+        "health": 80,
+        "mana": 30,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 10,
+        "strength": 0,
+        "dexterity": 15,
+        "constitution": 12,
+        "intelligence": 10,
+        "wisdom": 14,
+        "charisma": 10,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "301",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "98844892168576729034589516089301303248": {
+        "name": "Nita",
+        "genre": "F",
+        "race": "human",
+        "class": "bjoretNen",
+        "language": "espocioComum",
+        "age": 61,
+        "height": 1.87,
+        "health": 60,
+        "mana": 50,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 8,
+        "strength": 0,
+        "dexterity": 12,
+        "constitution": 12,
+        "intelligence": 15,
+        "wisdom": 15,
+        "charisma": 6,
+        "homeLand": "sul",
+        "favoriteWeapon": "M\u00e1gico",
+        "inventory": {
+            "head": "",
+            "torso": "5111",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "501",
+            "slots": [
+                "6151",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "151",
+            "ability2": "152"
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    },
+    "9270644828115703502314345932189327409": {
+        "name": "David",
+        "genre": "M",
+        "race": "halfling",
+        "class": "warrior",
+        "language": "espocioComum",
+        "age": 55,
+        "height": 1.22,
+        "health": 120,
+        "mana": 10,
+        "armor": 2,
+        "level": 1,
+        "XP": 0,
+        "mood": "Bem",
+        "velocity": 5,
+        "strength": 0,
+        "dexterity": 8,
+        "constitution": 14,
+        "intelligence": 6,
+        "wisdom": 12,
+        "charisma": 12,
+        "homeLand": "sul",
+        "favoriteWeapon": "Arma de uma m\u00e3o",
+        "inventory": {
+            "head": "",
+            "torso": "401",
+            "arms": "",
+            "hands": "",
+            "legs": "402",
+            "foot": "501",
+            "slots": [
+                "101",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "abilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "world": {
+            "worldRegion": "sul",
+            "localRegion": "",
+            "building": ""
+        }
+    }
+}

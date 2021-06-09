@@ -201,9 +201,7 @@
         "constitution": 15,
         "intelligence": 8,
         "wisdom": 12,
-        "charisma": 12,
-
-        "favoriteWeapons": ["Arma de duas mãos", "Arma de uma mão"]
+        "charisma": 12
     },
 
     "druid": {
@@ -220,9 +218,7 @@
         "constitution": 12,
         "intelligence": 8,
         "wisdom": 15,
-        "charisma": 12,
-
-        "favoriteWeapons": ["Arco longo", "Arco curto"]
+        "charisma": 12
     },
  
     "bard": {
@@ -239,9 +235,7 @@
         "constitution": 10,
         "intelligence": 15,
         "wisdom": 12,
-        "charisma": 15,
-
-        "favoriteWeapons": ["Instrumento", "Mágico"]
+        "charisma": 15
     },
 
     "monk": {
@@ -258,9 +252,7 @@
         "constitution": 8,
         "intelligence": 6,
         "wisdom": 15,
-        "charisma": 8,
-
-        "favoriteWeapons": ["Bastão", "Punhos"]
+        "charisma": 8
     },
 
     "espocioComum": {

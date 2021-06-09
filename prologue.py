@@ -13,9 +13,11 @@ with open(f'worldData.json', encoding='utf-8') as jfw:
     dataWorld = json.load(jfw)
 
 class Prologue:
-    def __init__(self, loadName, data):
+    def __init__(self, loadName, data, dataNpc, dataWorldNew):
         self.loadName = loadName
         self.data = data
+        self.dataNpc = dataNpc
+        self.dataWorldNew = dataWorldNew
 
     def firstSave(self):
         #Update FIRST SAVE
@@ -35,7 +37,10 @@ class Prologue:
                 json.dump(dataGame, jfg, indent=4)
 
             with open(f'saves/{self.loadName}/worldData.json', 'w', encoding='utf-8') as jfw:
-                json.dump(dataWorld, jfw, indent=4)
+                json.dump(self.dataWorldNew, jfw, indent=4)
+
+            with open(f'saves/{self.loadName}/npcData.json', 'w', encoding='utf-8') as nf:
+                json.dump(self.dataNpc, nf, indent=4)
     
     def prologueStart(self):
         with open(f'saves/{self.loadName}/{self.loadName}.json') as jfPlayer:

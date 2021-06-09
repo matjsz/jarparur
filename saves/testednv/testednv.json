@@ -1,0 +1,56 @@
+{
+    "playerName": "Teste 2",
+    "playerGenre": "M",
+    "playerRace": "nulr",
+    "playerClass": "bjoretNen",
+    "playerLanguage": "nulrfanghe",
+    "playerAge": 25,
+    "playerHeight": 1.82,
+    "playerHealth": 60,
+    "playerMana": 50,
+    "playerArmor": 2,
+    "playerLevel": 1,
+    "playerXP": 0,
+    "playerMood": "Bem",
+    "playerVelocity": 8,
+    "playerStrength": 8,
+    "playerDexterity": 12,
+    "playerConstitution": 12,
+    "playerIntelligence": 15,
+    "playerWisdom": 15,
+    "playerCharisma": 6,
+    "playerStartPoint": "nulr",
+    "playerFavoriteWeapon": "M\u00e1gico",
+    "playerInventory": {
+        "head": "",
+        "torso": "5111",
+        "arms": "",
+        "hands": "",
+        "legs": "",
+        "foot": "501",
+        "slots": [
+            "6151",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "bag": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "playerAbilities": {
+        "ability1": "151",
+        "ability2": "152"
+    },
+    "playerWorld": {
+        "worldRegion": "test",
+        "localRegion": "testArea1",
+        "building": "building1"
+    }
+}

@@ -2,6 +2,7 @@ import os, json
 from terminaltables import SingleTable
 from gameHandler import MapHandler
 
+isOnInv = True
 class Inventory:
     def __init__(self, loadName):
         self.loadName = loadName
@@ -17,7 +18,7 @@ class Inventory:
             global dataPlayer
             dataPlayer = json.load(pf)
         
-        global ln
+        global ln, isOnInv
         ln = self.loadName
 
         os.system("cls")
@@ -201,13 +202,15 @@ class Inventory:
         print(slotTable.table)
 
         print("\n[slot[n]] ex: slot1 - Mostra detalhes do item no slot escolhido\n[parteInventario] ex: cabeça - Mostra detalhes do item no componente escolhido\n[back] - Volta para a tela de jogo\n[d] [parteInventario] - Descarta item no componente escolhido\n[c] - Limpa o log")
-
-        while True:
+        global isOnInv
+        isOnInv = True
+        while isOnInv == True:
             cmds = ["cabeça", "torso", "braços", "mãos", "pernas", "pés"]
 
             inventoryEvent = input("\n[i] >>> ")
 
             if inventoryEvent in cmds:
+                os.system("cls")
                 if inventoryEvent == "pés":
                     try:
                         data["items"][dataPlayer["playerInventory"]["foot"]]["name"]
@@ -227,6 +230,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -245,6 +250,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -270,6 +277,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -288,6 +297,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -313,6 +324,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -331,6 +344,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -356,6 +371,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -374,6 +391,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -399,6 +418,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -417,6 +438,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -442,6 +465,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -460,6 +485,8 @@ class Inventory:
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
+                            input("Pressione qualquer botão para voltar...")
+                            Inventory.showInventory()
                         except KeyError:
                             pass
 
@@ -476,7 +503,7 @@ class Inventory:
                 os.system("cls")
                 MapHandler(ln)
                 MapHandler.UI().update('default')
-                break
+                isOnInv = False
 
             elif inventoryEvent == "c":
                 os.system("cls")
@@ -485,9 +512,12 @@ class Inventory:
             elif inventoryEvent == "dev add":
                 component = input("[onde adicionar] >> ")
                 item = input("[item para adicionar] >>> ")
+                os.system("cls")
+                Inventory.showInventory()
                 Inventory.addItem(component, item)
 
             elif "slot" in inventoryEvent:
+                os.system("cls")
                 if inventoryEvent[4] != " ":
                     slot = int(inventoryEvent[4])-1
                 else:
@@ -510,6 +540,8 @@ class Inventory:
 
                     tableItem = SingleTable(itemData)
                     print(tableItem.table)
+                    input("Pressione qualquer botão para voltar...")
+                    Inventory.showInventory()
                 except KeyError:
                     print("O Slot está vazio!")
                     continue

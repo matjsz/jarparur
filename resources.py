@@ -1,4 +1,5 @@
 import json
+import random
 
 with open(f'gameData.json', encoding='utf-8') as jf:
     data = json.load(jf)
@@ -63,3 +64,71 @@ def deconvertClass(classToConvert):
 
 def deconvertItem(itemToConvert):
     return data["items"][itemToConvert]["name"]
+
+def plural(n, word):
+    if n == 1:
+        return '%d %s' % (n, word)
+    return '%d %ss' % (n, word)
+
+def convertTime(seconds):
+    if seconds == 0:
+        return "agora"
+    
+    oneMinute = 60
+    oneHour = 60 * oneMinute
+    oneDay = 24 * oneHour
+    oneYear = 365 * oneDay
+
+    timeUnits = (
+        (oneYear, 'ano'),
+        (oneDay, 'dia'),
+        (oneHour, 'hora'),
+        (oneMinute, 'minuto'),
+        (1, 'segundo')
+    )
+
+    result = []
+
+    for unit in timeUnits:
+        timeUnit, word = unit
+        if seconds >= timeUnit:
+            n = int(seconds / timeUnit)
+            result.append(plural(n, word))
+            seconds -= n * timeUnit
+    return ' e'.join(', '.join(result).rsplit(',', 1))
+
+def convertCalendar(seconds):
+    if seconds == 0:
+        return "agora"
+    
+    oneMinute = 60
+    oneHour = 60 * oneMinute
+    oneDay = 24 * oneHour
+    oneYear = 365 * oneDay
+
+    timeUnits = (
+        (oneYear, 'ano'),
+        (oneDay, 'dia'),
+        (oneHour, 'hora'),
+        (oneMinute, 'minuto'),
+        (1, 'segundo')
+    )
+
+    result = []
+
+    for unit in timeUnits:
+        timeUnit, word = unit
+        if seconds >= timeUnit:
+            n = int(seconds / timeUnit)
+            if word == "dia":
+                result.append(f"{word} {n}")
+            elif word == "ano":
+                result.append(f"{word} {n}")
+            elif word == "hora":
+                result.append(plural(n, word))
+            elif word == "minuto":
+                result.append(plural(n, word))
+            elif word == "segundo":
+                result.append(plural(n, word))
+            seconds -= n * timeUnit
+    return ','.join(', '.join(result).rsplit(',', 1))

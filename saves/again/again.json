@@ -1,0 +1,56 @@
+{
+    "playerName": "Mais um teste",
+    "playerGenre": "M",
+    "playerRace": "human",
+    "playerClass": "ranger",
+    "playerLanguage": "espocioComum",
+    "playerAge": 25,
+    "playerHeight": 1.89,
+    "playerHealth": 80,
+    "playerMana": 30,
+    "playerArmor": 2,
+    "playerLevel": 1,
+    "playerXP": 0,
+    "playerMood": "Bem",
+    "playerVelocity": 10,
+    "playerStrength": 10,
+    "playerDexterity": 15,
+    "playerConstitution": 12,
+    "playerIntelligence": 10,
+    "playerWisdom": 14,
+    "playerCharisma": 10,
+    "playerStartPoint": "sul",
+    "playerFavoriteWeapon": "Arma de longo alcance",
+    "playerInventory": {
+        "head": "",
+        "torso": "401",
+        "arms": "",
+        "hands": "",
+        "legs": "402",
+        "foot": "501",
+        "slots": [
+            "301",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "bag": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "playerAbilities": {
+        "ability1": "",
+        "ability2": ""
+    },
+    "playerWorld": {
+        "worldRegion": "sul",
+        "localRegion": "",
+        "building": ""
+    }
+}

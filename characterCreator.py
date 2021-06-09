@@ -1,9 +1,12 @@
 import saveSystem
 import os
+import uuid
 import json
 import prologue
 import art
+import names
 from terminaltables import SingleTable
+import random 
 from resources import *
 from textwrap import wrap
 
@@ -413,6 +416,384 @@ def createCharacter():
 
     input("\nPressione Enter para continuar...")
 
+    #Create World
+    os.system("cls")
+    print("CRIAÇÃO DE MUNDO")
+    print("\nO último passo é decidir como vai ser o seu mundo!\n")
+    worldName = input("Nome do Mundo (não do Save) [opcional]: ")
+    worldPopulation = input("Quantidade de NPCs (caso deixe em branco, o padrão é sempre 100): ")
+    print("\nAgora irei processar todas as informações que você me deu, aguarde um momento...")
+
+    iterateThis = 100
+    if worldName == "":
+        worldName = "Jarparur"
+    if worldPopulation == "":
+        iterateThis = 100
+    else:
+        iterateThis = int(worldPopulation)
+    npcData = {}
+    ids = []
+
+    def genId():
+        newId = uuid.uuid4().int
+        while newId in ids:
+            newId = uuid.uuid4().int
+        ids.append(newId)
+        return newId
+
+    def genName(gend):
+        if gend == "M":
+            return names.get_first_name(gender="male")
+        else:
+            return names.get_first_name(gender="female") 
+
+    def defGend():
+        poss = [random.random(), random.random()]
+
+        if poss[0] > poss[1]:
+            return "M"
+        else:
+            return "F"
+
+    def defRace():
+        poss = [random.random(), random.random(), random.random(), random.random(), random.random(), random.random(), random.random()]
+        
+        if max(poss) == poss[0]:
+            return "human"
+        elif max(poss) == poss[1]:
+            return "dwarf"
+        elif max(poss) == poss[2]:
+            return "nulr"
+        elif max(poss) == poss[3]:
+            return "elf"
+        elif max(poss) == poss[4]:
+            return "woodElf"
+        elif max(poss) == poss[5]:
+            return "halfling"
+        elif max(poss) == poss[6]:
+            return "orc"
+        else:
+            return "human"
+
+    def defClass(thisRace):
+        humanClasses = ["warrior", "ranger", "wizard", "assassin", "cleric", "barbarian", "druid", "paladin", "bard", "monk"]
+        dwarfClasses = ["warrior", "paladin", "barbarian"]
+        nulrClasses = ["warrior", "ranger", "bjoretNen", "druid", "bard", "barbarian"]
+        elfClasses = ["cleric", "ranger", "wizard", "bard"]
+        woodElfClasses = ["ranger", "assassin", "druid", "monk"]
+        halflingClasses = ["bard", "cleric"]
+        orcClasses = ["barbarian", "warrior", "druid"]
+        allClasses = ["warrior", "ranger", "wizard", "bjoretNen", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+
+        if thisRace == "human":
+            return random.choice(humanClasses)
+        elif thisRace == "dwarf":
+            return random.choice(dwarfClasses)
+        elif thisRace == "nulr":
+            return random.choice(nulrClasses)
+        elif thisRace == "elf":
+            return random.choice(elfClasses)
+        elif thisRace == "woodElf":
+            return random.choice(woodElfClasses)
+        elif thisRace == "halfling":
+            return random.choice(halflingClasses)
+        elif thisRace == "orc":
+            return random.choice(orcClasses)
+        else:
+            return random.choice(allClasses)
+
+    def defLanguage(thisRace):
+        nulrfangheRaces = ["nulr", "elf"]
+        espocioComumRaces = ["human", "dwarf", "halfling"]
+        espocioAntigoRaces = ["orc", "woodElf"]
+
+        if thisRace in nulrfangheRaces:
+            return "nulrfanghe"
+        elif thisRace in espocioComumRaces:
+            return "espocioComum"
+        elif thisRace in espocioAntigoRaces:
+            return "espocioAntigo"
+        else:
+            return "espocioComum"
+
+    def getHeight(thisRace):
+        tall = ["orc", "woodElf"]
+        medium = ["human", "elf", "nulr"]
+        tiny = ["dwarf", "halfling"]
+
+        if thisRace in tall:
+            thisHeight = random.randint(190, 250)/100
+            return thisHeight
+        elif thisRace in medium:
+            thisHeight = random.randint(150, 190)/100
+            return thisHeight
+        elif thisRace in tiny:
+            thisHeight = random.randint(50, 150)/100
+            return thisHeight
+        else:
+            thisHeight = random.randint(150, 180)/100
+            return thisHeight
+
+    def defHomeLand(thisRace):
+        nulrRaces = ["nulr", "elf"]
+        sulRaces = ["human", "woodElf", "dwarf", "halfling"]
+        desertoDosOssosRaces = ["orc"]
+
+        if thisRace in nulrRaces:
+            return "nulr"
+        elif thisRace in sulRaces:
+            return "sul"
+        elif thisRace in desertoDosOssosRaces:
+            return "desertoDosOssos"
+        else:
+            return "sul"
+
+    def defFavoriteWeapon(thisClass):
+        poss = data[thisClass]["favoriteWeapons"]
+        
+        return random.choice(poss)
+
+    def defTorsoItem(thisClass):
+        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+        meeleeClasses = ["warrior", "paladin"]
+        rangedClasses = ["ranger", "druid"]
+
+        if thisClass in nonMagicalClasses:
+            return "401"
+        else:
+            return "5111"
+
+    def defLegsItem(thisClass):
+        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+        meeleeClasses = ["warrior", "paladin"]
+        rangedClasses = ["ranger", "druid"]
+
+        if thisClass in nonMagicalClasses:
+            return "402"
+        else:
+            return ""
+
+    def defFootItem(thisClass):
+        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+        meeleeClasses = ["warrior", "paladin"]
+        rangedClasses = ["ranger", "druid"]
+
+        if thisClass in nonMagicalClasses:
+            return "501"
+        else:
+            return "501"
+
+    # #Define Base ABILITIES
+    # if thisClass == "wizard":
+    #     playerAbility1 = "111"
+    #     playerAbility2 = "112"
+    
+    # elif thisClass == "bjoretNen":
+    #     playerAbility1 = "151"
+    #     playerAbility2 = "152"
+    
+    # else:
+    #     playerAbility1 = ""
+    #     playerAbility2 = ""
+
+    def defSlots(thisClass):
+        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+        meeleeClasses = ["warrior", "paladin"]
+        rangedClasses = ["ranger", "druid"]
+
+        if thisClass in meeleeClasses:
+            return "101"
+        elif thisClass in rangedClasses:
+            return "301"
+        elif thisClass == "wizard":
+            return "6111"
+    
+        elif thisClass == "bjoretNen":
+            return "6151"
+        
+        elif thisClass == "assassin":
+            return "102"
+        
+        elif thisClass == "barbarian":
+            return "201"
+
+        elif thisClass == "bard":
+            return "6112"
+        else:
+            return "203"
+
+    def defAbility1(thisClass):
+        if thisClass == "wizard":
+            return "111"
+        elif thisClass == "bjoretNen":
+            return "151"
+        else:
+            return ""
+    
+    def defAbility2(thisClass):
+        if thisClass == "wizard":
+            return "112"
+        elif thisClass == "bjoretNen":
+            return "152"
+        else:
+            return ""
+
+    # "name": "npcName", 
+    # "genre": "npcGenre", 
+    # "race": "npcRace", 
+    # "class": "npcClass",
+    # "language": "npcLanguage",
+    # "age": 0,
+    # "height": 0,
+
+    # "health": 0,
+    # "mana": 0,
+    # "armor": 0,
+
+    # "level": 1,
+    # "XP": 0,
+    # "mood": "npcMood",
+    
+    # "velocity": 0,
+
+    # "strength": 0,
+    # "dexterity": 0,
+    # "constitution": 0,
+    # "intelligence": 0,
+    # "wisdom": 0,
+    # "charisma": 0,
+
+    # "homeLand": "npcHomeLand",
+    # "favoriteWeapon": "npcFavWeapon",
+
+    # "inventory": {
+    #     "head": f"",
+    #     "torso": "npcTorso",
+    #     "arms": "",
+    #     "hands": "",
+    #     "legs": "npcLegs",
+    #     "foot": "npcFoot",
+
+    #     "slots": ["npcStarterWeapon", "", "", "", "", "", "", ""],
+    #     "bag": ["", "", ""]
+    # },
+
+    # "abilities": {
+    #     "ability1": "npcStarterAbility1",
+    #     "ability2": f"npcStarterAbility2"
+    # },
+
+    # "world": {
+    #     "worldRegion": "npcHomeLand",
+    #     "localRegion": "",
+    #     "building": ""
+    # }
+
+    npcData = {}
+
+    while iterateThis > 0:
+        thisId = str(genId())
+
+        thisNpcData = {
+            "name": "npcName", 
+            "genre": "npcGenre", 
+            "race": "npcRace", 
+            "class": "npcClass",
+            "language": "npcLanguage",
+            "age": 0,
+            "height": 0,
+
+            "health": 0,
+            "mana": 0,
+            "armor": 0,
+
+            "level": 1,
+            "XP": 0,
+            "mood": "npcMood",
+            
+            "velocity": 0,
+
+            "strength": 0,
+            "dexterity": 0,
+            "constitution": 0,
+            "intelligence": 0,
+            "wisdom": 0,
+            "charisma": 0,
+
+            "homeLand": "npcHomeLand",
+            "favoriteWeapon": "npcFavWeapon",
+
+            "inventory": {
+                "head": f"",
+                "torso": "npcTorso",
+                "arms": "",
+                "hands": "",
+                "legs": "npcLegs",
+                "foot": "npcFoot",
+
+                "slots": ["npcStarterWeapon", "", "", "", "", "", "", ""],
+                "bag": ["", "", ""]
+            },
+
+            "abilities": {
+                "ability1": "npcStarterAbility1",
+                "ability2": f"npcStarterAbility2"
+            },
+
+            "world": {
+                "worldRegion": "npcHomeLand",
+                "localRegion": "",
+                "building": ""
+            }
+        }
+
+        thisNpcData["genre"] = defGend()
+        thisNpcData["name"] = genName(thisNpcData["genre"])
+        thisNpcData["race"] = defRace()
+        thisNpcData["class"] = defClass(thisNpcData["race"])
+        thisNpcData["language"] = defLanguage(thisNpcData["race"])
+        thisNpcData["age"] = int(random.random()*100)
+        thisNpcData["height"] = getHeight(thisNpcData["race"])
+        thisNpcData["health"] = int(data[thisNpcData["class"]]["health"])
+        thisNpcData["mana"] = int(data[thisNpcData["class"]]["mana"])
+        thisNpcData["armor"] = int(data[thisNpcData["class"]]["armor"])
+        thisNpcData["level"] = 1
+        thisNpcData["XP"] = 0
+        thisNpcData["mood"] = "Bem"
+        thisNpcData["velocity"] = int(data[thisNpcData["class"]]["velocity"])
+        thisNpcData["dexterity"] = int(data[thisNpcData["class"]]["dexterity"])
+        thisNpcData["constitution"] = int(data[thisNpcData["class"]]["constitution"])
+        thisNpcData["intelligence"] = int(data[thisNpcData["class"]]["intelligence"])
+        thisNpcData["wisdom"] = int(data[thisNpcData["class"]]["wisdom"])
+        thisNpcData["charisma"] = int(data[thisNpcData["class"]]["charisma"])
+        thisNpcData["homeLand"] = defHomeLand(thisNpcData["race"])
+        thisNpcData["favoriteWeapon"] = defFavoriteWeapon(thisNpcData["class"])
+        thisNpcData["inventory"]["torso"] = defTorsoItem(thisNpcData["class"])
+        thisNpcData["inventory"]["legs"] = defLegsItem(thisNpcData["class"])
+        thisNpcData["inventory"]["foot"] = defFootItem(thisNpcData["class"])
+        thisNpcData["inventory"]["slots"][0] = defSlots(thisNpcData["class"])
+        thisNpcData["abilities"]["ability1"] = defAbility1(thisNpcData["class"])
+        thisNpcData["abilities"]["ability2"] = defAbility2(thisNpcData["class"])
+        thisNpcData["world"]["worldRegion"] = thisNpcData["homeLand"]
+
+        npcData[thisId] = thisNpcData
+        iterateThis -= 1
+
+    dataWorld["globalTime"] = random.randint(157790000000, 631150000000)
+    dataWorld["worldAge"] = convertTime(dataWorld["globalTime"])
+    dataWorld["worldName"] = worldName
+
+    populationCount = 0
+
+    for npc in npcData:
+        populationCount += 1
+    
+    dataWorld["worldPopulation"] = populationCount+1
+
+    os.system("cls")
+    print("Mundo gerado com sucesso!\n")
+    input("Continuar...")
+
     #Update PROLOGO
     os.system("cls")
     print("SALVAR JOGO")
@@ -421,6 +802,6 @@ def createCharacter():
 
     saveName = input("\nNome do Save >>> ")
 
-    prologo = prologue.Prologue(saveName, playerData)
+    prologo = prologue.Prologue(saveName, playerData, npcData, dataWorld)
     prologo.firstSave()
     prologo.prologueStart()

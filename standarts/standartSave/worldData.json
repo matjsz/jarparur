@@ -1,8 +1,8 @@
 {
     "worldName": "Jarparur", 
-    "worldAge": 20000, 
     "worldDescription": "Jarparur é conhecida por ser a terra das criaturas fantásticas, dando palco à magia, aço e sangue.",
     "worldLanguages": ["espocioComum", "espocioAntigo", "nulrfanghe"],
+    "worldAge": 20000, 
     "worldPopulation": 100000, 
     "worldType": "Planeta", 
     "day": 12,

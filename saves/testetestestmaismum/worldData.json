@@ -1,13 +1,14 @@
 {
     "worldName": "Jarparur",
-    "worldDescription": "Jarparur é conhecida por ser a terra das criaturas fantásticas, dando palco à magia, aço e sangue.",
-    "worldLanguages": ["espocioComum", "espocioAntigo", "nulrfanghe"],
-    "worldAge": 20000,
-    "worldPopulation": 100000,
-    "worldType": "Planet",
-    "day": 12,
-    "month": 2,
-    "year": 20000,
+    "worldDescription": "Jarparur \u00e9 conhecida por ser a terra das criaturas fant\u00e1sticas, dando palco \u00e0 magia, a\u00e7o e sangue.",
+    "worldLanguages": [
+        "espocioComum",
+        "espocioAntigo",
+        "nulrfanghe"
+    ],
+    "worldPopulation": 101,
+    "worldType": "Planeta",
+    "globalTime": 510089250346,
     "options": [
         "nulr",
         "grenkeparur",
@@ -64,7 +65,6 @@
             "type": "plain",
             "name": "\u00c1rea de Testes",
             "description": "Um lugar perfeito para... mais bugs :(",
-            "language": "espocioComum",
             "options": [
                 "building1"
             ],

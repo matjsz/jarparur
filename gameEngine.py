@@ -27,6 +27,10 @@ class GameWorld:
         with open(f'saves/{self.loadName}/{self.loadName}.json', encoding='utf-8') as pf:
             dataPlayer = json.load(pf)
 
+        with open(f'saves/{self.loadName}/npcData.json', encoding='utf-8') as nf:
+            global dataNpc
+            dataNpc = json.load(nf)
+
         #GLOBALS PLAYER DATA
         playerName = dataPlayer['playerName']
         playerRace = data[dataPlayer['playerRace']]['name']
@@ -117,4 +121,3 @@ class GameWorld:
 
             else:
                 MapHandler.UI().update("default")
-

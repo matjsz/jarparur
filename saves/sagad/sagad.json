@@ -1,0 +1,56 @@
+{
+    "playerName": "mais um",
+    "playerGenre": "M",
+    "playerRace": "human",
+    "playerClass": "warrior",
+    "playerLanguage": "espocioComum",
+    "playerAge": 25,
+    "playerHeight": 1.83,
+    "playerHealth": 120,
+    "playerMana": 10,
+    "playerArmor": 2,
+    "playerLevel": 1,
+    "playerXP": 0,
+    "playerMood": "Bem",
+    "playerVelocity": 5,
+    "playerStrength": 15,
+    "playerDexterity": 8,
+    "playerConstitution": 14,
+    "playerIntelligence": 6,
+    "playerWisdom": 12,
+    "playerCharisma": 12,
+    "playerStartPoint": "sul",
+    "playerFavoriteWeapon": "Arma de uma m\u00e3o",
+    "playerInventory": {
+        "head": "",
+        "torso": "401",
+        "arms": "",
+        "hands": "",
+        "legs": "402",
+        "foot": "501",
+        "slots": [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "bag": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "playerAbilities": {
+        "ability1": "",
+        "ability2": ""
+    },
+    "playerWorld": {
+        "worldRegion": "nulr",
+        "localRegion": "",
+        "building": ""
+    }
+}
