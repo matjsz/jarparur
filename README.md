@@ -1,7 +1,9 @@
-<h1>(Discontinued) Jarparur</h1>
-<p>Jarparur was a project based on a universe that i created a year ago, the universe of Jarparur was made for a D&D session, but it took a lot time and we never played that campaign, so i decided to make it real, or something like that.</p>
-<p>In this version, i took some inspirations from brilliant games: Dwarf Fortress, D&D Systems and Zelda. Those were the real drives that made me start that off.</p>
-<p>Nowadays i'm not working on Jarparur CLI anymore, i recently started 2 versions of that universe in Unity, a 2D version (Top down, Zelda and Pokémon like) and a 3D version (Third person, Skyrim like) those gonna be the real Jarparur versions, both are called World of Jarparur, i don't know actually which version gonna be the real World of Jarparur, but i'm more into the 3D one.</p>
-<p>So, Jarparur CLI is not gonna be continued anymore, maybe someday i'll comeback, but not now, so the project isn't gonna receive any update, don't wait for that for a while, i'll create a repo for the Unity version soon, that's gonna be the new Jarparur core game. I'm happy i reached this complexity of this project. See you soon.</p>
-<br>
-matjs.
+# Jarparur ![Coffee](https://img.shields.io/badge/%C3%89%20tudo%20culpa-do%20caf%C3%A9-brown?style=for-the-badge) [![Python](https://img.shields.io/badge/PY-blue?style=for-the-badge)](https://www.python.org/)
+
+Well, i finally came back.
+
+A year ago i created a folder called Jarparur, inside this folder i created a file named main.py, and since this day i promised myself that i would bring this game alive to the world. Well... it didn't happened as i expected.
+
+This is the first time i open this project since half a year or more, i realized how i was so novice to this language when i was writing this game script, but first things first, let me explain **what is** Jarparur. Jarparur is a fantasy world i've created 2 years ago, or more, i don't remember, it was written in a sheet of paper in a hurry so it wasn't really detailed, sometime after this i had the idea to make a game aabout this world, sadly i wasn't that good at Unity or Unreal and even at pixel art i've failed so i had the brilliant idea to make it a command line game, just like the old times, yet i wasn't so experienced in Python and i've failed again. This year i started to write a deep version of Jarparur's lore, aiming philosophical questions about this world and filling it with beautiful stories, this was my motivation to continue Jarparur's CLI game.
+
+4 days ago i've loaded the repository in my laptop for the first time in months and then, i've (re)started the development of the game as a serious project, so expect some huge content here (it surpasses 2.5k lines of code at the time i'm writing this). I'm launching the Alpha 1.1.0 now. That's it. :)
