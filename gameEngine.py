@@ -64,46 +64,7 @@ class GameWorld:
 
             #Game Commands
             if eventTerminal == "i":
-                Inventory.showInventory()
-
-            elif eventTerminal == "p":
-                profileData = [
-                    [playerName],
-                    ['Raça', playerRace],
-                    ['Classe', playerClass],
-                    ['Idioma', playerLanguage],
-                    ['Idade', playerAge],
-                    ['Altura', playerHeight],
-                    ['\n'],
-                    ['Vida:', playerHealth],
-                    ['Mana:', playerMana],
-                    ['Armadura:', playerArmor],
-                    ['Nível: ', str(playerLevel)+f" ({str(playerXP)} XP)"],
-                    ['\n'],
-                    ['Força', playerStrength],
-                    ['Destreza', playerDexterity],
-                    ['Constituição', playerConstitution],
-                    ['Inteligência', playerIntelligence],
-                    ['Sabedoria', playerWisdom],
-                    ['Carisma', playerCharisma]
-                ]
-                
-                tableProfile = SingleTable(profileData)
-                
-                MapHandler.UI().update("default")
-                print(tableProfile.table)
-
-            elif eventTerminal == "c":
-                MapHandler.UI().update("default")
-
-            #Navigation
-            elif eventTerminal == "m":
-                import jarparur
-
-                jarparur.mainStructure()
-            elif eventTerminal == "e":
-                os.system("cls")
-                exit()
+                Inventory.showInventory()            
 
             elif eventTerminal == "dev data":
                 DataStock.seeAllData()
@@ -115,7 +76,11 @@ class GameWorld:
                     sleepTime = input("Horas de sono: ")
                     thisEvent.event(int(sleepTime))
                 elif thisEvent.eType == "devTest":
-                    thisEvent.event()
+                    if eventTerminal == "addxp":
+                        thisXP = input("Quantidade de XP a se adicionar: ")
+                        thisEvent.event(int(thisXP))
+                    else:
+                        thisEvent.event()
                 else:
                     thisEvent.event()
 

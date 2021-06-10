@@ -8,14 +8,14 @@
     },
     "dwarf": {
         "name": "An\u00e3o",
-        "description": "An\u00f5es s\u00e3o \u00f3timos ferreiros e adoram cavernas, talvez por ambi\u00e7\u00e3o, ou apenas por puro t\u00e9dio. An\u00f5es s\u00e3o encontrados em montanhas.",
+        "description": "An\u00f5es s\u00e3o \u00f3timos ferreiros e adoram cavernas. An\u00f5es s\u00e3o encontrados em montanhas.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": []
     },
     "nulr": {
         "name": "N\u00f3rdico",
-        "description": "Tamb\u00e9m conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. S\u00e3o conhecidos por sua resist\u00eancia ao frio e pela Magia Real."
+        "description": "Tamb\u00e9m conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. S\u00e3o conhecidos principalmente pela Magia Real."
     },
     "elf": {
         "name": "Elfo",
@@ -26,7 +26,7 @@
     },
     "woodElf": {
         "name": "Elfo da Floresta",
-        "description": "\u00d3timos ca\u00e7adores, diferente de seus parentes pr\u00f3ximos, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
+        "description": "\u00d3timos ca\u00e7adores, diferente dos elfos comuns, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": []
@@ -41,7 +41,7 @@
     },
     "orc": {
         "name": "Orc",
-        "description": "Orcs vivem no Deserto dos Ossos, s\u00e3o extremamente resistentes ao calor, gra\u00e7as \u00e0 sua pele, que d\u00e1 a eles uma armadura natural.",
+        "description": "Orcs vivem no Deserto dos Ossos, s\u00e3o extremamente resistentes, gra\u00e7as \u00e0 sua pele, que d\u00e1 a eles uma armadura natural.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": [
@@ -185,7 +185,11 @@
         "constitution": 15,
         "intelligence": 8,
         "wisdom": 12,
-        "charisma": 12
+        "charisma": 12,
+        "favoriteWeapons": [
+            "Arma de duas m\u00e3os",
+            "Arma de uma m\u00e3o"
+        ]
     },
     "druid": {
         "name": "Druida",
@@ -199,7 +203,11 @@
         "constitution": 12,
         "intelligence": 8,
         "wisdom": 15,
-        "charisma": 12
+        "charisma": 12,
+        "favoriteWeapons": [
+            "Arco longo",
+            "Arco curto"
+        ]
     },
     "bard": {
         "name": "Bardo",
@@ -213,7 +221,11 @@
         "constitution": 10,
         "intelligence": 15,
         "wisdom": 12,
-        "charisma": 15
+        "charisma": 15,
+        "favoriteWeapons": [
+            "Instrumento",
+            "M\u00e1gico"
+        ]
     },
     "monk": {
         "name": "Monge",
@@ -227,7 +239,11 @@
         "constitution": 8,
         "intelligence": 6,
         "wisdom": 15,
-        "charisma": 8
+        "charisma": 8,
+        "favoriteWeapons": [
+            "Bast\u00e3o",
+            "Punhos"
+        ]
     },
     "espocioComum": {
         "name": "Esp\u00f3cio Comum",

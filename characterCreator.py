@@ -343,7 +343,8 @@ def createCharacter():
         "playerMana": int(data[playerClass]['mana']),
         "playerArmor": int(data[playerClass]['armor']),
 
-        "playerLevel": 1,
+        "playerLevel": 0,
+        "upgradePoints": 0,
         "playerXP": 0,
         "playerMood": "Bem",
         
@@ -420,15 +421,15 @@ def createCharacter():
     os.system("cls")
     print("CRIAÇÃO DE MUNDO")
     print("\nO último passo é decidir como vai ser o seu mundo!\n")
-    worldName = input("Nome do Mundo (não do Save) [opcional]: ")
-    worldPopulation = input("Quantidade de NPCs (caso deixe em branco, o padrão é sempre 100): ")
+    worldName = input("Nome do Mundo (opcional, o padrão é Jarparur): ")
+    worldPopulation = input("Quantidade de NPCs (caso deixe em branco, o padrão é sempre 1000): ")
     print("\nAgora irei processar todas as informações que você me deu, aguarde um momento...")
 
-    iterateThis = 100
+    iterateThis = 1000
     if worldName == "":
         worldName = "Jarparur"
     if worldPopulation == "":
-        iterateThis = 100
+        iterateThis = 1000
     else:
         iterateThis = int(worldPopulation)
     npcData = {}

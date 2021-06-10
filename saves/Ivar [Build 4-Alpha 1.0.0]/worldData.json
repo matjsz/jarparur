@@ -6,8 +6,9 @@
         "espocioAntigo",
         "nulrfanghe"
     ],
-    "worldPopulation": 100000,
+    "worldPopulation": 1000,
     "worldType": "Planeta",
+    "globalTime": 222924497198,
     "options": [
         "nulr",
         "grenkeparur",
@@ -77,5 +78,6 @@
                 ]
             }
         }
-    }
+    },
+    "worldAge": "7068 anos, 322 dias, 9 horas, 10 minutos e 51 segundos"
 }
