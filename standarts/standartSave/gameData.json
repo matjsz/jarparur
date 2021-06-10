@@ -9,7 +9,7 @@
 
     "dwarf": {
         "name": "Anão",
-        "description": "Anões são ótimos ferreiros e adoram cavernas. Anões são encontrados em montanhas.",
+        "description": "Anões são ótimos ferreiros e adoram cavernas, talvez por ambição, ou apenas por puro tédio. Anões são encontrados em montanhas.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": [] 
@@ -18,7 +18,7 @@
     "nulr": {
         "name": "Nórdico",
         "description": 
-        "Também conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. São conhecidos principalmente pela Magia Real."
+        "Também conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. São conhecidos por sua resistência ao frio e pela Magia Real."
     },
 
     "elf": {
@@ -31,7 +31,7 @@
 
     "woodElf": {
         "name": "Elfo da Floresta",
-        "description": "Ótimos caçadores, diferente dos elfos comuns, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
+        "description": "Ótimos caçadores, diferente de seus parentes próximos, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": []
@@ -48,7 +48,7 @@
 
     "orc": {
         "name": "Orc",
-        "description": "Orcs vivem no Deserto dos Ossos, são extremamente resistentes, graças à sua pele, que dá a eles uma armadura natural.",
+        "description": "Orcs vivem no Deserto dos Ossos, são extremamente resistentes ao calor, graças à sua pele, que dá a eles uma armadura natural.",
         "allies": [],
         "enemies": [],
         "uniqueTraits": [""]
@@ -201,9 +201,7 @@
         "constitution": 15,
         "intelligence": 8,
         "wisdom": 12,
-        "charisma": 12,
-
-        "favoriteWeapons": ["Arma de duas mãos", "Arma de uma mão"]
+        "charisma": 12
     },
 
     "druid": {
@@ -220,9 +218,7 @@
         "constitution": 12,
         "intelligence": 8,
         "wisdom": 15,
-        "charisma": 12,
-
-        "favoriteWeapons": ["Arco longo", "Arco curto"]
+        "charisma": 12
     },
  
     "bard": {
@@ -239,9 +235,7 @@
         "constitution": 10,
         "intelligence": 15,
         "wisdom": 12,
-        "charisma": 15,
-
-        "favoriteWeapons": ["Instrumento", "Mágico"]
+        "charisma": 15
     },
 
     "monk": {
@@ -258,9 +252,7 @@
         "constitution": 8,
         "intelligence": 6,
         "wisdom": 15,
-        "charisma": 8,
-
-        "favoriteWeapons": ["Bastão", "Punhos"]
+        "charisma": 8
     },
 
     "espocioComum": {

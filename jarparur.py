@@ -11,7 +11,7 @@ def mainStructure():
     print(art.gameTitle)
 
     while True:
-        action = input("\n| Novo Jogo     [1] |\n| Carregar Jogo [2] |\n| Sair          [3] | \n\n>>> ")
+        action = input(f"\n| {'Novo Jogo':13} [1] |\n| Carregar Jogo [2] |\n| {'Sair':13} [3] | \n\n>>> ")
         actions = ['1', '2', '3']
 
         if action in actions:
@@ -20,6 +20,7 @@ def mainStructure():
             elif action == "2":
                 saveSystem.loadGame()
             elif action == "3":
+                os.system("cls")
                 exit()
         else:
             exit()

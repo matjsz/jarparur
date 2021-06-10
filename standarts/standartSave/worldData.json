@@ -2,9 +2,12 @@
     "worldName": "Jarparur", 
     "worldDescription": "Jarparur é conhecida por ser a terra das criaturas fantásticas, dando palco à magia, aço e sangue.",
     "worldLanguages": ["espocioComum", "espocioAntigo", "nulrfanghe"],
-    "worldPopulation": 0, 
+    "worldAge": 20000, 
+    "worldPopulation": 100000, 
     "worldType": "Planeta", 
-    "globalTime": 0,
+    "day": 12,
+    "month": 2,
+    "year": 20000,
     "options": ["nulr", "grenkeparur", "desertoDosOssos", "sul", "test"],
     
     "nulr": {
@@ -42,7 +45,6 @@
         "description": "Local de testes para movimentação do jogador",
         "language": "espocioComum",
         "options": ["testArea1"],
-
 
         "testArea1": {
             "id": "testArea1",

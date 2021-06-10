@@ -1,0 +1,11 @@
+TO ADD XP => gameHandler.py - events["addxp"].event(xp)
+
+COMMANDS
+
+addxp -> Adiciona xp
+dev -> Mostra todos os eventos
+h -> See NPCs count and NPCs location 
+items -> Enter at Item Finder screen
+npcs -> Enter at NPC Finder screen 
+
+w -> Mostra informações sobre a região atual

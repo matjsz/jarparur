@@ -1,0 +1,58 @@
+{
+    "id": {
+        "playerName": "Name",
+        "playerGenre": "?",
+        "playerRace": "race",
+        "playerClass": "class",
+        "playerLanguage": "language",
+        "playerAge": 0,
+        "playerHeight": 0,
+        "playerHealth": 0,
+        "playerMana": 0,
+        "playerArmor": 0,
+        "playerLevel": 1,
+        "playerXP": 0,
+        "playerMood": "mood",
+        "playerVelocity": 0,
+        "playerStrength": 0,
+        "playerDexterity": 0,
+        "playerConstitution": 0,
+        "playerIntelligence": 0,
+        "playerWisdom": 0,
+        "playerCharisma": 0,
+        "playerStartPoint": "region",
+        "playerFavoriteWeapon": "type",
+        "playerInventory": {
+            "head": "",
+            "torso": "",
+            "arms": "",
+            "hands": "",
+            "legs": "",
+            "foot": "",
+            "slots": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "bag": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "playerAbilities": {
+            "ability1": "",
+            "ability2": ""
+        },
+        "playerWorld": {
+            "worldRegion": "",
+            "localRegion": "",
+            "building": ""
+        }
+    }
+}
