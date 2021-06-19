@@ -13,16 +13,9 @@ Mágico (Arcano):
     11 - Iniciante
 
 Não Mágico:
-    10 - Lendário
-    9 - Semi-lendário
-    8 - Divino
-    7 - Obra de arte
-    6 - Excelente
-    5 - Muito bom
-    4 - Bom
-    3 - Razoável
-    2 - Ruim
-    1 - Péssimo
+    3 - Lendário
+    2 - Obra de arte
+    1 - Bom
     0 - Miserável
 
 type
@@ -38,3 +31,88 @@ type
 type, tier, id
 
 tier, id
+
+---/
+
+usesFor
+
+healing - Cura
+mana - Mana
+
+---/    
+
+npc item by level tier
+
+tier 1 = lvl 16-20
+    meeleeClasses, rangedClasses = Lendário
+    arcaneMagicalClasses = Mestre
+    realMagicalClasses = Real
+tier 2 = lvl 11-15
+    meeleeClasses, rangedClasses = Obra de arte
+    arcaneMagicalClasses = Perito
+    realMagicalClasses = Ascendido
+tier 3 = lvl 6-10
+    meeleeClasses, rangedClasses = Bom
+    arcaneMagicalClasses = Experiente
+    realMagicalClasses = Iluminado
+tier 4 = lvl 1-5
+    meeleeClasses, rangedClasses = Miserável
+    arcaneMagicalClasses = Iniciante
+    realMagicalClasses = Fraco
+
+RELÍQUIAS só aparecem no mundo uma única vez em toda sua existência, enquanto ITENS aparecem no mundo infinitamente, sua chance de aparição depende de seu tier.
+
+RELÍQUIAS DO NORTE
+    Armadura Rúnica - Usada pelo deus ascendido do Norte, forjada por anões e encantada por Bjoretens. (race = nulr)
+    Armadura Gélida - Forjada durante a criação da Grenkeparur.
+    Armadura da Raíz do Mundo
+    Espada do Inverno
+    Machado da Fúria Nórdica 
+    Adaga do Sangue Gélido
+    Gema da Ascenção Real
+
+RELÍQUIAS O DESERTO DOS OSSOS
+    Armadura de Ossos de Dragão - Usada pelos bárbaros lendários do Deserto Dos Ossos (race = orc)
+    Machado Quebra-Crânios
+
+RELÍQUIAS DOS ELFOS DA FLORESTA 
+    Arco do Ritmo fatal
+    Adaga do Ultimo Suspiro 
+    Armadura Anciã
+
+RELÍQUIAS DO SUL
+    Armadura da Trindade
+    Espada da Rendição 
+    Martelo da Justiça 
+    Grimório das 7 Chaves 
+    Maça do Expurgo
+
+RELÍQUIAS DAS ILHAS DISTANTES 
+    SOBRE ILHAS DISTANTES = região escravizada pelo sul que recentemente se rebelou após o dragão ancião retornar aos planos mortais, libertando seu povo em uma rebelião, assim, surgem os monges que seguem a filosofia do dragão ancião. 
+
+    Punho do Dragão Ancião 
+    Correntes da Libertação 
+
+SETS LENDARIOS
+    warrior, paladin, cleric, barbarian
+        Armadura de Titânio
+        Elmo de Titânio
+        Placas de Titânio 
+        Botas de Titânio 
+        Braceletes de Titânio
+        Luvas de Titânio
+    wizard
+        Robe do Arquimago
+    bjoreten
+        Traje do Mestre Rúnico
+    bard
+        Traje do Mestre Músico
+    ranger
+        Traje do Arqueiro Lendário
+    assassin 
+        Traje do Assassino Lendário
+    monk
+        Traje do Dragão Lendário
+    
+
+

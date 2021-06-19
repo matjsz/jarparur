@@ -1,0 +1,55 @@
+{
+    "playerName": "yes",
+    "playerGenre": "m",
+    "playerRace": "dwarf",
+    "playerClass": "warrior",
+    "playerLanguage": "nulrfanghe",
+    "playerAge": 28,
+    "playerHeight": 1.05,
+    "playerHealth": 4,
+    "playerMaxHealth": 4,
+    "playerMana": 2,
+    "playerArmor": 1,
+    "baseDamage": 2,
+    "playerLevel": 0,
+    "upgradePoints": 0,
+    "playerXP": 0,
+    "playerMood": "Bem",
+    "playerStrength": 5,
+    "playerDexterity": 3,
+    "playerConstitution": 4,
+    "playerIntelligence": 2,
+    "playerWisdom": 2,
+    "playerCharisma": 4,
+    "playerStartPoint": "nulr",
+    "playerFavoriteWeapon": "Arma de uma m\u00e3o",
+    "playerInventory": {
+        "head": "",
+        "torso": "401",
+        "arms": "",
+        "hands": "",
+        "legs": "402",
+        "foot": "501",
+        "ring": "",
+        "slots": [
+            "101",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "bag": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "playerWorld": {
+        "worldRegion": "nulr",
+        "localRegion": "",
+        "building": ""
+    }
+}

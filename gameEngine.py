@@ -59,6 +59,9 @@ class GameWorld:
         playerMood = dataPlayer["playerMood"]
         eventsEngineSide = gameHandler.events
 
+        if playerHealth == 0:
+            MapHandler.UI().deathScreen()
+
         while True:
             eventTerminal = input(">>> ")
 

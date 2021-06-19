@@ -1,4 +1,6 @@
+import gameEngine
 import os, json
+from typing import final
 from terminaltables import SingleTable
 from gameHandler import MapHandler
 
@@ -45,506 +47,337 @@ class Inventory:
         playerFavoriteWeapon = dataPlayer['playerFavoriteWeapon']
 
     def discard(partInventory):
-        partsDict = {
-            "torso": "torso",
-            "cabeça": "head",
-            "braços": "arms",
-            "mãos": "hands",
-            "pernas": "legs",
-            "pés": "foot"
-        }
+        vest = ["torso", "head", "arms", "hands", "legs", "foot"]
+        inv = []
 
-        if partInventory == "torso" or partInventory == "cabeça" or partInventory == "braços" or partInventory == "mãos" or partInventory == "pés" or partInventory == "pernas":
-            dataPlayer["playerInventory"][partsDict.get(partInventory)] = ""
+        finalArmor = 0
+        finalMana = 0
+        finalBaseDamage = 0
+
+        for slot in dataPlayer["playerInventory"]["slots"]:
+            inv.append(dataPlayer["playerInventory"]["slots"].index(slot))
+
+        if partInventory in vest:
+            dataPlayer["playerInventory"][partInventory] = ""
+        elif partInventory in inv:
+            dataPlayer["playerInventory"]["slots"][partInventory] = ""
+
+        for part in vest:
+            if dataPlayer["playerInventory"][part] != "":
+                finalArmor += data["items"][dataPlayer["playerInventory"][part]]["armor"]
+                finalMana += data["items"][dataPlayer["playerInventory"][part]]["mana"]
+
+        for slot in inv:
+            if dataPlayer["playerInventory"]["slots"][slot] != "":
+                finalBaseDamage += data["items"][dataPlayer["playerInventory"]["slots"][int(slot)]]["damage"]
+
+        dataPlayer["playerArmor"] = finalArmor
+        if dataPlayer["playerLevel"] == 0:
+            dataPlayer["playerMana"] = finalMana + dataPlayer["playerIntelligence"]
         else:
-            if partInventory[4] != " ":
-                slot = int(partInventory[4])-1
-
-                try:
-                    dataPlayer["playerInventory"]["slots"][slot] = ""
-                except KeyError:
-                    print("O Slot ou parte do corpo inserido não existe!")
-                    input("\nPressione Enter para continuar...")
-                    Inventory.showInventory()
-            else:
-                print("O comando foi inserido de maneira incorreta!")
-                input("\nPressione Enter para continuar...")
-                Inventory.showInventory()
+            dataPlayer["playerMana"] = finalMana + (dataPlayer["playerIntelligence"] * dataPlayer["playerLevel"])
+        dataPlayer["baseDamage"] = finalBaseDamage
 
         with open(f'saves/{ln}/{ln}.json', 'w') as saveChanges:
-            json.dump(dataPlayer, saveChanges)
+            json.dump(dataPlayer, saveChanges, indent=4)
 
-        os.system("cls")
+        Inventory(ln)
         Inventory.showInventory()
 
-    def addItem(partInventory, itemID):
-        if partInventory == "torso" and data["items"][itemID]["type"] == "Roupa" or partInventory == "torso" and data["items"][itemID]["type"] == "Armadura":
-            dataPlayer["playerInventory"][partInventory] = itemID
-            
-        elif partInventory == "head" and data["items"][itemID]["type"] == "Capacete" or partInventory == "head" and data["items"][itemID]["type"] == "Chapéu":
-            dataPlayer["playerInventory"][partInventory] = itemID
+    def addItem(itemID):
+        parts = {
+            "torso": ["Roupa", "Armadura"],
+            "head": ["Capacete", "Chapéu"],
+            "legs": ["Calça"],
+            "hands": ["Luvas", "Anel"],
+            "arms": ["Bracelete"],
+            "foot": ["Calçado"]
+        }
 
-        elif partInventory == "legs" and data["items"][itemID]["type"] == "Calça":
-            dataPlayer["playerInventory"][partInventory] = itemID
+        invParts = []
 
-        elif partInventory == "hands" and data["items"][itemID]["type"] == "Luvas":
-            dataPlayer["playerInventory"][partInventory] = itemID
+        added = False
+        finalArmor = 0
+        finalMana = 0
+        finalBaseDamage = 0
+
+        for slot in dataPlayer["playerInventory"]["slots"]:
+            if slot == "":
+                invParts.append(dataPlayer["playerInventory"]["slots"].index(slot))
+
+        for part in parts:
+            if added == False:
+                if data["items"][itemID]["type"] in parts[part]:
+                    dataPlayer["playerInventory"][part] = itemID
+                    added = True
+
+        for part in parts:
+            if dataPlayer["playerInventory"][part] != "":
+                finalArmor += data["items"][dataPlayer["playerInventory"][part]]["armor"]
+                finalMana += data["items"][dataPlayer["playerInventory"][part]]["mana"]
+
+        for availablePart in invParts:
+            if added == False:
+                dataPlayer["playerInventory"]["slots"][availablePart] = itemID
+                added = True
+
+        for slot in dataPlayer["playerInventory"]["slots"]:
+            if slot != "":
+                slotNum = dataPlayer["playerInventory"]["slots"].index(slot)
+                finalBaseDamage += data["items"][dataPlayer["playerInventory"]["slots"][slotNum]]["damage"]
         
-        elif partInventory == "arms" and data["items"][itemID]["type"] == "Bracelete":
-            dataPlayer["playerInventory"][partInventory] = itemID
-
-        elif partInventory == "foot" and data["items"][itemID]["type"] == "Calçado":
-            dataPlayer["playerInventory"][partInventory] = itemID
-        
-        elif "slot" in partInventory:
-            if partInventory[4] != " ":
-                slot = int(partInventory[4])-1
-
-                try:
-                    dataPlayer["playerInventory"]["slots"][slot] = itemID
-                except KeyError:
-                    print("O Slot ou parte do corpo inserido não existe!")
-                    input("\nPressione Enter para continuar...")
-            else:
-                print("O comando foi inserido de maneira incorreta!")
-                input("\nPressione Enter para continuar...")
-
+        dataPlayer["playerArmor"] = finalArmor
+        if dataPlayer["playerLevel"] == 0:
+            dataPlayer["playerMana"] = finalMana + dataPlayer["playerIntelligence"]
         else:
-            try:
-                os.system("cls")
-                print(f"Você não pode adicionar {data['items'][itemID]['name']} no componente '{partInventory}'")
-                input("Pressione Enter para continuar...")
-            except KeyError:
-                os.system("cls")
-                print(f"O itemID {itemID} não está existe no gameData!")
-                input("Pressione Enter para continuar...")
+            dataPlayer["playerMana"] = finalMana + (dataPlayer["playerIntelligence"] * dataPlayer["playerLevel"])
+        dataPlayer["baseDamage"] = finalBaseDamage
 
         with open(f'saves/{ln}/{ln}.json', 'w') as saveChanges:
-            json.dump(dataPlayer, saveChanges)
+            json.dump(dataPlayer, saveChanges, indent=4)
 
+        Inventory(ln)
+        Inventory.showInventory()
+
+    def use(slotNum):
+        if data["items"][dataPlayer["playerInventory"]["slots"][slotNum]]["usesFor"] == "healing":
+            if dataPlayer["playerHealth"] == dataPlayer["playerMaxHealth"]:
+                pass
+            elif dataPlayer["playerHealth"] < dataPlayer["playerMaxHealth"]:
+                valuesToAdd = data["items"][dataPlayer["playerInventory"]["slots"][slotNum]]["value"]
+
+                while valuesToAdd > 0:
+                    if dataPlayer["playerHealth"] < dataPlayer["playerMaxHealth"]:
+                        dataPlayer["playerHealth"] += 1
+                        valuesToAdd -= 1
+                    else:
+                        valuesToAdd = 0 
+                dataPlayer["playerInventory"]["slots"][slotNum] = ""
+        elif data["items"][dataPlayer["playerInventory"]["slots"][slotNum]]["usesFor"] == "mana":
+            dataPlayer["playerMana"] += data["items"][dataPlayer["playerInventory"]["slots"][slotNum]]["value"]
+            dataPlayer["playerInventory"]["slots"][slotNum]
+
+        with open(f'saves/{ln}/{ln}.json', 'w') as saveChanges:
+            json.dump(dataPlayer, saveChanges, indent=4)
+
+        Inventory(ln)
         Inventory.showInventory()
 
     def showInventory():
-        os.system("cls")
-
-        print(f"Inventário de {playerName}\n")
-
-        torsoData = ""
-        braçosData = ""
-        maosData = ""
-        pesData = ""
-        pernasData = ""
-        cabeçaData = ""
-
-        #Item Cabeça
-        try:
-            cabeçaData = data["items"][dataPlayer["playerInventory"]["head"]]["name"]
-        except KeyError:
-            cabeçaData = ""
-
-        #Item Torso
-        try:
-            torsoData = data["items"][dataPlayer["playerInventory"]["torso"]]["name"]
-        except KeyError:
-            torsoData = ""
-
-        #Item Braços
-        try:
-            braçosData = data["items"][dataPlayer["playerInventory"]["arms"]]["name"]
-        except KeyError:
-            braçosData = ""
-
-        #Item Mãos
-        try:
-            maosData = data["items"][dataPlayer["playerInventory"]["hands"]]["name"]
-        except KeyError:
-            maosData = ""
-
-        #Item Pernas
-        try:
-            pernasData = data["items"][dataPlayer["playerInventory"]["legs"]]["name"]
-        except KeyError:
-            pernasData = ""
-
-        #Item Pés
-        try:
-            pesData = data["items"][dataPlayer["playerInventory"]["foot"]]["name"]
-        except KeyError:
-            pesData = ""
-
-        bodyItemsData = [
-            ['Cabeça', cabeçaData],
-            ['Torso', torsoData],
-            ['Braços', braçosData],
-            ['Mãos', maosData],
-            ['Pernas', pernasData],
-            ['Pés', pesData]
-        ]
-
-        bodyItemsTable = SingleTable(bodyItemsData)
-        bodyItemsTable.inner_row_border = True
-        print("Vestuário")
-        print(bodyItemsTable.table)
-
-        slotData = []
-
-        slotCount = 0
-        for slot in dataPlayer["playerInventory"]["slots"]:
-            slotCount += 1
-            try:
-                slotData.append([str(slotCount), data['items'][slot]['name']]) 
-            except KeyError:
-                slotData.append([str(slotCount), ""])
-
-        slotTable = SingleTable(slotData)
-        slotTable.inner_row_border = True
-        print("Inventário (Slots)")
-        print(slotTable.table)
-
-        print("\n[slot[n]] ex: slot1 - Mostra detalhes do item no slot escolhido\n[parteInventario] ex: cabeça - Mostra detalhes do item no componente escolhido\n[back] - Volta para a tela de jogo\n[d] [parteInventario] - Descarta item no componente escolhido\n[c] - Limpa o log")
         global isOnInv
         isOnInv = True
         while isOnInv == True:
-            cmds = ["cabeça", "torso", "braços", "mãos", "pernas", "pés"]
+            os.system("cls")
+
+            print(f"Inventário de {playerName}\n")
+            cmds = {
+                "back": "Voltar"
+            }
+            slotCmds = {}
+            vestCmds = {}
+            invCmds = {}
+            nCmd = 1
+
+            torsoData = ""
+            braçosData = ""
+            maosData = ""
+            pesData = ""
+            pernasData = ""
+            cabeçaData = ""
+
+            #Item Cabeça
+            try:
+                cabeçaData = data["items"][dataPlayer["playerInventory"]["head"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["head"]]["name"]
+                vestCmds[str(nCmd)] = "head"
+                nCmd += 1
+            except KeyError:
+                cabeçaData = ""
+
+            #Item Torso
+            try:
+                torsoData = data["items"][dataPlayer["playerInventory"]["torso"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["torso"]]["name"]
+                vestCmds[str(nCmd)] = "torso"
+                nCmd += 1
+            except KeyError:
+                torsoData = ""
+
+            #Item Braços
+            try:
+                braçosData = data["items"][dataPlayer["playerInventory"]["arms"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["arms"]]["name"]
+                vestCmds[str(nCmd)] = "arms"
+                nCmd += 1
+            except KeyError:
+                braçosData = ""
+
+            #Item Mãos
+            try:
+                maosData = data["items"][dataPlayer["playerInventory"]["hands"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["hands"]]["name"]
+                vestCmds[str(nCmd)] = "hands"
+                nCmd += 1
+            except KeyError:
+                maosData = ""
+
+            #Item Pernas
+            try:
+                pernasData = data["items"][dataPlayer["playerInventory"]["legs"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["legs"]]["name"]
+                vestCmds[str(nCmd)] = "legs"
+                nCmd += 1
+            except KeyError:
+                pernasData = ""
+
+            #Item Pés
+            try:
+                pesData = data["items"][dataPlayer["playerInventory"]["foot"]]["name"]
+                cmds[str(nCmd)] = data["items"][dataPlayer["playerInventory"]["foot"]]["name"]
+                vestCmds[str(nCmd)] = "foot"
+                nCmd += 1
+            except KeyError:
+                pesData = ""
+
+            bodyItemsData = [
+                ['Cabeça', cabeçaData],
+                ['Torso', torsoData],
+                ['Braços', braçosData],
+                ['Mãos', maosData],
+                ['Pernas', pernasData],
+                ['Pés', pesData]
+            ]
+
+            bodyItemsTable = SingleTable(bodyItemsData)
+            bodyItemsTable.inner_row_border = True
+            print("Vestuário")
+            print(bodyItemsTable.table)
+
+            slotData = []
+
+            slotCount = 0
+            for slot in dataPlayer["playerInventory"]["slots"]:
+                slotCount += 1
+                try:
+                    slotData.append([str(slotCount), data['items'][slot]['name']]) 
+                    slotCmds[str(nCmd)] = data['items'][slot]['name']
+                    invCmds[str(nCmd)] = dataPlayer["playerInventory"]["slots"].index(slot)
+                    nCmd += 1
+                except KeyError:
+                    slotData.append([str(slotCount), ""])
+
+            slotTable = SingleTable(slotData)
+            slotTable.inner_row_border = True
+            print("Inventário (Slots)")
+            print(slotTable.table)
+
+            # print("\nWIP => [slot[n]] ex: slot1 - Mostra detalhes do item no slot escolhido\n[parteInventario] ex: cabeça - Mostra detalhes do item no componente escolhido\n[back] - Volta para a tela de jogo\n[d] [parteInventario] - Descarta item no componente escolhido\n[c] - Limpa o log")
+            for command in cmds:
+                if command == "back":
+                    print(f"[{command}] {cmds[command]}\n")
+            print("Vestuário")
+            for command in cmds:
+                if command != "back":
+                    print(f"[{command}] {cmds[command]}")
+            print("\n")
+            print("Inventário")
+            for slotCommand in slotCmds:
+                print(f"[{slotCommand}] {slotCmds[slotCommand]}")
 
             inventoryEvent = input("\n[i] >>> ")
 
-            if inventoryEvent in cmds:
+            if inventoryEvent in cmds or inventoryEvent in slotCmds:
                 os.system("cls")
-                if inventoryEvent == "pés":
+                if inventoryEvent in vestCmds:
                     try:
-                        data["items"][dataPlayer["playerInventory"]["foot"]]["name"]
-
+                        data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["name"]
                         try:
-                            data["items"][dataPlayer["playerInventory"]["foot"]]["armor"]
+                            isOnItem = True
 
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["foot"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["foot"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["foot"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["foot"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["foot"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["foot"]]["cost"]]
-                            ]
+                            while isOnItem == True:
+                                os.system("cls")
+                                itemData = [
+                                    [data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["name"]],
+                                    ['Descrição', f"""{data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["description"]}"""],
+                                    ['Tier', data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["tier"]],
+                                    ['Tipo', data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["type"]],
+                                    ['\n'],
+                                    ['Armadura', data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["armor"]],
+                                    ['Mana', data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["mana"]],
+                                    ['Custo', data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["cost"]]
+                                ]
 
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
+                                tableItem = SingleTable(itemData)
+                                print(tableItem.table)
+                                print("d - Descarta o item | u - Usa o item caso seja um utilizável | back - Volta para o Inventário")
+                                itemEvent = input(">>> ")
 
-                        try :
-                            data["items"][dataPlayer["playerInventory"]["foot"]]["mana"]
+                                if itemEvent == "back":
+                                    isOnItem = False
+                                    Inventory.showInventory()
 
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["foot"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["foot"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["foot"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["foot"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["foot"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["foot"]]["cost"]]
-                            ]
+                                elif itemEvent == "d":
+                                    Inventory.discard(vestCmds[inventoryEvent])
 
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
+                                elif itemEvent == "u":
+                                    if data["items"][dataPlayer["playerInventory"][vestCmds[inventoryEvent]]]["type"] == "Utilizável":
+                                        Inventory.use(vestCmds[inventoryEvent])
+                                    else:
+                                        print("Este item não pode ser utilizado!")
+                                        input("Pressione qualquer tecla para continuar...")
                         except KeyError:
                             pass
 
                     except KeyError:
-                        print("Não há itens aqui!")
+                        isOnInv = False
+                        loadThis = gameEngine.GameWorld(ln)
+                        loadThis.start()
 
-                elif inventoryEvent == "pernas":
+                elif inventoryEvent in invCmds:
                     try:
-                        data["items"][dataPlayer["playerInventory"]["legs"]]["name"]
+                        isOnItem = True
 
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["legs"]]["armor"]
+                        while isOnItem == True:
+                            os.system("cls")
 
+                            data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["name"]
+                        
                             itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["legs"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["legs"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["legs"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["legs"]]["type"]],
+                                [data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["name"]],
+                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["description"]}"""],
+                                ['Tier', data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["tier"]],
+                                ['Tipo', data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["type"]],
                                 ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["legs"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["legs"]]["cost"]]
+                                ['Dano', str(data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["damage"])],
+                                ['Custo', str(data["items"][dataPlayer["playerInventory"]["slots"][invCmds[inventoryEvent]]]["cost"])]
                             ]
 
                             tableItem = SingleTable(itemData)
                             print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
 
-                        try :
-                            data["items"][dataPlayer["playerInventory"]["legs"]]["mana"]
+                            print("d - Descarta o item | u - Usa o item caso seja um utilizável | back - Volta para o Inventário")
+                            itemEvent = input(">>> ")
 
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["legs"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["legs"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["legs"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["legs"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["legs"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["legs"]]["cost"]]
-                            ]
+                            if itemEvent == "back":
+                                isOnItem = False
+                                Inventory.showInventory()
 
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
+                            elif itemEvent == "d":
+                                Inventory.discard(invCmds[inventoryEvent])
 
+                            elif itemEvent == "u":
+                                Inventory.use(invCmds[inventoryEvent])
                     except KeyError:
-                        print("Não há itens aqui!")
-
-                elif inventoryEvent == "mãos":
-                    try:
-                        data["items"][dataPlayer["playerInventory"]["hands"]]["name"]
-
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["hands"]]["armor"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["hands"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["hands"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["hands"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["hands"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["hands"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["hands"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                        try :
-                            data["items"][dataPlayer["playerInventory"]["hands"]]["mana"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["hands"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["hands"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["hands"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["hands"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["hands"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["hands"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                    except KeyError:
-                        print("Não há itens aqui!")
-
-                elif inventoryEvent == "braços":
-                    try:
-                        data["items"][dataPlayer["playerInventory"]["arms"]]["name"]
-
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["arms"]]["armor"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["arms"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["arms"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["arms"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["arms"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["arms"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["arms"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                        try :
-                            data["items"][dataPlayer["playerInventory"]["arms"]]["mana"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["arms"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["arms"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["arms"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["arms"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["arms"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["arms"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                    except KeyError:
-                        print("Não há itens aqui!")
-
-                elif inventoryEvent == "torso":
-                    try:
-                        data["items"][dataPlayer["playerInventory"]["torso"]]["name"]
-
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["torso"]]["armor"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["torso"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["torso"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["torso"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["torso"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["torso"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["torso"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                        try :
-                            data["items"][dataPlayer["playerInventory"]["torso"]]["mana"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["torso"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["torso"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["torso"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["torso"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["torso"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["torso"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                    except KeyError:
-                        print("Não há itens aqui!")
-
-                elif inventoryEvent == "cabeça":
-                    try:
-                        data["items"][dataPlayer["playerInventory"]["head"]]["name"]
-
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["head"]]["armor"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["head"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["head"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["head"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["head"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["head"]]["armor"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["head"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                        try:
-                            data["items"][dataPlayer["playerInventory"]["head"]]["mana"]
-
-                            itemData = [
-                                [data["items"][dataPlayer["playerInventory"]["head"]]["name"]],
-                                ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["head"]]["description"]}"""],
-                                ['Tier', data["items"][dataPlayer["playerInventory"]["head"]]["tier"]],
-                                ['Tipo', data["items"][dataPlayer["playerInventory"]["head"]]["type"]],
-                                ['\n'],
-                                ['Armadura', data["items"][dataPlayer["playerInventory"]["head"]]["mana"]],
-                                ['Custo', data["items"][dataPlayer["playerInventory"]["head"]]["cost"]]
-                            ]
-
-                            tableItem = SingleTable(itemData)
-                            print(tableItem.table)
-                            input("Pressione qualquer botão para voltar...")
-                            Inventory.showInventory()
-                        except KeyError:
-                            pass
-
-                    except KeyError:
-                        print("Não há itens aqui!")
-
-                else:
-                    print("O comando foi inserido de maneira incorreta!")
-            
-            elif "d " in inventoryEvent:
-                Inventory.discard(inventoryEvent[2:])
-
-            elif inventoryEvent == "back":
-                os.system("cls")
-                MapHandler(ln)
-                MapHandler.UI().update('default')
-                isOnInv = False
-
-            elif inventoryEvent == "c":
-                os.system("cls")
-                Inventory.showInventory()
+                        isOnInv = False
+                        loadThis = gameEngine.GameWorld(ln)
+                        loadThis.start()
+                
+                elif inventoryEvent == "back":
+                    isOnInv = False
+                    loadThis = gameEngine.GameWorld(ln)
+                    loadThis.start()
 
             elif inventoryEvent == "dev add":
-                component = input("[onde adicionar] >> ")
                 item = input("[item para adicionar] >>> ")
                 os.system("cls")
-                Inventory.showInventory()
-                Inventory.addItem(component, item)
-
-            elif "slot" in inventoryEvent:
-                os.system("cls")
-                if inventoryEvent[4] != " ":
-                    slot = int(inventoryEvent[4])-1
-                else:
-                    print("O comando foi inserido de maneira incorreta!")
-                    input("\nPressione Enter para continuar...")
-                    Inventory.showInventory()
-                
-                try:
-                    data["items"][dataPlayer["playerInventory"]["slots"][slot]]["name"]
-                    
-                    itemData = [
-                        [data["items"][dataPlayer["playerInventory"]["slots"][slot]]["name"]],
-                        ['Descrição', f"""{data["items"][dataPlayer["playerInventory"]["slots"][slot]]["description"]}"""],
-                        ['Tier', data["items"][dataPlayer["playerInventory"]["slots"][slot]]["tier"]],
-                        ['Tipo', data["items"][dataPlayer["playerInventory"]["slots"][slot]]["type"]],
-                        ['\n'],
-                        ['Dano', str(data["items"][dataPlayer["playerInventory"]["slots"][slot]]["damage"])],
-                        ['Custo', str(data["items"][dataPlayer["playerInventory"]["slots"][slot]]["cost"])]
-                    ]
-
-                    tableItem = SingleTable(itemData)
-                    print(tableItem.table)
-                    input("Pressione qualquer botão para voltar...")
-                    Inventory.showInventory()
-                except KeyError:
-                    print("O Slot está vazio!")
-                    continue
-
-            else:
-                print("O comando foi inserido de maneira incorreta!")
+                Inventory.addItem(item)

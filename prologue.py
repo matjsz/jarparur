@@ -47,7 +47,7 @@ class Prologue:
             dataPlayer = json.load(jfPlayer)
 
         #Update PROLOGO EXECUTAR
-        if dataPlayer["playerGenre"] == "M":
+        if dataPlayer["playerGenre"] == "M" or "m":
             os.system("cls")
             print("PRÓLOGO\n")
 

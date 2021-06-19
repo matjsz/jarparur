@@ -12,34 +12,7 @@ from textwrap import wrap
 
 dragonBeforeName = art.characterCreatorDragonIdling
 
-availabeRaces = ["1", "2", "3", "4", "5", "6", "7"]
-
-availabeClasses = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
-
 availabeLanguages = ['1', '2', '3']
-
-racesDict = {
-    "1": "human",
-    "2": "dwarf",
-    "3": "nulr",
-    "4": "elf",
-    "5": "woodElf",
-    "6": "halfling",
-    "7": "orc"
-}
-
-classDict = {
-    "1": "warrior",
-    "2": "ranger",
-    "3": "wizard",
-    "4": "bjoretNen",
-    "5": "assassin",
-    "6": "cleric",
-    "7o": "paladin",
-    "8": "barbarian",
-    "9": "bard",
-    "10": "monk"
-}
 
 languagesDict = {
     "1": "espocioComum",
@@ -61,54 +34,125 @@ with open(f'worldData.json', encoding='utf-8') as wf:
     dataWorld = json.load(wf)
 
 def createCharacter():
-    #Update NOME
-    os.system("cls")
-    print("CRIAÇÃO DE NOVO PERSONAGEM")
+    #Update LOCAL DE INICIO
+    regionScreen = True
+    while regionScreen == True:
+        os.system("cls")
+        print("CRIAÇÃO DE NOVO PERSONAGEM")
 
-    print("\nBem-vindo aventureiro (ou aventureira)! Está pronto para adentrar no maravilhoso mundo de Japarur? Espero que sim, você não vai se arrepender!")
+        print("\nBem-vindo aventureiro (ou aventureira)! Está pronto para adentrar no maravilhoso mundo de Japarur? Espero que sim, você não vai se arrepender!")
 
-    #Nome
-    print("\nPrimeiramente, você precisa dar um nome ao seu personagem.")
+        print("\nVamos escolher uma região para o seu personagem!")
 
-    print(dragonBeforeName)
+        tableRegiaoData = [
+            ['Região', 'Descrição'],
+            [dataWorld["nulr"]["name"], data["nulr"]["description"]],
+            [dataWorld["grenkeparur"]["name"], dataWorld["grenkeparur"]["description"]],
+            [dataWorld["desertoDosOssos"]["name"], dataWorld["desertoDosOssos"]["description"]],
+            [dataWorld["sul"]["name"], dataWorld["sul"]["description"]]
+        ]
 
-    playerName = input("\nSeu nome: ")
-    print("\nAgora, seu personagem precisa de um gênero.")
-    playerGenre = input("\nSeu gênero [M/F]: ")
+        tableRegiao = SingleTable(tableRegiaoData)
+        tableRegiao.inner_row_border = True
 
-    while True:
+        print(tableRegiao.table)
+        print("1 - Norte | 2 - Grenkëparur | 3 - Deserto dos Ossos | 4 - O Sul")
+        
+        playerStartPoint = input("\nSeu ponto de início: ")
+        if playerStartPoint in regionsDict:
+            playerStartPoint = regionsDict.get(playerStartPoint)
+            regionScreen = False
+        else:
+            os.system("cls")
+            print("CRIAÇÃO DE NOVO PERSONAGEM - ERRO => Região não existe")
+            print("\nA região escolhida não existe!\n")
+            input("Pressione Enter para continuar...")
+
+    raceScreen = True
+    while raceScreen == True:
         #Update RAÇA
         os.system("cls")
         print("CRIAÇÃO DE NOVO PERSONAGEM\n")
 
-        print(art.characterName(playerName))
-
         #Raça
-        print(f"\nOk {playerName}, você tem um nome... mas oque você é? Digo, qual a sua raça. Sim, existem raças no mundo de Jarparur assim como em qualquer outro plano existencial, digo... RPG.\n")
+        print(f"\nCerto, sua região natal vai ser {playerStartPoint}, isso lhe dá algumas opções de raças, vejamos...\n")
 
         tableRaçaData = [
-            ['Raça', 'Descrição'],
-            [data["human"]["name"], data["human"]["description"]],
-            [data["dwarf"]["name"], data["dwarf"]["description"]],
-            [data["nulr"]["name"], data["nulr"]["description"]],
-            [data["elf"]["name"], data["elf"]["description"]],
-            [data["woodElf"]["name"], data["woodElf"]["description"]],
-            [data["halfling"]["name"], data["halfling"]["description"]],
-            [data["orc"]["name"], data["orc"]["description"]]
         ]
+        racesDict = {}
+
+        if playerStartPoint == "nulr":
+            tableRaçaData = [
+                ['Raça', 'Descrição'],
+                [data["dwarf"]["name"], data["dwarf"]["description"]],
+                [data["nulr"]["name"], data["nulr"]["description"]],
+            ]
+        elif playerStartPoint == "sul":
+            tableRaçaData = [
+                ['Raça', 'Descrição'],
+                [data["human"]["name"], data["human"]["description"]],
+                [data["elf"]["name"], data["elf"]["description"]],
+                [data["woodElf"]["name"], data["woodElf"]["description"]],
+                [data["halfling"]["name"], data["halfling"]["description"]],
+            ]
+        elif playerStartPoint == "desertoDosOssos":
+            tableRaçaData = [
+                ['Raça', 'Descrição'],
+                [data["orc"]["name"], data["orc"]["description"]]
+            ]
+        else:
+            tableRaçaData = [
+                ['Raça', 'Descrição'],
+                [data["human"]["name"], data["human"]["description"]],
+                [data["dwarf"]["name"], data["dwarf"]["description"]],
+                [data["nulr"]["name"], data["nulr"]["description"]],
+                [data["elf"]["name"], data["elf"]["description"]],
+                [data["woodElf"]["name"], data["woodElf"]["description"]],
+                [data["halfling"]["name"], data["halfling"]["description"]],
+                [data["orc"]["name"], data["orc"]["description"]]
+            ]
 
         tableRaça = SingleTable(tableRaçaData)
         tableRaça.inner_row_border = True
 
         print(tableRaça.table)
 
-        print("1 - Humano | 2 - Anão | 3 - Nulr | 4 - Elfo | 5 - Elfo da Floresta | 6 - Halfling | 7 - Orc")
+        if playerStartPoint == "nulr":
+            racesDict = {
+                "1": "dwarf",
+                "2": "nulr"
+            }
+            print("1 - Anão | 2 - Nulr")
+        elif playerStartPoint == "sul":
+            racesDict = {
+                "1": "human",
+                "2": "elf",
+                "3": "woodElf",
+                "4": "halfling"
+            }
+            print("1 - Humano | 2 - Elfo | 3 - Elfo da Floresta | 4 - Halfling")
+        elif playerStartPoint == "desertoDosOssos":
+            racesDict = {
+                "1": "orc"
+            }
+            print("1 - Orc")
+        else:
+            racesDict = {
+                "1": "human",
+                "2": "dwarf",
+                "3": "nulr",
+                "4": "elf",
+                "5": "woodElf",
+                "6": "halfling",
+                "7": "orc"
+            }
+            print("1 - Humano | 2 - Anão | 3 - Nulr | 4 - Elfo | 5 - Elfo da Floresta | 6 - Halfling | 7 - Orc")
 
         playerRace = input("\nSua raça: ")
 
-        if playerRace in availabeRaces:
+        if playerRace in racesDict:
             playerRace = racesDict.get(playerRace)
-            break
+            raceScreen = False
         else:
             #Update ERRO RAÇA
             os.system("cls")
@@ -117,7 +161,8 @@ def createCharacter():
             print("A Raça inserida não existe!")
             input("\nPressione Enter para continuar...")
 
-    while True:
+    classScreen = True
+    while classScreen == True:
         #Update CLASSE
         os.system("cls")
         print("CRIAÇÃO DE NOVO PERSONAGEM")
@@ -127,31 +172,126 @@ def createCharacter():
         print(f"\nCerto, você se tornou um(a) {data[playerRace]['name']}, muito bom! Porque não escolher uma raça?\n")
         
         tableClasseData = [
-            ['Classe', 'Descrição'],
-            [data["warrior"]["name"], data["warrior"]["description"]],
-            [data["ranger"]["name"], data["ranger"]["description"]],
-            [data["wizard"]["name"], data["wizard"]["description"]],
-            [data["bjoretNen"]["name"], data["bjoretNen"]["description"]],
-            [data["assassin"]["name"], data["assassin"]["description"]],
-            [data["cleric"]["name"], data["cleric"]["description"]],
-            [data["paladin"]["name"], data["paladin"]["description"]],
-            [data["barbarian"]["name"], data["barbarian"]["description"]],
-            [data["bard"]["name"], data["bard"]["description"]],
-            [data["monk"]["name"], data["monk"]["description"]]
         ]
+        classDict = {}
+
+        if playerRace == "nulr":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["warrior"]["name"], data["warrior"]["description"]],
+                [data["ranger"]["name"], data["ranger"]["description"]],
+                [data["bjoretNen"]["name"], data["bjoretNen"]["description"]],
+                [data["assassin"]["name"], data["assassin"]["description"]],
+                [data["barbarian"]["name"], data["barbarian"]["description"]],
+                [data["bard"]["name"], data["bard"]["description"]]
+            ]
+        elif playerRace == "dwarf":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["warrior"]["name"], data["warrior"]["description"]],
+                [data["barbarian"]["name"], data["barbarian"]["description"]]
+            ]
+        elif playerRace == "human":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["warrior"]["name"], data["warrior"]["description"]],
+                [data["ranger"]["name"], data["ranger"]["description"]],
+                [data["wizard"]["name"], data["wizard"]["description"]],
+                [data["assassin"]["name"], data["assassin"]["description"]],
+                [data["cleric"]["name"], data["cleric"]["description"]],
+                [data["paladin"]["name"], data["paladin"]["description"]],
+                [data["monk"]["name"], data["monk"]["description"]]
+            ]
+        elif playerRace == "elf":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["ranger"]["name"], data["ranger"]["description"]],
+                [data["wizard"]["name"], data["wizard"]["description"]],
+                [data["cleric"]["name"], data["cleric"]["description"]],
+            ]
+        elif playerRace == "woodElf":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["warrior"]["name"], data["warrior"]["description"]],
+                [data["ranger"]["name"], data["ranger"]["description"]],
+                [data["assassin"]["name"], data["assassin"]["description"]]
+            ]
+        elif playerRace == "halfling":
+            tableClasseData = [
+                ['Classe', 'Descrição'],
+                [data["cleric"]["name"], data["cleric"]["description"]],
+                [data["bard"]["name"], data["bard"]["description"]]
+            ]
+        elif playerRace == "orc":
+            tableClasseData = [
+            ['Classe', 'Descrição'],
+                [data["warrior"]["name"], data["warrior"]["description"]],
+                [data["barbarian"]["name"], data["barbarian"]["description"]]
+            ]
 
         tableClasse = SingleTable(tableClasseData)
         tableClasse.inner_row_border = True
 
         print(tableClasse.table)
 
-        print("1 - Guerreiro | 2 - Ranger | 3 - Mago | 4 - Bjoret-Nen | 5 - Assassino | 6 - Clérigo | 7 - Paladino | 8 - Bárbaro | 9 - Bardo | 10 - Monge")
+        if playerRace == "nulr":
+            print("1 - Guerreiro | 2 - Ranger | 3 - Bjoret-Nen | 4 - Assassino | 5 - Bárbaro | 6 - Bardo")
+            classDict = {
+                "1": "warrior",
+                "2": "ranger",
+                "3": "bjoretNen",
+                "4": "assassin",
+                "5": "barbarian",
+                "6": "bard"
+            }
+        elif playerRace == "dwarf":
+            print("1 - Guerreiro | 2 - Bárbaro")
+            classDict = {
+                "1": "warrior",
+                "2": "barbarian"
+            }
+        elif playerRace == "human":
+            print("1 - Guerreiro | 2 - Ranger | 3 - Mago | 4 - Assassino | 5 - Clérigo | 6 - Paladino")
+            classDict = {
+                "1": "warrior",
+                "2": "ranger",
+                "3": "wizard",
+                "4": "assassin",
+                "5": "cleric",
+                "6": "paladin"
+            }
+        elif playerRace == "elf":
+            print("1 - Ranger | 2 - Mago | 3 - Clérigo")
+            classDict = {
+                "1": "ranger",
+                "2": "wizard",
+                "3": "cleric"
+            }
+        elif playerRace == "woodElf":
+            print("1 - Guerreiro | 2 - Ranger | 3 - Assassino")
+            classDict = {
+                "1": "warrior",
+                "2": "ranger",
+                "3": "assassin"
+            }
+        elif playerRace == "halfling":
+            print("1 - Clérigo | 2 - Bardo")
+            classDict = {
+                "1": "cleric",
+                "2": "bard"
+            }
+        elif playerRace == "orc":
+            print("1 - Guerreiro | 2 - Bárbaro")
+            classDict = {
+                "1": "warrior",
+                "2": "barbarian"
+            }
 
         playerClass = input("\nSua classe: ")
 
-        if playerClass in availabeClasses:
+        if playerClass in classDict:
             playerClass = classDict.get(playerClass)
-            break
+            classScreen = False
         else:
             #Update ERRO CLASSE
             os.system("cls")
@@ -160,66 +300,72 @@ def createCharacter():
             print("A Classe inserida não existe!")
             input("\nPressione Enter para continuar...")
 
-    while True:
-        #Update LINGUAGEM
+    #Update NOME
+    screenNome = True
+    while screenNome == True:
+        thoseGenres = ["M", "m", "F", "f"]
+
         os.system("cls")
         print("CRIAÇÃO DE NOVO PERSONAGEM")
 
-        print(art.characterClass(playerClass))
+        print(f"\nAté aqui, sua raça é {playerRace} e sua classe é {playerClass}.")
 
-        print(f"Vejamos, você é {playerName}, um(a) {data[playerRace]['name']} {data[playerClass]['name']}(a), até aqui, tudo parece perfeito, mas agora você deve escolher um idioma para o seu personagem.")
+        #Nome
+        print("\nAgora, você precisa dar um nome ao seu personagem.")
 
-        tableLinguaData = [
-            ['Idioma', 'Descrição'],
-            [data["espocioComum"]["name"], data["espocioComum"]["description"]],
-            [data["espocioAntigo"]["name"], data["espocioAntigo"]["description"]],
-            [data["nulrfanghe"]["name"], data["nulrfanghe"]["description"]],
-        ]
+        print(dragonBeforeName)
 
-        tableLingua = SingleTable(tableLinguaData)
-        tableLingua.inner_row_border = True
+        playerName = input("\nSeu nome: ")
+        print("\nAgora, seu personagem precisa de um gênero.")
+        playerGenre = input("\nSeu gênero [M/F]: ")
 
-        print(tableLingua.table)
-        print("1 - Espócio Comum | 2 - Espócio Antigo | 3 - Nulrfanghë")
-
-        playerLanguage = input("\nSeu Idioma: ")
-
-        if playerLanguage in availabeLanguages:
-            playerLanguage = languagesDict.get(playerLanguage)
-            break
+        if playerGenre in thoseGenres:
+            if playerRace == "nulr" or "dwarf":
+                playerLanguage = "nulrfanghe"
+            elif playerRace == "orc" or "woodElf":
+                playerLanguage = "espocioAntigo"
+            else:
+                playerLanguage = "espocioComum"
+            
+            screenNome = False
         else:
-            #Update ERRO CLASSE
             os.system("cls")
             print("CRIAÇÃO DE NOVO PERSONAGEM")
 
-            print("O Idioma inserido não existe!")
+            print("O gênero inserido não está disponível!")
             input("\nPressione Enter para continuar...")
 
     #Update IDADE
     os.system("cls")
     print("CRIAÇÃO DE NOVO PERSONAGEM")
 
-    print(f"\nCerto {playerName}, agora você fala {data[playerLanguage]['name']}, insira sua idade para fins... inúteis.\n")
+    print(f"\nCerto {playerName}, agora você fala {data[playerLanguage]['name']}, é um {data[playerRace]['name']} e sua classe é {data[playerClass]['name']}. Insira sua idade para fins... inúteis.\n")
 
     playerAge = input("Sua idade: ")
 
-    #Update ALTURA
-    os.system("cls")
-    print("CRIAÇÃO DE NOVO PERSONAGEM")
+    tall = ["orc", "woodElf"]
+    medium = ["human", "elf", "nulr"]
+    tiny = ["dwarf", "halfling"]
 
-    print(art.characterAge(playerAge))
+    if playerRace in tall:
+        thisHeight = random.randint(190, 250)
+        playerHeight = thisHeight
+    elif playerRace in medium:
+        thisHeight = random.randint(150, 190)
+        playerHeight = thisHeight
+    elif playerRace in tiny:
+        thisHeight = random.randint(50, 150)
+        playerHeight = thisHeight
+    else:
+        thisHeight = random.randint(150, 180)
+        playerHeight = thisHeight
 
-    print(f"\nOk {playerName}, a sua altura por favor.\n")
-
-    playerHeight = input("Sua altura (em cm): ")
 
     #Update ARMA FAVORITA
     os.system("cls")
     print("CRIAÇÃO DE NOVO PERSONAGEM")
 
     print(f"\nEm Jarparur, você precisa se defender contra monstros e criaturas perigosas, para isso, você precisa de uma arma. Não, você não vai receber esta arma, mas quando encontrar, ela terá atributos melhores!\n")
-
-    count = 0
     
     classFavoriteWeapons = data[playerClass]["favoriteWeapons"]
     tempChoice = ""
@@ -230,43 +376,18 @@ def createCharacter():
     print("\n")
 
     for weapon in classFavoriteWeapons:
-        while tempChoice != "y" or tempChoice != "n":
+        while tempChoice == "" or tempChoice == "n":
             choice = input(f"{weapon} <- [y/n] ")
 
             if choice == "y":
-                tempChoice = choice
                 playerFavoriteWeapon = weapon
+                tempChoice = choice
                 break
             elif choice == "n":
                 tempChoice = choice
                 break
             else:
                 continue
-
-    #Update LOCAL DE INICIO
-    os.system("cls")
-    print("CRIAÇÃO DE NOVO PERSONAGEM")
-
-    count = 0
-
-    print(f"Certo {playerName}, você está pronto para entrar no mundo de Jarparur!\n")
-
-    tableRegiaoData = [
-        ['Região', 'Descrição'],
-        [dataWorld["nulr"]["name"], data["nulr"]["description"]],
-        [dataWorld["grenkeparur"]["name"], dataWorld["grenkeparur"]["description"]],
-        [dataWorld["desertoDosOssos"]["name"], dataWorld["desertoDosOssos"]["description"]],
-        [dataWorld["sul"]["name"], dataWorld["sul"]["description"]]
-    ]
-
-    tableRegiao = SingleTable(tableRegiaoData)
-    tableRegiao.inner_row_border = True
-
-    print(tableRegiao.table)
-    print("1 - Norte | 2 - Grenkëparur | 3 - Deserto dos Ossos | 4 - O Sul")
-    
-    playerStartPoint = input("\nSeu ponto de início: ")
-    playerStartPoint = regionsDict.get(playerStartPoint)
 
     #-------------------------------------------------------------------------------/
 
@@ -316,19 +437,22 @@ def createCharacter():
     else:
         playerWeapon = "203"
 
-    #Define Base ABILITIES
-    if playerClass == "wizard":
-        playerAbility1 = "111"
-        playerAbility2 = "112"
-    
-    elif playerClass == "bjoretNen":
-        playerAbility1 = "151"
-        playerAbility2 = "152"
-    
-    else:
-        playerAbility1 = ""
-        playerAbility2 = ""
+    playerArmor = 0
 
+    if playerHead != "":
+        playerArmor += data["items"][playerHead]["armor"]
+    elif playerTorso != "":
+        playerArmor += data["items"][playerTorso]["armor"]
+    elif playerArms != "":
+        playerArmor += data["items"][playerArms]["armor"]
+    elif playerHands != "":
+        playerArmor += data["items"][playerHands]["armor"]
+    elif playerLegs != "":
+        playerArmor += data["items"][playerLegs]["armor"]
+    elif playerFoot != "":
+        playerArmor != data["items"][playerFoot]["armor"]
+
+    baseDamage = data["items"][playerWeapon]["damage"]
 
     playerData = {
         "playerName": f"{playerName}", #INPUT
@@ -339,16 +463,16 @@ def createCharacter():
         "playerAge": int(playerAge), #INPUT
         "playerHeight": (int(playerHeight)/100), #INPUT
 
-        "playerHealth": int(data[playerClass]['health']),
-        "playerMana": int(data[playerClass]['mana']),
-        "playerArmor": int(data[playerClass]['armor']),
+        "playerHealth": int(data[playerClass]['constitution']),
+        "playerMaxHealth": int(data[playerClass]['constitution']),
+        "playerMana": int(data[playerClass]['intelligence']),
+        "playerArmor": playerArmor,
+        "baseDamage": baseDamage,
 
         "playerLevel": 0,
         "upgradePoints": 0,
         "playerXP": 0,
         "playerMood": "Bem",
-        
-        "playerVelocity": int(data[playerClass]['velocity']),
 
         "playerStrength": int(data[playerClass]['strength']),
         "playerDexterity": int(data[playerClass]['dexterity']),
@@ -367,14 +491,10 @@ def createCharacter():
             "hands": f"{playerHands}",
             "legs": f"{playerLegs}",
             "foot": f"{playerFoot}",
+            "ring": "",
 
             "slots": [f"{playerWeapon}", "", "", "", "", "", "", ""],
             "bag": ["", "", ""]
-        },
-
-        "playerAbilities": {
-            "ability1": f"{playerAbility1}",
-            "ability2": f"{playerAbility2}"
         },
 
         "playerWorld": {
@@ -397,13 +517,13 @@ def createCharacter():
     print(f"Idade: {playerAge}")
     print(f"Altura: {int(playerHeight)/100}")
     print(f"\n")
-    print(f"Vida: {data[playerClass]['health']}")
-    print(f"Mana: {data[playerClass]['mana']}")
-    print(f"Armadura: {data[playerClass]['armor']}")
-    print(f"Nível: 1")
+    print(f"Vida: {data[playerClass]['constitution']}")
+    print(f"Mana: {data[playerClass]['intelligence']}")
+    print(f"Armadura: {playerArmor}")
+    print(f"Dano base: {baseDamage}")
+    print(f"Nível: 0")
     print(f"XP: 0")
     print(f"\n")
-    print(f"Velocidade: {data[playerClass]['velocity']}")
     print(f"\n")
     print(f"Força: {data[playerClass]['strength']}")
     print(f"Destreza: {data[playerClass]['dexterity']}")
@@ -504,8 +624,8 @@ def createCharacter():
             return random.choice(allClasses)
 
     def defLanguage(thisRace):
-        nulrfangheRaces = ["nulr", "elf"]
-        espocioComumRaces = ["human", "dwarf", "halfling"]
+        nulrfangheRaces = ["nulr"]
+        espocioComumRaces = ["human", "dwarf", "halfling", "elf"]
         espocioAntigoRaces = ["orc", "woodElf"]
 
         if thisRace in nulrfangheRaces:
@@ -536,8 +656,8 @@ def createCharacter():
             return thisHeight
 
     def defHomeLand(thisRace):
-        nulrRaces = ["nulr", "elf"]
-        sulRaces = ["human", "woodElf", "dwarf", "halfling"]
+        nulrRaces = ["nulr"]
+        sulRaces = ["human", "woodElf", "dwarf", "halfling", "elf"]
         desertoDosOssosRaces = ["orc"]
 
         if thisRace in nulrRaces:
@@ -554,141 +674,610 @@ def createCharacter():
         
         return random.choice(poss)
 
-    def defTorsoItem(thisClass):
-        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
-        meeleeClasses = ["warrior", "paladin"]
-        rangedClasses = ["ranger", "druid"]
+    def defSlots(thisClass, level):
+        t4Weapons = {
+            "warrior": data["items"]["t4Warrior"][7],
+            "ranger": data["items"]["t4Ranger"][7],
+            "wizard": data["items"]["t4Wizard"][7],
+            "bjoretNen": data["items"]["t4BjoretNen"][7],
+            "cleric": data["items"]["t4Cleric"][7],
+            "assassin": data["items"]["t4Assassin"][7],
+            "cleric": data["items"]["t4Cleric"][7],
+            "paladin": data["items"]["t4Paladin"][7],
+            "barbarian": data["items"]["t4Barbarian"][7],
+            "druid": data["items"]["t4Druid"][7],
+            "bard": data["items"]["t4Bard"][7],
+            "monk": data["items"]["t4Monk"][7]
+        }
 
-        if thisClass in nonMagicalClasses:
-            return "401"
+        t3Weapons = {
+            "warrior": data["items"]["t3Warrior"][7],
+            "ranger": data["items"]["t3Ranger"][7],
+            "wizard": data["items"]["t3Wizard"][7],
+            "bjoretNen": data["items"]["t3BjoretNen"][7],
+            "cleric": data["items"]["t3Cleric"][7],
+            "assassin": data["items"]["t3Assassin"][7],
+            "cleric": data["items"]["t3Cleric"][7],
+            "paladin": data["items"]["t3Paladin"][7],
+            "barbarian": data["items"]["t3Barbarian"][7],
+            "druid": data["items"]["t3Druid"][7],
+            "bard": data["items"]["t3Bard"][7],
+            "monk": data["items"]["t3Monk"][7]
+        }
+
+        t2Weapons = {
+            "warrior": data["items"]["t2Warrior"][7],
+            "ranger": data["items"]["t2Ranger"][7],
+            "wizard": data["items"]["t2Wizard"][7],
+            "bjoretNen": data["items"]["t2BjoretNen"][7],
+            "cleric": data["items"]["t2Cleric"][7],
+            "assassin": data["items"]["t2Assassin"][7],
+            "cleric": data["items"]["t2Cleric"][7],
+            "paladin": data["items"]["t2Paladin"][7],
+            "barbarian": data["items"]["t2Barbarian"][7],
+            "druid": data["items"]["t2Druid"][7],
+            "bard": data["items"]["t2Bard"][7],
+            "monk": data["items"]["t2Monk"][7]
+        }
+
+        t1Weapons = {
+            "warrior": data["items"]["t1Warrior"][7],
+            "ranger": data["items"]["t1Ranger"][7],
+            "wizard": data["items"]["t1Wizard"][7],
+            "bjoretNen": data["items"]["t1BjoretNen"][7],
+            "cleric": data["items"]["t1Cleric"][7],
+            "assassin": data["items"]["t1Assassin"][7],
+            "cleric": data["items"]["t1Cleric"][7],
+            "paladin": data["items"]["t1Paladin"][7],
+            "barbarian": data["items"]["t1Barbarian"][7],
+            "druid": data["items"]["t1Druid"][7],
+            "bard": data["items"]["t1Bard"][7],
+            "monk": data["items"]["t1Monk"][7]
+        }
+
+        if level == 0:
+            return t4Weapons[thisClass]
+        elif level >= 1 and level <= 5:
+            return t4Weapons[thisClass]
+        elif level >= 6 and level <= 10:
+            return t3Weapons[thisClass]
+        elif level >= 11 and level <= 15:
+            return t2Weapons[thisClass]
+        elif level >= 16 and level <= 20:
+            return t1Weapons[thisClass]
+
+    def defArmor(thisTorso, thisLegs, thisFoot):
+        finalArmor = 0
+
+        if thisLegs != "":
+            finalArmor += data["items"][thisTorso]["armor"] + data["items"][thisLegs]["armor"] + data["items"][thisFoot]["armor"]
         else:
-            return "5111"
+            finalArmor += data["items"][thisTorso]["armor"] + data["items"][thisFoot]["armor"]
 
-    def defLegsItem(thisClass):
-        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
-        meeleeClasses = ["warrior", "paladin"]
-        rangedClasses = ["ranger", "druid"]
+        return finalArmor
 
-        if thisClass in nonMagicalClasses:
-            return "402"
-        else:
-            return ""
+    def defItems(part, thisClass, level):
+        tier4Parts = {
+            "warrior":{
+                "head": data['items']['t4Warrior'][0],
+                "torso": data['items']['t4Warrior'][1],
+                "legs": data['items']['t4Warrior'][2],
+                "foot": data['items']['t4Warrior'][3],
+                "arms": data['items']['t4Warrior'][4],
+                "hands": data['items']['t4Warrior'][5]
+            },
 
-    def defFootItem(thisClass):
-        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
-        meeleeClasses = ["warrior", "paladin"]
-        rangedClasses = ["ranger", "druid"]
+            "ranger":{
+                "head": data['items']['t4Ranger'][0],
+                "torso": data['items']['t4Ranger'][1],
+                "legs": data['items']['t4Ranger'][2],
+                "foot": data['items']['t4Ranger'][3],
+                "arms": data['items']['t4Ranger'][4],
+                "hands": data['items']['t4Ranger'][5]
+            },
 
-        if thisClass in nonMagicalClasses:
-            return "501"
-        else:
-            return "501"
+            "wizard":{
+                "head": data['items']['t4Wizard'][0],
+                "torso": data['items']['t4Wizard'][1],
+                "legs": data['items']['t4Wizard'][2],
+                "foot": data['items']['t4Wizard'][3],
+                "arms": data['items']['t4Wizard'][4],
+                "hands": data['items']['t4Wizard'][5]
+            },
 
-    # #Define Base ABILITIES
-    # if thisClass == "wizard":
-    #     playerAbility1 = "111"
-    #     playerAbility2 = "112"
-    
-    # elif thisClass == "bjoretNen":
-    #     playerAbility1 = "151"
-    #     playerAbility2 = "152"
-    
-    # else:
-    #     playerAbility1 = ""
-    #     playerAbility2 = ""
+            "bjoretNen":{
+                "head": data['items']['t4BjoretNen'][0],
+                "torso": data['items']['t4BjoretNen'][1],
+                "legs": data['items']['t4BjoretNen'][2],
+                "foot": data['items']['t4BjoretNen'][3],
+                "arms": data['items']['t4BjoretNen'][4],
+                "hands": data['items']['t4BjoretNen'][5]
+            },
 
-    def defSlots(thisClass):
-        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
-        meeleeClasses = ["warrior", "paladin"]
-        rangedClasses = ["ranger", "druid"]
+            "assassin":{
+                "head": data['items']['t4Assassin'][0],
+                "torso": data['items']['t4Assassin'][1],
+                "legs": data['items']['t4Assassin'][2],
+                "foot": data['items']['t4Assassin'][3],
+                "arms": data['items']['t4Assassin'][4],
+                "hands": data['items']['t4Assassin'][5]
+            },
 
-        if thisClass in meeleeClasses:
-            return "101"
-        elif thisClass in rangedClasses:
-            return "301"
-        elif thisClass == "wizard":
-            return "6111"
-    
-        elif thisClass == "bjoretNen":
-            return "6151"
-        
-        elif thisClass == "assassin":
-            return "102"
-        
-        elif thisClass == "barbarian":
-            return "201"
+            "cleric":{
+                "head": data['items']['t4Cleric'][0],
+                "torso": data['items']['t4Cleric'][1],
+                "legs": data['items']['t4Cleric'][2],
+                "foot": data['items']['t4Cleric'][3],
+                "arms": data['items']['t4Cleric'][4],
+                "hands": data['items']['t4Cleric'][5]
+            },
 
-        elif thisClass == "bard":
-            return "6112"
-        else:
-            return "203"
+            "paladin":{
+                "head": data['items']['t4Paladin'][0],
+                "torso": data['items']['t4Paladin'][1],
+                "legs": data['items']['t4Paladin'][2],
+                "foot": data['items']['t4Paladin'][3],
+                "arms": data['items']['t4Paladin'][4],
+                "hands": data['items']['t4Paladin'][5]
+            },
 
-    def defAbility1(thisClass):
-        if thisClass == "wizard":
-            return "111"
-        elif thisClass == "bjoretNen":
-            return "151"
-        else:
-            return ""
-    
-    def defAbility2(thisClass):
-        if thisClass == "wizard":
-            return "112"
-        elif thisClass == "bjoretNen":
-            return "152"
-        else:
-            return ""
+            "barbarian":{
+                "head": data['items']['t4Barbarian'][0],
+                "torso": data['items']['t4Barbarian'][1],
+                "legs": data['items']['t4Barbarian'][2],
+                "foot": data['items']['t4Barbarian'][3],
+                "arms": data['items']['t4Barbarian'][4],
+                "hands": data['items']['t4Barbarian'][5]
+            },
 
-    # "name": "npcName", 
-    # "genre": "npcGenre", 
-    # "race": "npcRace", 
-    # "class": "npcClass",
-    # "language": "npcLanguage",
-    # "age": 0,
-    # "height": 0,
+            "druid":{
+                "head": data['items']['t4Druid'][0],
+                "torso": data['items']['t4Druid'][1],
+                "legs": data['items']['t4Druid'][2],
+                "foot": data['items']['t4Druid'][3],
+                "arms": data['items']['t4Druid'][4],
+                "hands": data['items']['t4Druid'][5]
+            },
 
-    # "health": 0,
-    # "mana": 0,
-    # "armor": 0,
+            "bard":{
+                "head": data['items']['t4Bard'][0],
+                "torso": data['items']['t4Bard'][1],
+                "legs": data['items']['t4Bard'][2],
+                "foot": data['items']['t4Bard'][3],
+                "arms": data['items']['t4Bard'][4],
+                "hands": data['items']['t4Bard'][5]
+            },
 
-    # "level": 1,
-    # "XP": 0,
-    # "mood": "npcMood",
-    
-    # "velocity": 0,
+            "monk":{
+                "head": data['items']['t4Monk'][0],
+                "torso": data['items']['t4Monk'][1],
+                "legs": data['items']['t4Monk'][2],
+                "foot": data['items']['t4Monk'][3],
+                "arms": data['items']['t4Monk'][4],
+                "hands": data['items']['t4Monk'][5]
+            }
+        }
+        tier3Parts = {
+            "warrior":{
+                "head": data['items']['t3Warrior'][0],
+                "torso": data['items']['t3Warrior'][1],
+                "legs": data['items']['t3Warrior'][2],
+                "foot": data['items']['t3Warrior'][3],
+                "arms": data['items']['t3Warrior'][4],
+                "hands": data['items']['t3Warrior'][5]
+            },
 
-    # "strength": 0,
-    # "dexterity": 0,
-    # "constitution": 0,
-    # "intelligence": 0,
-    # "wisdom": 0,
-    # "charisma": 0,
+            "ranger":{
+                "head": data['items']['t3Ranger'][0],
+                "torso": data['items']['t3Ranger'][1],
+                "legs": data['items']['t3Ranger'][2],
+                "foot": data['items']['t3Ranger'][3],
+                "arms": data['items']['t3Ranger'][4],
+                "hands": data['items']['t3Ranger'][5]
+            },
 
-    # "homeLand": "npcHomeLand",
-    # "favoriteWeapon": "npcFavWeapon",
+            "wizard":{
+                "head": data['items']['t3Wizard'][0],
+                "torso": data['items']['t3Wizard'][1],
+                "legs": data['items']['t3Wizard'][2],
+                "foot": data['items']['t3Wizard'][3],
+                "arms": data['items']['t3Wizard'][4],
+                "hands": data['items']['t3Wizard'][5]
+            },
 
-    # "inventory": {
-    #     "head": f"",
-    #     "torso": "npcTorso",
-    #     "arms": "",
-    #     "hands": "",
-    #     "legs": "npcLegs",
-    #     "foot": "npcFoot",
+            "bjoretNen":{
+                "head": data['items']['t3BjoretNen'][0],
+                "torso": data['items']['t3BjoretNen'][1],
+                "legs": data['items']['t3BjoretNen'][2],
+                "foot": data['items']['t3BjoretNen'][3],
+                "arms": data['items']['t3BjoretNen'][4],
+                "hands": data['items']['t3BjoretNen'][5]
+            },
 
-    #     "slots": ["npcStarterWeapon", "", "", "", "", "", "", ""],
-    #     "bag": ["", "", ""]
-    # },
+            "assassin":{
+                "head": data['items']['t3Assassin'][0],
+                "torso": data['items']['t3Assassin'][1],
+                "legs": data['items']['t3Assassin'][2],
+                "foot": data['items']['t3Assassin'][3],
+                "arms": data['items']['t3Assassin'][4],
+                "hands": data['items']['t3Assassin'][5]
+            },
 
-    # "abilities": {
-    #     "ability1": "npcStarterAbility1",
-    #     "ability2": f"npcStarterAbility2"
-    # },
+            "cleric":{
+                "head": data['items']['t3Cleric'][0],
+                "torso": data['items']['t3Cleric'][1],
+                "legs": data['items']['t3Cleric'][2],
+                "foot": data['items']['t3Cleric'][3],
+                "arms": data['items']['t3Cleric'][4],
+                "hands": data['items']['t3Cleric'][5]
+            },
 
-    # "world": {
-    #     "worldRegion": "npcHomeLand",
-    #     "localRegion": "",
-    #     "building": ""
-    # }
+            "paladin":{
+                "head": data['items']['t3Paladin'][0],
+                "torso": data['items']['t3Paladin'][1],
+                "legs": data['items']['t3Paladin'][2],
+                "foot": data['items']['t3Paladin'][3],
+                "arms": data['items']['t3Paladin'][4],
+                "hands": data['items']['t3Paladin'][5]
+            },
+
+            "barbarian":{
+                "head": data['items']['t3Barbarian'][0],
+                "torso": data['items']['t3Barbarian'][1],
+                "legs": data['items']['t3Barbarian'][2],
+                "foot": data['items']['t3Barbarian'][3],
+                "arms": data['items']['t3Barbarian'][4],
+                "hands": data['items']['t3Barbarian'][5]
+            },
+
+            "druid":{
+                "head": data['items']['t3Druid'][0],
+                "torso": data['items']['t3Druid'][1],
+                "legs": data['items']['t3Druid'][2],
+                "foot": data['items']['t3Druid'][3],
+                "arms": data['items']['t3Druid'][4],
+                "hands": data['items']['t3Druid'][5]
+            },
+
+            "bard":{
+                "head": data['items']['t3Bard'][0],
+                "torso": data['items']['t3Bard'][1],
+                "legs": data['items']['t3Bard'][2],
+                "foot": data['items']['t3Bard'][3],
+                "arms": data['items']['t3Bard'][4],
+                "hands": data['items']['t3Bard'][5]
+            },
+
+            "monk":{
+                "head": data['items']['t3Monk'][0],
+                "torso": data['items']['t3Monk'][1],
+                "legs": data['items']['t3Monk'][2],
+                "foot": data['items']['t3Monk'][3],
+                "arms": data['items']['t3Monk'][4],
+                "hands": data['items']['t3Monk'][5]
+            }
+        }
+        tier2Parts = {
+            "warrior":{
+                "head": data['items']['t2Warrior'][0],
+                "torso": data['items']['t2Warrior'][1],
+                "legs": data['items']['t2Warrior'][2],
+                "foot": data['items']['t2Warrior'][3],
+                "arms": data['items']['t2Warrior'][4],
+                "hands": data['items']['t2Warrior'][5]
+            },
+
+            "ranger":{
+                "head": data['items']['t2Ranger'][0],
+                "torso": data['items']['t2Ranger'][1],
+                "legs": data['items']['t2Ranger'][2],
+                "foot": data['items']['t2Ranger'][3],
+                "arms": data['items']['t2Ranger'][4],
+                "hands": data['items']['t2Ranger'][5]
+            },
+
+            "wizard":{
+                "head": data['items']['t2Wizard'][0],
+                "torso": data['items']['t2Wizard'][1],
+                "legs": data['items']['t2Wizard'][2],
+                "foot": data['items']['t2Wizard'][3],
+                "arms": data['items']['t2Wizard'][4],
+                "hands": data['items']['t2Wizard'][5]
+            },
+
+            "bjoretNen":{
+                "head": data['items']['t2BjoretNen'][0],
+                "torso": data['items']['t2BjoretNen'][1],
+                "legs": data['items']['t2BjoretNen'][2],
+                "foot": data['items']['t2BjoretNen'][3],
+                "arms": data['items']['t2BjoretNen'][4],
+                "hands": data['items']['t2BjoretNen'][5]
+            },
+
+            "assassin":{
+                "head": data['items']['t2Assassin'][0],
+                "torso": data['items']['t2Assassin'][1],
+                "legs": data['items']['t2Assassin'][2],
+                "foot": data['items']['t2Assassin'][3],
+                "arms": data['items']['t2Assassin'][4],
+                "hands": data['items']['t2Assassin'][5]
+            },
+
+            "cleric":{
+                "head": data['items']['t2Cleric'][0],
+                "torso": data['items']['t2Cleric'][1],
+                "legs": data['items']['t2Cleric'][2],
+                "foot": data['items']['t2Cleric'][3],
+                "arms": data['items']['t2Cleric'][4],
+                "hands": data['items']['t2Cleric'][5]
+            },
+
+            "paladin":{
+                "head": data['items']['t2Paladin'][0],
+                "torso": data['items']['t2Paladin'][1],
+                "legs": data['items']['t2Paladin'][2],
+                "foot": data['items']['t2Paladin'][3],
+                "arms": data['items']['t2Paladin'][4],
+                "hands": data['items']['t2Paladin'][5]
+            },
+
+            "barbarian":{
+                "head": data['items']['t2Barbarian'][0],
+                "torso": data['items']['t2Barbarian'][1],
+                "legs": data['items']['t2Barbarian'][2],
+                "foot": data['items']['t2Barbarian'][3],
+                "arms": data['items']['t2Barbarian'][4],
+                "hands": data['items']['t2Barbarian'][5]
+            },
+
+            "druid":{
+                "head": data['items']['t2Druid'][0],
+                "torso": data['items']['t2Druid'][1],
+                "legs": data['items']['t2Druid'][2],
+                "foot": data['items']['t2Druid'][3],
+                "arms": data['items']['t2Druid'][4],
+                "hands": data['items']['t2Druid'][5]
+            },
+
+            "bard":{
+                "head": data['items']['t2Bard'][0],
+                "torso": data['items']['t2Bard'][1],
+                "legs": data['items']['t2Bard'][2],
+                "foot": data['items']['t2Bard'][3],
+                "arms": data['items']['t2Bard'][4],
+                "hands": data['items']['t2Bard'][5]
+            },
+
+            "monk":{
+                "head": data['items']['t2Monk'][0],
+                "torso": data['items']['t2Monk'][1],
+                "legs": data['items']['t2Monk'][2],
+                "foot": data['items']['t2Monk'][3],
+                "arms": data['items']['t2Monk'][4],
+                "hands": data['items']['t2Monk'][5]
+            }
+        }
+        tier1Parts = {
+            "warrior":{
+                "head": data['items']['t1Warrior'][0],
+                "torso": data['items']['t1Warrior'][1],
+                "legs": data['items']['t1Warrior'][2],
+                "foot": data['items']['t1Warrior'][3],
+                "arms": data['items']['t1Warrior'][4],
+                "hands": data['items']['t1Warrior'][5]
+            },
+
+            "ranger":{
+                "head": data['items']['t1Ranger'][0],
+                "torso": data['items']['t1Ranger'][1],
+                "legs": data['items']['t1Ranger'][2],
+                "foot": data['items']['t1Ranger'][3],
+                "arms": data['items']['t1Ranger'][4],
+                "hands": data['items']['t1Ranger'][5]
+            },
+
+            "wizard":{
+                "head": data['items']['t1Wizard'][0],
+                "torso": data['items']['t1Wizard'][1],
+                "legs": data['items']['t1Wizard'][2],
+                "foot": data['items']['t1Wizard'][3],
+                "arms": data['items']['t1Wizard'][4],
+                "hands": data['items']['t1Wizard'][5]
+            },
+
+            "bjoretNen":{
+                "head": data['items']['t1BjoretNen'][0],
+                "torso": data['items']['t1BjoretNen'][1],
+                "legs": data['items']['t1BjoretNen'][2],
+                "foot": data['items']['t1BjoretNen'][3],
+                "arms": data['items']['t1BjoretNen'][4],
+                "hands": data['items']['t1BjoretNen'][5]
+            },
+
+            "assassin":{
+                "head": data['items']['t1Assassin'][0],
+                "torso": data['items']['t1Assassin'][1],
+                "legs": data['items']['t1Assassin'][2],
+                "foot": data['items']['t1Assassin'][3],
+                "arms": data['items']['t1Assassin'][4],
+                "hands": data['items']['t1Assassin'][5]
+            },
+
+            "cleric":{
+                "head": data['items']['t1Cleric'][0],
+                "torso": data['items']['t1Cleric'][1],
+                "legs": data['items']['t1Cleric'][2],
+                "foot": data['items']['t1Cleric'][3],
+                "arms": data['items']['t1Cleric'][4],
+                "hands": data['items']['t1Cleric'][5]
+            },
+
+            "paladin":{
+                "head": data['items']['t1Paladin'][0],
+                "torso": data['items']['t1Paladin'][1],
+                "legs": data['items']['t1Paladin'][2],
+                "foot": data['items']['t1Paladin'][3],
+                "arms": data['items']['t1Paladin'][4],
+                "hands": data['items']['t1Paladin'][5]
+            },
+
+            "barbarian":{
+                "head": data['items']['t1Barbarian'][0],
+                "torso": data['items']['t1Barbarian'][1],
+                "legs": data['items']['t1Barbarian'][2],
+                "foot": data['items']['t1Barbarian'][3],
+                "arms": data['items']['t1Barbarian'][4],
+                "hands": data['items']['t1Barbarian'][5]
+            },
+
+            "druid":{
+                "head": data['items']['t1Druid'][0],
+                "torso": data['items']['t1Druid'][1],
+                "legs": data['items']['t1Druid'][2],
+                "foot": data['items']['t1Druid'][3],
+                "arms": data['items']['t1Druid'][4],
+                "hands": data['items']['t1Druid'][5]
+            },
+
+            "bard":{
+                "head": data['items']['t1Bard'][0],
+                "torso": data['items']['t1Bard'][1],
+                "legs": data['items']['t1Bard'][2],
+                "foot": data['items']['t1Bard'][3],
+                "arms": data['items']['t1Bard'][4],
+                "hands": data['items']['t1Bard'][5]
+            },
+
+            "monk":{
+                "head": data['items']['t1Monk'][0],
+                "torso": data['items']['t1Monk'][1],
+                "legs": data['items']['t1Monk'][2],
+                "foot": data['items']['t1Monk'][3],
+                "arms": data['items']['t1Monk'][4],
+                "hands": data['items']['t1Monk'][5]
+            }
+        }
+
+        if level == 0:
+            return tier4Parts[thisClass][part]
+        elif level >= 1 and level <= 5:
+            return tier4Parts[thisClass][part]
+        elif level >= 6 and level <= 10:
+            return tier3Parts[thisClass][part]
+        elif level >= 11 and level <= 15:
+            return tier2Parts[thisClass][part]
+        elif level >= 16 and level <= 20:
+            return tier1Parts[thisClass][part]
+
+    def defAttr(thisClass, level, thisAttr):
+        attr = {
+            "warrior": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level
+            },
+
+            "ranger": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level
+            },
+
+            "assassin": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level
+            },
+
+            "cleric": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level
+            },
+
+            "paladin": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level
+            },
+
+            "barbarian": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+            },
+
+            "druid": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level
+            },
+
+            "monk": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level
+            },
+
+            "wizard": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level
+            },
+
+            "bjoretNen": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level
+            },
+
+            "bard": {
+                "strength": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "constitution": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "dexterity": random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level,
+                "intelligence": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "wisdom": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level,
+                "charisma": random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level
+            }
+        }
+
+        return attr[thisClass][thisAttr]
+
+    # skill forte = random.randint(int(convertLevelToUpgradePoints(level, level-1)/2), int(convertLevelToUpgradePoints(level, level-1)) )+ data[thisClass]["strength"] * level
+
+    # skill mediana = random.randint(int(convertLevelToUpgradePoints(level, level-1)/4), int(convertLevelToUpgradePoints(level, (level)-1)/2)) + data[thisClass]["strength"] * level
+
+    # skill fraca = random.randint(int(convertLevelToUpgradePoints(level, level-1)/8), int(convertLevelToUpgradePoints(level, (level)-1)/4)) + data[thisClass]["strength"] * level
 
     npcData = {}
 
@@ -711,8 +1300,6 @@ def createCharacter():
             "level": 1,
             "XP": 0,
             "mood": "npcMood",
-            
-            "velocity": 0,
 
             "strength": 0,
             "dexterity": 0,
@@ -725,7 +1312,7 @@ def createCharacter():
             "favoriteWeapon": "npcFavWeapon",
 
             "inventory": {
-                "head": f"",
+                "head": "",
                 "torso": "npcTorso",
                 "arms": "",
                 "hands": "",
@@ -736,11 +1323,6 @@ def createCharacter():
                 "bag": ["", "", ""]
             },
 
-            "abilities": {
-                "ability1": "npcStarterAbility1",
-                "ability2": f"npcStarterAbility2"
-            },
-
             "world": {
                 "worldRegion": "npcHomeLand",
                 "localRegion": "",
@@ -748,33 +1330,49 @@ def createCharacter():
             }
         }
 
+        nonMagicalClasses = ["warrior", "ranger", "assassin", "cleric", "paladin", "barbarian", "druid", "bard", "monk"]
+
+        thisNpcData["level"] = random.randint(0, 20)
         thisNpcData["genre"] = defGend()
         thisNpcData["name"] = genName(thisNpcData["genre"])
         thisNpcData["race"] = defRace()
         thisNpcData["class"] = defClass(thisNpcData["race"])
         thisNpcData["language"] = defLanguage(thisNpcData["race"])
-        thisNpcData["age"] = int(random.random()*100)
+        thisNpcData["age"] = random.randint(18, 50)
         thisNpcData["height"] = getHeight(thisNpcData["race"])
-        thisNpcData["health"] = int(data[thisNpcData["class"]]["health"])
-        thisNpcData["mana"] = int(data[thisNpcData["class"]]["mana"])
-        thisNpcData["armor"] = int(data[thisNpcData["class"]]["armor"])
-        thisNpcData["level"] = 1
-        thisNpcData["XP"] = 0
+        thisNpcData["XP"] = convertLevelToXP(thisNpcData["level"])
         thisNpcData["mood"] = "Bem"
-        thisNpcData["velocity"] = int(data[thisNpcData["class"]]["velocity"])
-        thisNpcData["dexterity"] = int(data[thisNpcData["class"]]["dexterity"])
-        thisNpcData["constitution"] = int(data[thisNpcData["class"]]["constitution"])
-        thisNpcData["intelligence"] = int(data[thisNpcData["class"]]["intelligence"])
-        thisNpcData["wisdom"] = int(data[thisNpcData["class"]]["wisdom"])
-        thisNpcData["charisma"] = int(data[thisNpcData["class"]]["charisma"])
+
+        if thisNpcData["level"] > 1:
+            thisNpcData["constitution"] = defAttr(thisNpcData["class"], thisNpcData["level"], "constitution")
+            thisNpcData["dexterity"] = defAttr(thisNpcData["class"], thisNpcData["level"], "dexterity")
+            thisNpcData["strength"] = defAttr(thisNpcData["class"], thisNpcData["level"], "strength")
+            thisNpcData["intelligence"] = defAttr(thisNpcData["class"], thisNpcData["level"], "intelligence")
+            thisNpcData["wisdom"] = defAttr(thisNpcData["class"], thisNpcData["level"], "wisdom")
+            thisNpcData["charisma"] = defAttr(thisNpcData["class"], thisNpcData["level"], "charisma")
+        else:
+            thisNpcData["constitution"] = int(data[thisNpcData["class"]]["constitution"])*thisNpcData["level"]+1
+            thisNpcData["intelligence"] = int(data[thisNpcData["class"]]["intelligence"])*thisNpcData["level"]+1
+            thisNpcData["dexterity"] = int(data[thisNpcData["class"]]["dexterity"])*thisNpcData["level"]+1
+            thisNpcData["strength"] = int(data[thisNpcData["class"]]["strength"])*thisNpcData["level"]+1
+            thisNpcData["wisdom"] = int(data[thisNpcData["class"]]["wisdom"])*thisNpcData["level"]+1
+            thisNpcData["charisma"] = int(data[thisNpcData["class"]]["charisma"])*thisNpcData["level"]+1
+
         thisNpcData["homeLand"] = defHomeLand(thisNpcData["race"])
         thisNpcData["favoriteWeapon"] = defFavoriteWeapon(thisNpcData["class"])
-        thisNpcData["inventory"]["torso"] = defTorsoItem(thisNpcData["class"])
-        thisNpcData["inventory"]["legs"] = defLegsItem(thisNpcData["class"])
-        thisNpcData["inventory"]["foot"] = defFootItem(thisNpcData["class"])
-        thisNpcData["inventory"]["slots"][0] = defSlots(thisNpcData["class"])
-        thisNpcData["abilities"]["ability1"] = defAbility1(thisNpcData["class"])
-        thisNpcData["abilities"]["ability2"] = defAbility2(thisNpcData["class"])
+        thisNpcData["inventory"]["head"] = defItems("head", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["torso"] = defItems("torso", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["legs"] = defItems("legs", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["arms"] = defItems("arms", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["hands"] = defItems("hands", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["foot"] = defItems("foot", thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["inventory"]["slots"][0] = defSlots(thisNpcData["class"], thisNpcData["level"])
+        thisNpcData["health"] = int(thisNpcData["constitution"] * thisNpcData["level"])
+        thisNpcData["mana"] = int(thisNpcData["intelligence"] * thisNpcData["level"])
+        if thisNpcData["class"] in nonMagicalClasses:
+            thisNpcData["armor"] = defArmor(thisNpcData["inventory"]["torso"], thisNpcData["inventory"]["legs"], thisNpcData["inventory"]["foot"])
+        else:
+            thisNpcData["armor"] = defArmor(thisNpcData["inventory"]["torso"], "", thisNpcData["inventory"]["foot"])
         thisNpcData["world"]["worldRegion"] = thisNpcData["homeLand"]
 
         npcData[thisId] = thisNpcData
