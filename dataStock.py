@@ -42,7 +42,6 @@ class DataStock:
         playerCharisma = dataPlayer['playerCharisma']
         playerFavoriteWeapon = dataPlayer['playerFavoriteWeapon']
         playerInventory = dataPlayer['playerInventory']
-        playerAbilities = dataPlayer['playerAbilities']
 
         #GLOBALS WORLD DATA
         global worldName, worldType, worldAge, worldPopulation, nulr, grenkeparur, desertoDosOssos, sul
@@ -79,14 +78,13 @@ class DataStock:
         espocioAntigo = data["espocioAntigo"]
         nulfanghe = data["nulrfanghe"]
         items = data["items"]
-        abilities = data["abilities"]
 
     def seeAllData():
-        allPlayerData = [playerName, playerRace, playerClass, playerLanguage, playerAge, playerHeight, playerHealth, playerMana, playerArmor, playerLevel, playerXP, playerStrength, playerDexterity, playerConstitution, playerIntelligence, playerWisdom, playerCharisma, playerFavoriteWeapon, playerInventory, playerAbilities]
+        allPlayerData = [playerName, playerRace, playerClass, playerLanguage, playerAge, playerHeight, playerHealth, playerMana, playerArmor, playerLevel, playerXP, playerStrength, playerDexterity, playerConstitution, playerIntelligence, playerWisdom, playerCharisma, playerFavoriteWeapon, playerInventory]
 
         allWorldData = [worldName, worldAge, worldPopulation, worldType, nulr, grenkeparur, desertoDosOssos, sul]
 
-        allGameData = [human, dwarf, nulrnen, elf, woodElf, halfling, orc, warrior, ranger, wizard, bjoretNen, assassin, cleric, paladin, barbarian, druid, bard, monk, espocioComum, espocioAntigo, nulfanghe, items, abilities]
+        allGameData = [human, dwarf, nulrnen, elf, woodElf, halfling, orc, warrior, ranger, wizard, bjoretNen, assassin, cleric, paladin, barbarian, druid, bard, monk, espocioComum, espocioAntigo, nulfanghe, items]
 
         print("Player Data")
         for data in allPlayerData:

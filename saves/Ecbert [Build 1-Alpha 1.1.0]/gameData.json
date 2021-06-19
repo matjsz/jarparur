@@ -1,0 +1,1677 @@
+{
+    "human": {
+        "name": "Humano",
+        "description": "Humanos s\u00e3o ambiciosos e insistentes, talvez sejam a pr\u00f3pria defini\u00e7\u00e3o de lideran\u00e7a. \u00c9 a ra\u00e7a mais populosa de Jarparur.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+    "dwarf": {
+        "name": "An\u00e3o",
+        "description": "An\u00f5es s\u00e3o \u00f3timos ferreiros e adoram cavernas. An\u00f5es s\u00e3o encontrados em montanhas.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+    "nulr": {
+        "name": "N\u00f3rdico",
+        "description": "Tamb\u00e9m conhecidos como Nulr-Nen, vivem no extremo norte de Jarparunn. S\u00e3o conhecidos principalmente pela Magia Real."
+    },
+    "elf": {
+        "name": "Elfo",
+        "description": "Os elfos s\u00e3o conhecidos por sua arquitetura magn\u00edfica, seu conhecimento do universo e seus diferentes planos exist\u00eanciais.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+    "woodElf": {
+        "name": "Elfo da Floresta",
+        "description": "\u00d3timos ca\u00e7adores, diferente dos elfos comuns, os elfos da floresta levam um estilo de vida mais tribal nas florestas do Sul.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": []
+    },
+    "halfling": {
+        "name": "Halfling",
+        "description": "Halflings s\u00e3o \u00f3timos bardos, al\u00e9m de alegrarem a festa com suas divertidas can\u00e7\u00f5es, tamb\u00e9m podem ser \u00f3timos assassinos.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [],
+        "startPoint": ""
+    },
+    "orc": {
+        "name": "Orc",
+        "description": "Orcs vivem no Deserto dos Ossos, s\u00e3o extremamente resistentes, gra\u00e7as \u00e0 sua pele, que d\u00e1 a eles uma armadura natural.",
+        "allies": [],
+        "enemies": [],
+        "uniqueTraits": [
+            ""
+        ]
+    },
+    "warrior": {
+        "name": "Guerreiro",
+        "description": "Um bravo guerreiro pode trucidar legi\u00f5es inteiras de combatentes. devido a sua enorme for\u00e7a e resist\u00eancia.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 3,
+        "constitution": 4,
+        "intelligence": 2,
+        "wisdom": 2,
+        "charisma": 4,
+        "favoriteWeapons": [
+            "Arma de uma m\u00e3o"
+        ]
+    },
+    "ranger": {
+        "name": "Ranger",
+        "description": "Um \u00f3timo rastreador, al\u00e9m de ca\u00e7ador e flanco, os Rangers possuem uma precis\u00e3o impec\u00e1vel quando bem treinados.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 2,
+        "dexterity": 5,
+        "constitution": 3,
+        "intelligence": 3,
+        "wisdom": 4,
+        "charisma": 3,
+        "favoriteWeapons": [
+            "Arma de longo alcance"
+        ]
+    },
+    "wizard": {
+        "name": "Mago",
+        "description": "O Mago estuda as nu\u00e2nces do Cosmos de forma estoica, revelando ser um verdadeiro portador da magia arcana.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 2,
+        "dexterity": 3,
+        "constitution": 2,
+        "intelligence": 5,
+        "wisdom": 5,
+        "charisma": 3,
+        "favoriteWeapons": [
+            "M\u00e1gico",
+            "Utiliz\u00e1vel"
+        ]
+    },
+    "bjoretNen": {
+        "name": "Bjoret-Nen",
+        "description": "Buscam entender a origem dos sinais misteriosos de magia real, al\u00e9m de dominar os artif\u00edcios da Bjoret (Natureza)",
+        "health": 0,
+        "mana": 0,
+        "velocity": 0,
+        "armor": 0,
+        "strength": 2,
+        "dexterity": 3,
+        "constitution": 2,
+        "intelligence": 5,
+        "wisdom": 5,
+        "charisma": 3,
+        "favoriteWeapons": [
+            "M\u00e1gico"
+        ]
+    },
+    "assassin": {
+        "name": "Assassino",
+        "description": "Assassinos s\u00e3o sublimes rastreadores e possuem dano explosivo, se destacam em habilidades furtivas.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 5,
+        "constitution": 2,
+        "intelligence": 3,
+        "wisdom": 2,
+        "charisma": 3,
+        "favoriteWeapons": [
+            "Arma de uma m\u00e3o",
+            "Utiliz\u00e1vel"
+        ]
+    },
+    "cleric": {
+        "name": "Cl\u00e9rigo",
+        "description": "Basti\u00f5es da prote\u00e7\u00e3o e da justi\u00e7a, os cl\u00e9rigos buscam proteger seus aliados e a liberdade de seu povo.",
+        "health": 0,
+        "mana": 0,
+        "velocity": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 2,
+        "constitution": 5,
+        "intelligence": 3,
+        "wisdom": 3,
+        "charisma": 2,
+        "favoriteWeapons": [
+            "Arma de duas m\u00e3os",
+            "Utiliz\u00e1vel"
+        ]
+    },
+    "paladin": {
+        "name": "Paladino",
+        "description": "Sendo protetores da religi\u00e3o do Sul, s\u00e3o aben\u00e7oados por suas entidades e protegem suas cidades dos elfos da floresta.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 3,
+        "constitution": 5,
+        "intelligence": 2,
+        "wisdom": 3,
+        "charisma": 2,
+        "favoriteWeapons": [
+            "Arma de duas m\u00e3os",
+            "Arma de uma m\u00e3o"
+        ]
+    },
+    "barbarian": {
+        "name": "B\u00e1rbaro",
+        "description": "Raivosos e com sede de sangue. Um B\u00e1rbaro est\u00e1 sempre a procura de uma boa batalha, n\u00e3o importando se \u00e9 justa ou n\u00e3o.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 3,
+        "constitution": 5,
+        "intelligence": 2,
+        "wisdom": 3,
+        "charisma": 2,
+        "favoriteWeapons": [
+            "Arma de duas m\u00e3os",
+            "Arma de uma m\u00e3o"
+        ]
+    },
+    "druid": {
+        "name": "Druida",
+        "description": "Druidas s\u00e3o poderosos domadores de animais, eles possuem uma conex\u00e3o f\u00edsica e espiritual com seus bichanos.",
+        "health": 0,
+        "mana": 0,
+        "armor": 0,
+        "strength": 3,
+        "dexterity": 5,
+        "constitution": 5,
+        "intelligence": 2,
+        "wisdom": 3,
+        "charisma": 2,
+        "favoriteWeapons": [
+            "Arco longo",
+            "Arco curto"
+        ]
+    },
+    "bard": {
+        "name": "Bardo",
+        "description": "Bel\u00edssimas cantorias podem ser t\u00e3o mortais quanto a l\u00e2mina de um guerreiro. Um banjo bem encantado faz a diferen\u00e7a.",
+        "health": 0,
+        "mana": 0,
+        "velocity": 0,
+        "armor": 0,
+        "strength": 2,
+        "dexterity": 3,
+        "constitution": 3,
+        "intelligence": 5,
+        "wisdom": 2,
+        "charisma": 5,
+        "favoriteWeapons": [
+            "Instrumento",
+            "M\u00e1gico"
+        ]
+    },
+    "monk": {
+        "name": "Monge",
+        "description": "Paci\u00eancia. Disciplina. Sabedoria \u00e9 a chave para acertar o chute mortal ou atingir a postura do drag\u00e3o lend\u00e1rio.",
+        "health": 0,
+        "mana": 0,
+        "velocity": 0,
+        "armor": 0,
+        "strength": 5,
+        "dexterity": 3,
+        "constitution": 3,
+        "intelligence": 2,
+        "wisdom": 5,
+        "charisma": 2,
+        "favoriteWeapons": [
+            "Arma de duas-m\u00e3os"
+        ]
+    },
+    "espocioComum": {
+        "name": "Esp\u00f3cio Comum",
+        "description": "L\u00edngua falada no Sul de Jarparunn, tanto pelos elfos, quanto pelos humanos."
+    },
+    "espocioAntigo": {
+        "name": "Esp\u00f3cio Antigo",
+        "description": "L\u00edngua falada no escaldante Deserto dos Ossos pelos orcs."
+    },
+    "nulrfanghe": {
+        "name": "Nulrfangh\u00eb",
+        "description": "L\u00edngua fala no Norte/Nulr de Jarparunn pelos N\u00f3rdicos/Nulr-Nen, tamb\u00e9m \u00e9 a l\u00edngua das antigas runas n\u00f3rdicas."
+    },
+    "items": {
+        "tier1": [
+            "42"
+        ],
+        "tier2": [
+            "421",
+            "422",
+            "423",
+            "424",
+            "425",
+            "426",
+            "121",
+            "521",
+            "522",
+            "523",
+            "524",
+            "525",
+            "321",
+            "526",
+            "6131",
+            "6132",
+            "527",
+            "6171",
+            "6172",
+            "528",
+            "122",
+            "427",
+            "428",
+            "429",
+            "4110",
+            "4111",
+            "4112",
+            "123",
+            "221",
+            "222",
+            "6133",
+            "223",
+            "6135",
+            "6136"
+        ],
+        "tier3": [
+            "111",
+            "411",
+            "412",
+            "413",
+            "311",
+            "414",
+            "6121",
+            "6161",
+            "5121",
+            "5162",
+            "511",
+            "113",
+            "415",
+            "416",
+            "112",
+            "211",
+            "212",
+            "6122",
+            "5122",
+            "512",
+            "213",
+            "417",
+            "418",
+            "513",
+            "514",
+            "419",
+            "6123",
+            "6124",
+            "6125",
+            "515"
+        ],
+        "tier4": [
+            "101",
+            "301",
+            "6111",
+            "6151",
+            "102",
+            "201",
+            "202",
+            "6112",
+            "203",
+            "401",
+            "5111",
+            "402",
+            "501"
+        ],
+        "utilizable": [
+            "711"
+        ],
+        "t4Warrior": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "101"
+        ],
+        "t4Ranger": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "301"
+        ],
+        "t4Wizard": [
+            "",
+            "5111",
+            "",
+            "501",
+            "",
+            "",
+            "",
+            "6111"
+        ],
+        "t4BjoretNen": [
+            "",
+            "5111",
+            "",
+            "501",
+            "",
+            "",
+            "",
+            "6151"
+        ],
+        "t4Assassin": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "102"
+        ],
+        "t4Cleric": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "203"
+        ],
+        "t4Paladin": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "201"
+        ],
+        "t4Barbarian": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "202"
+        ],
+        "t4Druid": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "301"
+        ],
+        "t4Bard": [
+            "",
+            "5111",
+            "",
+            "501",
+            "",
+            "",
+            "",
+            "6112"
+        ],
+        "t4Monk": [
+            "",
+            "401",
+            "402",
+            "501",
+            "",
+            "",
+            "",
+            "201"
+        ],
+        "t3Warrior": [
+            "419",
+            "411",
+            "412",
+            "414",
+            "417",
+            "418",
+            "",
+            "111"
+        ],
+        "t3Ranger": [
+            "515",
+            "411",
+            "412",
+            "414",
+            "514",
+            "513",
+            "",
+            "311"
+        ],
+        "t3Wizard": [
+            "515",
+            "5121",
+            "",
+            "414",
+            "",
+            "",
+            "",
+            "6121"
+        ],
+        "t3BjoretNen": [
+            "515",
+            "5162",
+            "",
+            "414",
+            "",
+            "",
+            "",
+            "6161"
+        ],
+        "t3Assassin": [
+            "515",
+            "511",
+            "",
+            "414",
+            "",
+            "",
+            "",
+            "113"
+        ],
+        "t3Cleric": [
+            "419",
+            "415",
+            "416",
+            "413",
+            "417",
+            "418",
+            "",
+            "112"
+        ],
+        "t3Paladin": [
+            "419",
+            "415",
+            "416",
+            "413",
+            "417",
+            "418",
+            "",
+            "211"
+        ],
+        "t3Barbarian": [
+            "419",
+            "415",
+            "416",
+            "413",
+            "417",
+            "418",
+            "",
+            "212"
+        ],
+        "t3Druid": [
+            "515",
+            "411",
+            "412",
+            "414",
+            "514",
+            "513",
+            "",
+            "311"
+        ],
+        "t3Bard": [
+            "515",
+            "5122",
+            "",
+            "414",
+            "",
+            "",
+            "",
+            "6122"
+        ],
+        "t3Monk": [
+            "",
+            "411",
+            "512",
+            "414",
+            "514",
+            "",
+            "",
+            "213"
+        ],
+        "t2Warrior": [
+            "424",
+            "421",
+            "422",
+            "423",
+            "425",
+            "426",
+            "",
+            "121"
+        ],
+        "t2Ranger": [
+            "515",
+            "521",
+            "522",
+            "523",
+            "524",
+            "525",
+            "",
+            "321"
+        ],
+        "t2Wizard": [
+            "515",
+            "526",
+            "",
+            "523",
+            "",
+            "",
+            "",
+            "6132"
+        ],
+        "t2BjoretNen": [
+            "515",
+            "527",
+            "",
+            "523",
+            "",
+            "",
+            "",
+            "6171"
+        ],
+        "t2Assassin": [
+            "515",
+            "528",
+            "",
+            "523",
+            "524",
+            "525",
+            "",
+            "122"
+        ],
+        "t2Cleric": [
+            "4111",
+            "427",
+            "428",
+            "429",
+            "4110",
+            "4112",
+            "",
+            "123"
+        ],
+        "t2Paladin": [
+            "4111",
+            "427",
+            "428",
+            "429",
+            "4110",
+            "4112",
+            "",
+            "221"
+        ],
+        "t2Barbarian": [
+            "424",
+            "421",
+            "422",
+            "423",
+            "425",
+            "426",
+            "",
+            "222"
+        ],
+        "t2Druid": [
+            "515",
+            "521",
+            "522",
+            "523",
+            "524",
+            "525",
+            "",
+            "321"
+        ],
+        "t2Bard": [
+            "515",
+            "6127",
+            "",
+            "523",
+            "",
+            "",
+            "",
+            "6126"
+        ],
+        "t2Monk": [
+            "515",
+            "529",
+            "",
+            "523",
+            "",
+            "524",
+            "",
+            "223"
+        ],
+        "t1Warrior": [
+            "433",
+            "431",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "131"
+        ],
+        "t1Ranger": [
+            "",
+            "535",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "331"
+        ],
+        "t1Wizard": [
+            "",
+            "533",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "6141"
+        ],
+        "t1BjoretNen": [
+            "",
+            "531",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "6181"
+        ],
+        "t1Assassin": [
+            "",
+            "532",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "133"
+        ],
+        "t1Cleric": [
+            "433",
+            "431",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "132"
+        ],
+        "t1Paladin": [
+            "433",
+            "431",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "231"
+        ],
+        "t1Barbarian": [
+            "433",
+            "431",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "232"
+        ],
+        "t1Druid": [
+            "",
+            "535",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "331"
+        ],
+        "t1Bard": [
+            "",
+            "534",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "6142"
+        ],
+        "t1Monk": [
+            "",
+            "536",
+            "432",
+            "434",
+            "435",
+            "436",
+            "",
+            "233"
+        ],
+        "hasRing": [],
+        "101": {
+            "name": "Espada de Bronze",
+            "description": "Uma espada simples de bronze, acho que o an\u00e3o que a forjou n\u00e3o estava de bom humor.",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 2,
+            "cost": 5
+        },
+        "301": {
+            "name": "Arco de Ca\u00e7a",
+            "description": "Um arco simples, bom para ca\u00e7ar animais pequenos, nem um pouco confi\u00e1vel, pode quebrar a qualquer momento.",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de longo alcance",
+            "damage": 2,
+            "cost": 5
+        },
+        "6111": {
+            "name": "Tomo de Feiti\u00e7os de Iniciante",
+            "description": "Talvez essas duas p\u00e1ginas possam ajudar em alguma coisa... cuidado com o nariz.",
+            "tier": "Iniciante",
+            "type": "M\u00e1gico",
+            "damage": 2,
+            "cost": 5
+        },
+        "6151": {
+            "name": "Ra\u00edz de Full\u00e4ret",
+            "description": "Uma ra\u00edz seca retirada de uma \u00e1rvore que um dia j\u00e1 foi portadora de um Bjoret-Nen em sua mais pura forma.",
+            "tier": "Fraco",
+            "type": "M\u00e1gico",
+            "damage": 2,
+            "cost": 5
+        },
+        "102": {
+            "name": "Adaga Cega",
+            "description": "Precisa ser afiado, mas funciona, prometo. S\u00f3 n\u00e3o v\u00e1 entrar em uma briga com uma dessas, n\u00e3o \u00e9 uma boa ideia.",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 2,
+            "cost": 5
+        },
+        "201": {
+            "name": "Martelo de Pedra",
+            "description": "Esculpido pelo an\u00e3o mais pregui\u00e7oso da regi\u00e3o, aqui est\u00e1 seu maravilhoso martelo! Nem pense em usar em uma guerra.",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 2,
+            "cost": 5
+        },
+        "202": {
+            "name": "Machado de Ossos",
+            "description": "Feito com os ossos de suas maiores batalhas, verdadeiros trof\u00e9us. Confeccionado com ossos de ratos.",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 2,
+            "cost": 5
+        },
+        "6112": {
+            "name": "Banjo com P\u00e9rolas",
+            "description": "Um banjo decorado com p\u00e9rolas do colar quebrado de um mago iniciante.",
+            "tier": "Iniciante",
+            "type": "M\u00e1gico",
+            "damage": 2,
+            "cost": 5
+        },
+        "203": {
+            "name": "Bast\u00e3o de Madeira",
+            "description": "Minha antiga vassoura, agora devastada pelos ratos, malditos roedores. Mas enfim, agora \u00e9 seu, use com sabedoria!",
+            "tier": "Miser\u00e1vel",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 2,
+            "cost": 5
+        },
+        "401": {
+            "name": "Armadura de Couro",
+            "description": "Uma (des)confort\u00e1vel armadura de couro para te proteger de pontadas de espadas e flechas.",
+            "tier": "Miser\u00e1vel",
+            "type": "Armadura",
+            "armor": 1,
+            "mana": 0,
+            "cost": 2
+        },
+        "5111": {
+            "name": "Robe de Mago Iniciante",
+            "description": "Pano. Sim, s\u00f3 pano.",
+            "tier": "Iniciante",
+            "type": "Roupa",
+            "mana": 5,
+            "armor": 0,
+            "cost": 2
+        },
+        "402": {
+            "name": "Cal\u00e7as de Couro",
+            "description": "Para cobrir suas vergonhas.",
+            "tier": "Miser\u00e1vel",
+            "type": "Cal\u00e7a",
+            "armor": 1,
+            "mana": 0,
+            "cost": 1
+        },
+        "501": {
+            "name": "Botas B\u00e1sicas",
+            "description": "Voc\u00ea n\u00e3o vai querer andar nas pedras, n\u00e9?",
+            "tier": "Miser\u00e1vel",
+            "type": "Cal\u00e7ado",
+            "armor": 1,
+            "mana": 0,
+            "cost": 1
+        },
+        "111": {
+            "name": "Espada de A\u00e7o",
+            "description": "Um bom come\u00e7o para aventureiros adeptos. Afiada e r\u00e1pida.",
+            "tier": "Bom",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 6,
+            "cost": 75
+        },
+        "411": {
+            "name": "Colete de Malha",
+            "description": "Uma boa malha pode parar at\u00e9 a mais r\u00e1pida das flechas.",
+            "tier": "Bom",
+            "type": "Armadura",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "412": {
+            "name": "Cal\u00e7as de Couro Tratado",
+            "description": "Cal\u00e7as feitas com couro de primeira, n\u00e3o para uma flecha, mas protege de estocadas",
+            "tier": "Bom",
+            "type": "Cal\u00e7a",
+            "armor": 2,
+            "mana": 0,
+            "cost": 15
+        },
+        "413": {
+            "name": "Botas de Placas de A\u00e7o",
+            "description": "A\u00e7o comprimido e preparado para grandiosas batalhas!",
+            "tier": "Bom",
+            "type": "Cal\u00e7ado",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "311": {
+            "name": "Arco Recurvo",
+            "description": "Feito com os pinheiros do norte, talhado em detalhes",
+            "tier": "Bom",
+            "type": "Arma de longo alcance",
+            "damage": 6,
+            "cost": 75
+        },
+        "414": {
+            "name": "Botas de Caminhada",
+            "description": "Botas feitas para longas jornadas ou caminhadas pela floresta",
+            "tier": "Bom",
+            "type": "Cal\u00e7ado",
+            "armor": 2,
+            "mana": 0,
+            "cost": 15
+        },
+        "6121": {
+            "name": "Grim\u00f3rio de Feiti\u00e7os Intermedi\u00e1rio",
+            "description": "Feito para quem sabe conjurar fa\u00edscas de fogo e pequenas rajadas de \u00e1gua.",
+            "tier": "Experiente",
+            "type": "M\u00e1gico",
+            "damage": 7,
+            "cost": 75
+        },
+        "6161": {
+            "name": "Grim\u00f3rio de Signetes R\u00fanicos",
+            "description": "Uma colet\u00e2nea de t\u00e9cnicas e m\u00e9todos da magia real",
+            "tier": "Iluminado",
+            "type": "M\u00e1gico",
+            "damage": 7,
+            "cost": 75
+        },
+        "5121": {
+            "name": "Robe de Mago Experiente",
+            "description": "Um belo robe para um bom feitceiro!",
+            "tier": "Experiente",
+            "type": "Roupa",
+            "armor": 1,
+            "mana": 10,
+            "cost": 85
+        },
+        "5162": {
+            "name": "Traje R\u00fanico Intermedi\u00e1rio",
+            "description": "Destinado a Bjoret-Nens adeptos. Runas poderosas decoram seu entorno",
+            "tier": "Iluminado",
+            "type": "Roupa",
+            "armor": 1,
+            "mana": 10,
+            "cost": 85
+        },
+        "511": {
+            "name": "Traje com capuz",
+            "description": "\u00d3timo para se esconder ou misturar-se na multid\u00e3o",
+            "tier": "Bom",
+            "type": "Roupa",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "113": {
+            "name": "Adaga Afiada",
+            "description": "Tamanho n\u00e3o \u00e9 documento.",
+            "tier": "Bom",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 8,
+            "cost": 85
+        },
+        "415": {
+            "name": "Armadura de A\u00e7o Batido",
+            "description": "\u00d3tima para aguentar estocadas e marretadas!",
+            "tier": "Bom",
+            "type": "Armadura",
+            "armor": 6,
+            "mana": 0,
+            "cost": 65
+        },
+        "416": {
+            "name": "A\u00e7o Batido",
+            "description": "A\u00e7o batido para proteger as pernas!",
+            "tier": "Bom",
+            "type": "Cal\u00e7a",
+            "armor": 6,
+            "mana": 0,
+            "cost": 55
+        },
+        "112": {
+            "name": "Ma\u00e7a de A\u00e7o",
+            "description": "R\u00e1pida e pontiaguda, boa companheira para um escudo",
+            "tier": "Bom",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 5,
+            "cost": 40
+        },
+        "211": {
+            "name": "Martelo de A\u00e7o Forjado",
+            "description": "Um martelo de respeito para um paladino de respeito.",
+            "tier": "Bom",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 5,
+            "cost": 45
+        },
+        "212": {
+            "name": "Machado de Guerra",
+            "description": "Um grandioso machado, possui 2 gumes afiados e um longo cabo",
+            "tier": "Bom",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 5,
+            "cost": 45
+        },
+        "6122": {
+            "name": "Flauta Encantada",
+            "description": "N\u00e3o s\u00f3 um instrumento de entretenimento, esta flauta pode ser seu fim.",
+            "tier": "Experiente",
+            "type": "M\u00e1gico",
+            "damage": 5,
+            "cost": 40
+        },
+        "5122": {
+            "name": "Trajes de M\u00fasico Experiente",
+            "description": "Um belo traje decorado com diferentes tecidos do Sul",
+            "tier": "Experiente",
+            "type": "Roupa",
+            "armor": 1,
+            "mana": 5,
+            "cost": 35
+        },
+        "512": {
+            "name": "Cal\u00e7as do Monge",
+            "description": "Vestimenta forte e flex\u00edvel, boa para realizar diversos golpes.",
+            "tier": "Bom",
+            "type": "Cal\u00e7a",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "213": {
+            "name": "Bast\u00e3o Polido",
+            "description": "Um bast\u00e3o com pontas de metal, eficiente quando bem usado.",
+            "tier": "Bom",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 4,
+            "cost": 30
+        },
+        "417": {
+            "name": "Braceletes de A\u00e7o",
+            "description": "Couro com a\u00e7o revestido para proteger os bra\u00e7os.",
+            "tier": "Bom",
+            "type": "Bracelete",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "418": {
+            "name": "Luvas de A\u00e7o",
+            "description": "Couro com a\u00e7o revestido para proteger os dedos.",
+            "tier": "Bom",
+            "type": "Luvas",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "513": {
+            "name": "Luvas de Couro",
+            "description": "\u00d3timas para proteger do frio e de objetos cortantes.",
+            "tier": "Bom",
+            "type": "Luvas",
+            "armor": 2,
+            "mana": 0,
+            "cost": 15
+        },
+        "514": {
+            "name": "Braceletes de Couro",
+            "description": "Leve, mas ainda assim resistente.",
+            "tier": "Bom",
+            "type": "Bracelete",
+            "armor": 2,
+            "mana": 0,
+            "cost": 15
+        },
+        "419": {
+            "name": "Elmo de A\u00e7o",
+            "description": "Protege o membro mais importante do seu corpo.",
+            "tier": "Bom",
+            "type": "Capacete",
+            "armor": 3,
+            "mana": 0,
+            "cost": 25
+        },
+        "6123": {
+            "name": "Anel da Magia Fraco",
+            "description": "Providencia 5 de mana adicional ao portador",
+            "tier": "Bom",
+            "type": "Anel",
+            "armor": 0,
+            "mana": 5,
+            "cost": 100
+        },
+        "6124": {
+            "name": "Anel da Armadura Fraco",
+            "description": "Providencia 5 de armadura adicional ao portador",
+            "tier": "Bom",
+            "type": "Anel",
+            "armor": 5,
+            "mana": 0,
+            "cost": 100
+        },
+        "6125": {
+            "name": "Anel do Aniquilador",
+            "description": "Um an\u00e9l forjado por um elfo desconhecido, talvez um estudante iniciante.",
+            "tier": "Bom",
+            "type": "Anel",
+            "armor": 5,
+            "mana": 5,
+            "cost": 250
+        },
+        "515": {
+            "name": "Capuz",
+            "description": "Um capuz simples, um pouco mais de armadura nunca \u00e9 demais",
+            "tier": "Bom",
+            "type": "Chap\u00e9u",
+            "armor": 2,
+            "mana": 0,
+            "cost": 15
+        },
+        "421": {
+            "name": "Armadura de Metal",
+            "description": "Feita com metal forjado pelos melhores ferreiros da regi\u00e3o",
+            "tier": "Obra de arte",
+            "type": "Armadura",
+            "armor": 10,
+            "mana": 2,
+            "cost": 1250
+        },
+        "422": {
+            "name": "Placas de Metal",
+            "description": "Para proteger as pernas. Impec\u00e1vel.",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7a",
+            "armor": 8,
+            "mana": 2,
+            "cost": 1150
+        },
+        "423": {
+            "name": "Botas de Metal",
+            "description": "Botas de metal muito bem forjado.",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7ado",
+            "armor": 8,
+            "mana": 0,
+            "cost": 1150
+        },
+        "424": {
+            "name": "Elmo de Metal",
+            "description": "Seu polimento o torna reluzente, um elmo de respeito para um portador de respeito",
+            "tier": "Obra de arte",
+            "type": "Capacete",
+            "armor": 8,
+            "mana": 0,
+            "cost": 1150
+        },
+        "425": {
+            "name": "Bracelete de Metal",
+            "description": "Capaz de aguentar estocadas da mais afiada espada",
+            "tier": "Obra de arte",
+            "type": "Bracelete",
+            "armor": 6,
+            "mana": 0,
+            "cost": 950
+        },
+        "426": {
+            "name": "Luvas de Metal",
+            "description": "Extremamente resistentes.",
+            "tier": "Obra de arte",
+            "type": "Luvas",
+            "armor": 6,
+            "mana": 0,
+            "cost": 950
+        },
+        "121": {
+            "name": "Espada de Metal",
+            "description": "Uma gloriosa espada de metal reluzente, forjada sob as m\u00e3os de um an\u00e3o extremamente talentoso",
+            "tier": "Obra de arte",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 25,
+            "cost": 1750
+        },
+        "521": {
+            "name": "Colete de Malha com Placas de Metal",
+            "description": "Projetado para os melhores Rangers de Jarparur",
+            "tier": "Obra de arte",
+            "type": "Roupa",
+            "armor": 5,
+            "mana": 0,
+            "cost": 850
+        },
+        "522": {
+            "name": "Cal\u00e7as de Couro com Placas de Metal",
+            "description": "Para melhor locomo\u00e7\u00e3o, mas ainda assim, proteger o portador.",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7a",
+            "armor": 4,
+            "mana": 0,
+            "cost": 750
+        },
+        "523": {
+            "name": "Botas de Couro Revestido",
+            "description": "Tratadas em um processo rigoroso e revestidas com materiais resistentes",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7ado",
+            "armor": 4,
+            "mana": 0,
+            "cost": 750
+        },
+        "524": {
+            "name": "Bracelete de Couro Revestido",
+            "description": "\u00d3timo para manter longe as flechas inoportunas da batalha",
+            "tier": "Obra de arte",
+            "type": "Bracelete",
+            "armor": 3,
+            "mana": 0,
+            "cost": 650
+        },
+        "525": {
+            "name": "Luvas de Couro Revestido",
+            "description": "Uma boa escolha para aqueles que visam n\u00e3o perder seus dedos",
+            "tier": "Obra de arte",
+            "type": "Luvas",
+            "armor": 2,
+            "mana": 0,
+            "cost": 550
+        },
+        "321": {
+            "name": "Arco Longo",
+            "description": "Talhado com diferentes tipos de madeira e revestido com placas de metal.",
+            "tier": "Obra de arte",
+            "type": "Arma de longo alcance",
+            "damage": 25,
+            "cost": 1750
+        },
+        "526": {
+            "name": "Robe de Mago Perito",
+            "description": "Feito com o tecido mais raro do Sul e encantado com energias arcanas.",
+            "tier": "Perito",
+            "type": "Roupa",
+            "armor": 2,
+            "mana": 25,
+            "cost": 1850
+        },
+        "6131": {
+            "name": "Cetro",
+            "description": "Este cetro pode lan\u00e7ar rajadas de energia arcana ao alvo",
+            "tier": "Perito",
+            "type": "M\u00e1gico",
+            "damage": 25,
+            "cost": 2250
+        },
+        "6132": {
+            "name": "Grim\u00f3rio de Feiti\u00e7os do Perito",
+            "description": "Este grim\u00f3rio adiciona uma variedade de feiti\u00e7os para o portador",
+            "tier": "Perito",
+            "type": "M\u00e1gico",
+            "damage": 15,
+            "cost": 2550
+        },
+        "527": {
+            "name": "Traje R\u00fanico Ascendido",
+            "description": "Este traje possui runas secretas, conhecidas apenas pelos mestres reais do norte",
+            "tier": "Ascendido",
+            "type": "Roupa",
+            "armor": 2,
+            "mana": 25,
+            "cost": 1850
+        },
+        "6171": {
+            "name": "Signetes R\u00fanicos Reais",
+            "description": "Signetes R\u00fanicos transcrevidos na pele do portador, extremamente fortes",
+            "tier": "Perito",
+            "type": "M\u00e1gico",
+            "damage": 45,
+            "cost": 3250
+        },
+        "6172": {
+            "name": "Grim\u00f3rio dos Signetes R\u00fanicos Secretos",
+            "description": "Cont\u00e9m os maiores segredos do Norte, a magia mais forte Jarparur",
+            "tier": "Ascendido",
+            "type": "M\u00e1gico",
+            "damage": 25,
+            "cost": 1850
+        },
+        "528": {
+            "name": "Traje com capuz revestido",
+            "description": "Este traje possui revestimento de couro processado, dando agilidade ao portador e prote\u00e7\u00e3o",
+            "tier": "Obra de arte",
+            "type": "Roupa",
+            "armor": 8,
+            "mana": 0,
+            "cost": 850
+        },
+        "122": {
+            "name": "Adaga de Tit\u00e2nio",
+            "description": "Uma morte r\u00e1pida de uma arma de qualidade, esta adaga pode cumprir esse miss\u00e3o.",
+            "tier": "Obra de arte",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 55,
+            "cost": 1850
+        },
+        "427": {
+            "name": "Armadura de Ouro",
+            "description": "S\u00edmbolo do militarismo do Sul, representa suas riquezas e for\u00e7a militar",
+            "tier": "Obra de arte",
+            "type": "Armadura",
+            "armor": 10,
+            "mana": 0,
+            "cost": 2750
+        },
+        "428": {
+            "name": "Placas de Ouro",
+            "description": "Ouro para proteger as pernas.",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7a",
+            "armor": 10,
+            "mana": 0,
+            "cost": 2550
+        },
+        "429": {
+            "name": "Botas de Ouro",
+            "description": "Ouro para os p\u00e9s",
+            "tier": "Obra de arte",
+            "type": "Cal\u00e7ado",
+            "armor": 8,
+            "mana": 0,
+            "cost": 2450
+        },
+        "4110": {
+            "name": "Bracelete de Ouro",
+            "description": "Ouro para os bra\u00e7os",
+            "tier": "Obra de arte",
+            "type": "Bracelete",
+            "armor": 8,
+            "mana": 0,
+            "cost": 2450
+        },
+        "4111": {
+            "name": "Elmo de Ouro",
+            "description": "Um bel\u00edssimo elmo de ouro reluzente, digno de um l\u00edder do Sul",
+            "tier": "Obra de arte",
+            "type": "Capacete",
+            "armor": 8,
+            "mana": 0,
+            "cost": 2450
+        },
+        "4112": {
+            "name": "Luvas de Ouro",
+            "description": "Luvas reluzentes de ouro para intimidar o inimigo",
+            "tier": "Obra de arte",
+            "type": "Luvas",
+            "armor": 4,
+            "mana": 0,
+            "cost": 2150
+        },
+        "123": {
+            "name": "Ma\u00e7a Dourada",
+            "description": "Uma ma\u00e7a digna de um defensor talentoso.",
+            "tier": "Obra de arte",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 25,
+            "cost": 2450
+        },
+        "221": {
+            "name": "Martelo Dourado",
+            "description": "Um glorioso martelo dourado, representando a for\u00e7a militar do Sul e sua riqueza",
+            "tier": "Obra de arte",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 25,
+            "cost": 2550
+        },
+        "222": {
+            "name": "Machado do Berserker",
+            "description": "Um machado destinado aos b\u00e1rbaros mais corajosos de Jarparur",
+            "tier": "Obra de arte",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 45,
+            "cost": 1750
+        },
+        "6127": {
+            "name": "Traje do M\u00fasico M\u00edstico",
+            "description": "Uma vers\u00e3o extremamente forte devido a encantamentos do traje de m\u00fasico padr\u00e3o",
+            "tier": "Perito",
+            "type": "Roupa",
+            "armor": 2,
+            "mana": 15,
+            "cost": 1250
+        },
+        "6126": {
+            "name": "Harpa M\u00edstica",
+            "description": "Cuidado, essa harpa pode compor uma melodia fatal.",
+            "tier": "Perito",
+            "type": "M\u00e1gico",
+            "damage": 25,
+            "cost": 1250
+        },
+        "529": {
+            "name": "Traje do Monge Semi-Lend\u00e1rio",
+            "description": "Um traje com adornos dourados e costura de alta linha, encantado com o esp\u00edrito do Drag\u00e3o",
+            "tier": "Obra de arte",
+            "type": "Roupa",
+            "armor": 25,
+            "mana": 0,
+            "cost": 2100
+        },
+        "223": {
+            "name": "Punhos do Drag\u00e3o",
+            "description": "Luvas capazes de conjurar o verdadeiro poder do Drag\u00e3o.",
+            "tier": "Obra de arte",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 45,
+            "cost": 1850
+        },
+        "6134": {
+            "name": "Anel da Magia Forte",
+            "description": "Forjado em uma parceria com os elfos do Sul e os an\u00f5es do Norte, tempos antigos.",
+            "tier": "Obra de arte",
+            "type": "Anel",
+            "armor": 0,
+            "mana": 20,
+            "cost": 5500
+        },
+        "6135": {
+            "name": "Anel da Armadura Forte",
+            "description": "Forjado em uma parceria com os elfos do Sul e os an\u00f5es do Norte, tempos antigos.",
+            "tier": "Obra de arte",
+            "type": "Anel",
+            "armor": 20,
+            "mana": 0,
+            "cost": 5500
+        },
+        "6136": {
+            "name": "Anel do Conquistador",
+            "description": "Forjado em segredo por um an\u00e3o ambicioso.",
+            "tier": "Obra de arte",
+            "type": "Anel",
+            "armor": 25,
+            "mana": 25,
+            "cost": 11000
+        },
+        "431": {
+            "name": "Armadura de Tit\u00e2nio",
+            "description": "A armadura mais forte que um aventureiro pode conseguir (ou ser\u00e1 que n\u00e3o?)",
+            "tier": "Lend\u00e1rio",
+            "type": "Armadura",
+            "armor": 65,
+            "mana": 10,
+            "cost": 15800
+        },
+        "432": {
+            "name": "Placas de Tit\u00e2nio",
+            "description": "Placas que complementam a lend\u00e1ria armadura tit\u00e2nica",
+            "tier": "Lend\u00e1rio",
+            "type": "Cal\u00e7a",
+            "armor": 55,
+            "mana": 10,
+            "cost": 15800
+        },
+        "433": {
+            "name": "Elmo de Tit\u00e2nio",
+            "description": "Um elmo bel\u00edssimo com adornos e detalhes \u00fanicos.",
+            "tier": "Lend\u00e1rio",
+            "type": "Capacete",
+            "armor": 55,
+            "mana": 10,
+            "cost": 15800
+        },
+        "434": {
+            "name": "Botas de Tit\u00e2nio",
+            "description": "Botas de tit\u00e2nio com adornos e detalhes entalhados.",
+            "tier": "Lend\u00e1rio",
+            "type": "Cal\u00e7ado",
+            "armor": 55,
+            "mana": 10,
+            "cost": 15800
+        },
+        "435": {
+            "name": "Braceletes de Tit\u00e2nio",
+            "description": "Braceletes de tit\u00e2nio com adornos e detalhes entalhados.",
+            "tier": "Lend\u00e1rio",
+            "type": "Bracelete",
+            "armor": 45,
+            "mana": 10,
+            "cost": 15800
+        },
+        "436": {
+            "name": "Luvas de Tit\u00e2nio",
+            "description": "Luvas extremamente fortes.",
+            "tier": "Lend\u00e1rio",
+            "type": "Luvas",
+            "armor": 45,
+            "mana": 10,
+            "cost": 15800
+        },
+        "531": {
+            "name": "Traje do Mestre R\u00fanico",
+            "description": "Possui as runas mais fortes de Jarparur transcritas em seu tecido, possuindo capacidades extraordin\u00e1rias.",
+            "tier": "Real",
+            "type": "Roupa",
+            "armor": 10,
+            "mana": 180,
+            "cost": 19000
+        },
+        "532": {
+            "name": "Traje do Assassino Lend\u00e1rio",
+            "description": "Conhecido como um presente dado ao assassino mais talentoso da misteriosa Guilda dos Assassinos.",
+            "tier": "Lend\u00e1rio",
+            "type": "Roupa",
+            "armor": 80,
+            "mana": 40,
+            "cost": 16000
+        },
+        "533": {
+            "name": "Robe do Arquimago",
+            "description": "Robe possu\u00eddo pelos melhores magos de Jarparur",
+            "tier": "Mestre",
+            "type": "Roupa",
+            "armor": 10,
+            "mana": 180,
+            "cost": 19000
+        },
+        "534": {
+            "name": "Traje do Mestre M\u00fasico",
+            "description": "Um talentoso m\u00fasico precisa de uma bela vestimenta.",
+            "tier": "Mestre",
+            "type": "Roupa",
+            "armor": 10,
+            "mana": 180,
+            "cost": 19000
+        },
+        "535": {
+            "name": "Traje do Arqueiro Lend\u00e1rio",
+            "description": "Um verdadeiro arqueiro talentoso possui uma vestimenta \u00e0 sua altura.",
+            "tier": "Lend\u00e1rio",
+            "type": "Roupa",
+            "armor": 80,
+            "mana": 40,
+            "cost": 16000
+        },
+        "536": {
+            "name": "Traje do Drag\u00e3o Lend\u00e1rio",
+            "description": "A paci\u00eancia reina nos vales da mente do monge que atinge o estado do drag\u00e3o lend\u00e1rio.",
+            "tier": "Lend\u00e1rio",
+            "type": "Roupa",
+            "armor": 80,
+            "mana": 40,
+            "cost": 16000
+        },
+        "131": {
+            "name": "Espada de Tit\u00e2nio",
+            "description": "Uma poderosa espada de tit\u00e2nio capaz de cortar tudo \u00e0 sua frente",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 180,
+            "cost": 14800
+        },
+        "132": {
+            "name": "Ma\u00e7a de Tit\u00e2nio",
+            "description": "Uma poderosa ma\u00e7a de tit\u00e2nio capaz de cortar tudo \u00e0 sua frente",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 180,
+            "cost": 14800
+        },
+        "133": {
+            "name": "Adaga de Tit\u00e2nio",
+            "description": "Uma poderosa adaga de tit\u00e2nio capaz de cortar tudo \u00e0 sua frente",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de uma m\u00e3o",
+            "damage": 180,
+            "cost": 14800
+        },
+        "331": {
+            "name": "Arco de Tit\u00e2nio",
+            "description": "Um bel\u00edssimo arco de tit\u00e2nio capaz de disparar poderosas flechas nos inimigos",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de longo alcance",
+            "damage": 180,
+            "cost": 14800
+        },
+        "231": {
+            "name": "Martelo de Tit\u00e2nio",
+            "description": "Um poderoso martelo de tit\u00e2nio, poderoso o bastante para detonar tudo \u00e0 sua frente",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 150,
+            "cost": 14800
+        },
+        "232": {
+            "name": "Machado de Tit\u00e2nio",
+            "description": "Um poderoso machado de tit\u00e2nio, poderoso o bastante para cortar tudo \u00e0 sua frente",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 180,
+            "cost": 14800
+        },
+        "6141": {
+            "name": "Grim\u00f3rio do Arquimago",
+            "description": "Um grim\u00f3rio poderoso, seus feiti\u00e7os podem destruir o mundo inteiro se bem usados",
+            "tier": "Mestre",
+            "type": "M\u00e1gico",
+            "damage": 180,
+            "cost": 20000
+        },
+        "6181": {
+            "name": "Signetes do do Mestre R\u00fanico",
+            "description": "Quando o Bjoreten se torna um s\u00f3 com a Bjoret, ele recebe seus signetes. N\u00e3o subestime um Bjoreten Real",
+            "tier": "Real",
+            "type": "M\u00e1gico",
+            "damage": 180,
+            "cost": 20000
+        },
+        "6142": {
+            "name": "Ocarina do Mestre M\u00fasico",
+            "description": "Melodias t\u00e3o belas... ainda assim, t\u00e3o fatais.",
+            "tier": "Mestre",
+            "type": "M\u00e1gico",
+            "damage": 180,
+            "cost": 20000
+        },
+        "233": {
+            "name": "Punhos do Drad\u00e3o Lend\u00e1rio",
+            "description": "Manoplas poderosas, capazes de abater qualquer inimigo",
+            "tier": "Lend\u00e1rio",
+            "type": "Arma de duas-m\u00e3os",
+            "damage": 180,
+            "cost": 19000
+        },
+        "42": {
+            "name": "O Sentido da Vida",
+            "description": "O verdadeiro sentido da vida!",
+            "tier": "Lend\u00e1rio",
+            "type": "Easter Egg",
+            "damage": 420000,
+            "cost": 420000
+        },
+        "711": {
+            "name": "Po\u00e7\u00e3o de Vida",
+            "description": "Possui um l\u00edquido avermelhado em seu interior. Recupera 2 pontos de vida.",
+            "tier": "Bom",
+            "type": "Utiliz\u00e1vel",
+            "damage": 0,
+            "cost": 5,
+            "usesFor": "healing",
+            "value": 2
+        }
+    }
+}

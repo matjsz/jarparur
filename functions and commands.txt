@@ -1,4 +1,70 @@
+EXTRA INFO 
+
+playerTurn => enemyTurn
+
+playerTurn:
+    if damage:
+        if enemyParry:
+            enemyTurn
+        else:
+            enemyDecreaseDamage
+            enemyTurn
+    elif item:
+        useItem
+        enemyTurn
+    elif playerEscape:
+        endCombat
+enemyTurn:
+    damage
+    if playerParry:
+        playerTurn
+    else:
+        playerDecreaseDamage
+        playerTurn
+
+damage
+
+baseDamage = item
+baseAbilityDamage = depends on level
+
+attack damage:
+    chanceOfCritic = 
+        ranged/melee = random() * 100 + dexterity
+        magical = random() * 100 + intelligence
+    melee = baseDamage (items increase baseDamage) * strength - random() * 10
+    ranged = baseDamage (items increase baseDamage) * dexterity - random() * 10
+    magical = baseDamage (items increase baseDamage) * intelligence - random() * 10
+
+defense
+
+chanceOfParry = random() * 100 + dexterity
+chanceOfEscape = random() * 100 + dexterity
+decreaseDamage = random() * (constitution + playerArmor (items increase playerArmor))
+
+miscelaneous
+
+chanceOfOpen = random() * 100 + (dexterity+intelligence)
+chanceOfSolve = random() * 100 + intelligence
+decreasePrice = price - charisma * 0,1
+
+attributes:
+
+playerLife = constitution * (playerLevel)
+playerMana = intelligence * (playerLevel)
+playerArmor = item
+
+2 = weak point
+3 = neutral
+5 = good point
+
+
+
+
+FUNCTIONS
+
 TO ADD XP => gameHandler.py - events["addxp"].event(xp)
+
+
 
 COMMANDS
 

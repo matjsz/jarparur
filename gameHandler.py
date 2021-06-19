@@ -300,6 +300,41 @@ class MapHandler:
             os.system("cls")
             self.update("default")
 
+        def deathScreen(self):
+            os.system("cls")
+
+            print("Você morreu!")
+            print("\nÉ aqui que sua jornada em Jarparur encontra seu fim.")
+            profileData = [
+                ['Nome', playerName],
+                ['Raça', playerRace],
+                ['Classe', playerClass],
+                ['Idioma', playerLanguage],
+                ['Idade', playerAge],
+                ['Altura', playerHeight],
+                ['Inimigos mortos', '0'],
+                ['Dungeons completas', '0'],
+                ['\n'],
+                ['Nível: ', f"{str(playerLevel)} {resources.convertLevelToTitle(dataPlayer['playerLevel'], dataPlayer['playerClass'])} ({str(playerXP)} XP)"],
+                ['\n'],
+                ['Força', playerStrength],
+                ['Destreza', playerDexterity],
+                ['Constituição', playerConstitution],
+                ['Inteligência', playerIntelligence],
+                ['Sabedoria', playerWisdom],
+                ['Carisma', playerCharisma],
+                ['Terra natal', dataWorld[dataPlayer['playerStartPoint']]['name']],
+                ['Arma favorita', dataPlayer['playerFavoriteWeapon']]
+            ]
+            
+            tableProfile = SingleTable(profileData)
+            
+            print(tableProfile.table)
+            input("Continuar...")
+            import jarparur
+
+            jarparur.mainStructure()
+
         def upgradeScreen(self, xp, previousLevel):
             os.system("cls")
 
@@ -342,6 +377,9 @@ class MapHandler:
                     self.update("default")
                 else:
                     dataPlayer[dictPointsFinal[whereToUse]] += 1
+                    dataPlayer["playerHealth"] = dataPlayer["playerConstitution"] * dataPlayer["playerLevel"]
+                    dataPlayer["playerMaxHealth"] = dataPlayer["playerConstitution"] * dataPlayer["playerLevel"]
+                    dataPlayer["playerMana"] = dataPlayer["playerIntelligence"] * dataPlayer["playerLevel"]
                     pointsToUse -= 1
                     dataPlayer['upgradePoints'] = pointsToUse
 
@@ -424,7 +462,7 @@ class MapHandler:
                         ['Vida:', playerHealth],
                         ['Mana:', playerMana],
                         ['Armadura:', playerArmor],
-                        ['Nível: ', str(playerLevel)+f" ({str(playerXP)} XP)"],
+                        ['Nível: ', f"{str(playerLevel)} {resources.convertLevelToTitle(dataPlayer['playerLevel'], dataPlayer['playerClass'])} ({str(playerXP)} XP)"],
                         ['\n'],
                         ['Força', playerStrength],
                         ['Destreza', playerDexterity],
@@ -467,7 +505,7 @@ class MapHandler:
                                 ['Localização atual', dataWorld[dataNpc[npc]["world"]["worldRegion"]]["name"]],
                                 ['Gênero', dataNpc[npc]["genre"]],
                                 ['Raça', data[dataNpc[npc]["race"]]['name']],
-                                ['Classe', data[dataNpc[npc]["class"]]['name']],
+                                ['Classe', f"{data[dataNpc[npc]['class']]['name']} {resources.convertLevelToTitle(dataNpc[npc]['level'], dataNpc[npc]['class'])}"],
                                 ['Idioma', data[dataNpc[npc]["language"]]['name']],
                                 ['Idade', dataNpc[npc]["age"]],
                                 ['Altura', f'{dataNpc[npc]["height"]} metros'],
@@ -476,7 +514,6 @@ class MapHandler:
                                 ['Pontos de armadura', dataNpc[npc]['armor']],
                                 ['Nível', f'{dataNpc[npc]["level"]} ({dataNpc[npc]["XP"]} XP)'],
                                 ['Arma favorita', dataNpc[npc]["favoriteWeapon"]],
-                                ['Velocidade', dataNpc[npc]['velocity']],
                                 ['Força', dataNpc[npc]['strength']],
                                 ['Destreza', dataNpc[npc]['dexterity']],
                                 ['Constituição', dataNpc[npc]['constitution']],
@@ -496,7 +533,7 @@ class MapHandler:
                             print(npc)
                         print("\n")
                         input("Pressione qualquer tecla para voltar...")
-                    elif eventNpc == "all-text":
+                    elif eventNpc == "all-name":
                         print("\n")
                         for npc in dataNpc:
                             print(dataNpc[npc]["name"])
@@ -510,7 +547,7 @@ class MapHandler:
                                 ['Localização atual', dataWorld[dataNpc[eventNpc]["world"]["worldRegion"]]["name"]],
                                 ['Gênero', dataNpc[eventNpc]["genre"]],
                                 ['Raça', data[dataNpc[eventNpc]["race"]]['name']],
-                                ['Classe', data[dataNpc[eventNpc]["class"]]['name']],
+                                ['Classe', f"{data[dataNpc[eventNpc]['class']]['name']} {resources.convertLevelToTitle(dataNpc[eventNpc]['level'], dataNpc[eventNpc]['class'])}"],
                                 ['Idioma', data[dataNpc[eventNpc]["language"]]['name']],
                                 ['Idade', dataNpc[eventNpc]["age"]],
                                 ['Altura', f'{dataNpc[eventNpc]["height"]} metros'],
@@ -519,7 +556,6 @@ class MapHandler:
                                 ['Pontos de armadura', dataNpc[eventNpc]['armor']],
                                 ['Nível', f'{dataNpc[eventNpc]["level"]} ({dataNpc[eventNpc]["XP"]} XP)'],
                                 ['Arma favorita', dataNpc[eventNpc]["favoriteWeapon"]],
-                                ['Velocidade', dataNpc[eventNpc]['velocity']],
                                 ['Força', dataNpc[eventNpc]['strength']],
                                 ['Destreza', dataNpc[eventNpc]['dexterity']],
                                 ['Constituição', dataNpc[eventNpc]['constitution']],
